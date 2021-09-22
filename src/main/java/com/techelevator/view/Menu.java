@@ -4,16 +4,16 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.util.Scanner;
-import java.util.List;
 
 public class Menu {
 
-	private PrintWriter out;
-	private Scanner in;
+	private final Scanner in;
+	private final PrintWriter out;
 
+	/** CONSTRUCTOR */
 	public Menu(InputStream input, OutputStream output) {
-		this.out = new PrintWriter(output);
 		this.in = new Scanner(input);
+		this.out = new PrintWriter(output);
 	}
 
 	public Object getChoiceFromOptions(Object[] options) {
@@ -34,7 +34,7 @@ public class Menu {
 				choice = options[selectedOption - 1];
 			}
 		} catch (NumberFormatException e) {
-			// eat the exception, an error message will be displayed below since choice will be null
+			// Display error message in the following if statement
 		}
 		if (choice == null) {
 			out.println(System.lineSeparator() + "*** " + userInput + " is not a valid option ***" + System.lineSeparator());
@@ -44,11 +44,11 @@ public class Menu {
 
 	private void displayMenuOptions(Object[] options) {
 		out.println();
-		for (int i = 0; i < options.length; i++) {
+		for (int i = 0; i < options.length - 1; i++) {
 			int optionNum = i + 1;
 			out.println(optionNum + ") " + options[i]);
 		}
-		out.print(System.lineSeparator() + "Please choose an option >>> ");
+		out.print(System.lineSeparator() + "Please make a selection: ");
 		out.flush();
 	}
 }
