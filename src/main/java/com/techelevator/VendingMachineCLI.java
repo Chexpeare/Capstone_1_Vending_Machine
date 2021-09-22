@@ -14,7 +14,7 @@ public class VendingMachineCLI {
 	private static final String MAIN_MENU_OPTION_SALES_REPORT = "";
 
 	private static final String[] MAIN_MENU_OPTIONS = { MAIN_MENU_OPTION_DISPLAY_ITEMS, MAIN_MENU_OPTION_PURCHASE,
-														MAIN_MENU_OPTION_EXIT, MAIN_MENU_OPTION_SALES_REPORT};
+														MAIN_MENU_OPTION_EXIT, MAIN_MENU_OPTION_SALES_REPORT };
 
 	private final Menu menu;
 	private final String inputDataFile = "/capstone/vendingmachine.csv";
