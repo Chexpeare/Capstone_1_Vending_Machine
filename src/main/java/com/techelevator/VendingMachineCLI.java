@@ -1,10 +1,7 @@
 package com.techelevator;
 
 import com.techelevator.view.Menu;
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Scanner;
 
 public class VendingMachineCLI {
 
@@ -12,16 +9,20 @@ public class VendingMachineCLI {
 	private static final String MAIN_MENU_OPTION_PURCHASE = "Purchase";
 	private static final String MAIN_MENU_OPTION_EXIT = "Exit";
 	private static final String MAIN_MENU_OPTION_SALES_REPORT = "";
-
 	private static final String[] MAIN_MENU_OPTIONS = { MAIN_MENU_OPTION_DISPLAY_ITEMS, MAIN_MENU_OPTION_PURCHASE,
 														MAIN_MENU_OPTION_EXIT, MAIN_MENU_OPTION_SALES_REPORT };
-
 	private final Menu menu;
-	private final String inputDataFile = "/capstone/vendingmachine.csv";
+//	private final String inputDataFile = "/capstone/vendingmachine.csv";
 
 	/** CONSTRUCTOR */
 	public VendingMachineCLI(Menu menu) {
 		this.menu = menu;
+	}
+
+	public static void main(String[] args) throws IOException {
+		Menu menu = new Menu(System.in, System.out);
+		VendingMachineCLI cli = new VendingMachineCLI(menu);
+		cli.run();
 	}
 
 	public void run() throws IOException {
@@ -52,9 +53,4 @@ public class VendingMachineCLI {
 		}
 	}
 
-	public static void main(String[] args) throws IOException {
-		Menu menu = new Menu(System.in, System.out);
-		VendingMachineCLI cli = new VendingMachineCLI(menu);
-		cli.run();
-	}
 }
