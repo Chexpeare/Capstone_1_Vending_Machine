@@ -25,11 +25,22 @@ public class Menu {
 		return choice;
 	}
 
+	private void displayMenuOptions(Object[] options) {
+		out.println();
+		for (int i = 0; i < options.length - 1; i++) {
+			int optionNum = i + 1;
+			out.println(optionNum + ") " + options[i]);
+		}
+		out.print(System.lineSeparator() + "Please make a selection: ");
+		out.flush();
+	}
+
 	private Object getChoiceFromUserInput(Object[] options) {
 		Object choice = null;
 		String userInput = in.nextLine();
 		try {
-			int selectedOption = Integer.valueOf(userInput);
+			int selectedOption = Integer.parseInt(userInput);
+			// int selectedOption = Integer.valueOf(userInput);  <--- Original code
 			if (selectedOption > 0 && selectedOption <= options.length) {
 				choice = options[selectedOption - 1];
 			}
@@ -40,15 +51,5 @@ public class Menu {
 			out.println(System.lineSeparator() + "*** " + userInput + " is not a valid option ***" + System.lineSeparator());
 		}
 		return choice;
-	}
-
-	private void displayMenuOptions(Object[] options) {
-		out.println();
-		for (int i = 0; i < options.length - 1; i++) {
-			int optionNum = i + 1;
-			out.println(optionNum + ") " + options[i]);
-		}
-		out.print(System.lineSeparator() + "Please make a selection: ");
-		out.flush();
 	}
 }
