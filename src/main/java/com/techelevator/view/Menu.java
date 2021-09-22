@@ -11,11 +11,15 @@ public class Menu {
 	private final PrintWriter out;
 
 	/** CONSTRUCTOR */
+	// Instantiated by VendingMachineCLI main()
 	public Menu(InputStream input, OutputStream output) {
 		this.in = new Scanner(input);
 		this.out = new PrintWriter(output);
 	}
 
+	/** METHODS */
+	// Method 1: POE - This method is called by VendingMachineCLI which passes MAIN_MENU_OPTIONS and returns the
+	// choice made by the user.
 	public Object getChoiceFromOptions(Object[] options) {
 		Object choice = null;
 		while (choice == null) {
@@ -25,9 +29,11 @@ public class Menu {
 		return choice;
 	}
 
+	// Method 2: called by getChoiceFromOptions() above
+	// Creates list of options based on MAIN_MENU_OPTIONS in VendingMachineCLI
 	private void displayMenuOptions(Object[] options) {
 		out.println();
-		for (int i = 0; i < options.length - 1; i++) {
+		for (int i = 0; i < (options.length - 1); i++) {
 			int optionNum = i + 1;
 			out.println(optionNum + ") " + options[i]);
 		}
@@ -35,6 +41,7 @@ public class Menu {
 		out.flush();
 	}
 
+	// Method 3: called by getChoiceFromOptions() once the user makes a choice
 	private Object getChoiceFromUserInput(Object[] options) {
 		Object choice = null;
 		String userInput = in.nextLine();
@@ -45,10 +52,10 @@ public class Menu {
 				choice = options[selectedOption - 1];
 			}
 		} catch (NumberFormatException e) {
-			// Display error message in the following if statement
+			// Display of error message is delegated to the following if statement
 		}
 		if (choice == null) {
-			out.println(System.lineSeparator() + "*** " + userInput + " is not a valid option ***" + System.lineSeparator());
+//			out.println(System.lineSeparator() + "*** " + userInput + " is not a valid option ***" + System.lineSeparator());
 		}
 		return choice;
 	}
