@@ -1,46 +1,15 @@
 package com.techelevator;
 
-public class Gum {
+public class Gum extends Snack {
     private int uChewsLeft = 5;
     private int littleLeaugeChewLeft = 5;
     private int chicletsLeft = 5;
     private int triplemintLeft = 5;
 
-    public int getuChewsLeft() {
-        return uChewsLeft;
-    }
-
-    public int getLittleLeaugeChewLeft() {
-        return littleLeaugeChewLeft;
-    }
-
-    public int getChicletsLeft() {
-        return chicletsLeft;
-    }
-
-    public int getTriplemintLeft() {
-        return triplemintLeft;
-    }
-
-    public double getUChewsPrice() {
-        double uChewsPrice = 0.0;
-        return uChewsPrice;
-    }
-
-    public double getLittleLeaugeChewPrice() {
-        double littleLeagueChewPrice = 0.0;
-        return littleLeagueChewPrice;
-    }
-
-    public double getChicletsPrice() {
-        double chicletsPrice = 0.0;
-        return chicletsPrice;
-    }
-
-    public double getTriplemintPrice() {
-        double tripleMintPrice = 0.0;
-        return tripleMintPrice;
-    }
+    double uChewsPrice = 0.85;
+    double littleLeagueChewPrice = 0.95;
+    double chicletsPrice = 0.75;
+    double tripleMintPrice = 0.75;
 
     public void completeGumPurchase(String itemSelected) {
         if(itemSelected.equals("U-Chews")) {
@@ -53,4 +22,63 @@ public class Gum {
             triplemintLeft--;
         }
     }
+
+    /** Remaining: GETTERS & SETTERS */
+    public int getuChewsLeft() {
+        return uChewsLeft;
+    }
+    public void setuChewsLeft(int uChewsLeft) {
+        this.uChewsLeft = uChewsLeft;
+    }
+
+    public int getLittleLeaugeChewLeft() {
+        return littleLeaugeChewLeft;
+    }
+    public void setLittleLeaugeChewLeft(int littleLeaugeChewLeft) {
+        this.littleLeaugeChewLeft = littleLeaugeChewLeft;
+    }
+
+    public int getChicletsLeft() {
+        return chicletsLeft;
+    }
+    public void setChicletsLeft(int chicletsLeft) {
+        this.chicletsLeft = chicletsLeft;
+    }
+
+    public int getTriplemintLeft() {
+        return triplemintLeft;
+    }
+    public void setTriplemintLeft(int triplemintLeft) {
+        this.triplemintLeft = triplemintLeft;
+    }
+
+    /** Price: GETTERS & SETTERS */
+    public double getUChewsPrice() {
+        return uChewsPrice;
+    }
+    public void setuChewsPrice(double uChewsPrice) {
+        this.uChewsPrice = uChewsPrice;
+    }
+
+    public double getLittleLeaugeChewPrice() {
+        return littleLeagueChewPrice;
+    }
+    public void setLittleLeagueChewPrice(double littleLeagueChewPrice) {
+        this.littleLeagueChewPrice = littleLeagueChewPrice;
+    }
+
+    public double getChicletsPrice() {
+        return chicletsPrice;
+    }
+    public void setChicletsPrice(double chicletsPrice) {
+        this.chicletsPrice = chicletsPrice;
+    }
+
+    public double getTriplemintPrice() {
+        return tripleMintPrice;
+    }
+    public void setTripleMintPrice(double tripleMintPrice) {
+        this.tripleMintPrice = tripleMintPrice;
+    }
+
 }

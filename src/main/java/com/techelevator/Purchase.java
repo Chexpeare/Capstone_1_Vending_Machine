@@ -22,10 +22,10 @@ public class Purchase {
     private double deposit;
     private double change;
     private static double totalSales = 0.0;
+    private static int chipsCounter = 0;
     private static int candyCounter = 0;
     private static int drinksCounter = 0;
     private static int gumCounter = 0;
-    private static int chipsCounter = 0;
     private Menu menu;
     private String itemSelected;
     private String itemType;
@@ -47,13 +47,16 @@ public class Purchase {
             System.out.printf('\n' + "Current balance is: $" + "%.2f",getCurrentBalance());
             String choice = (String)menu.getChoiceFromOptions(MAIN_MENU_OPTIONS);
 
-            if (choice.equals(MAIN_MENU_OPTION_FEED_MONEY)) {
-                feedMoney();
-            } else if (choice.equals(MAIN_MENU_OPTION_SELECT_PRODUCT)) {
-                selectProduct(new Inventory());
-            } else if (choice.equals(MAIN_MENU_OPTION_FINISH_TRANSACTION)) {
-                finishTransaction();
-                return;
+            switch (choice) {
+                case MAIN_MENU_OPTION_FEED_MONEY:
+                    feedMoney();
+                    break;
+                case MAIN_MENU_OPTION_SELECT_PRODUCT:
+                    selectProduct(new Inventory());
+                    break;
+                case MAIN_MENU_OPTION_FINISH_TRANSACTION:
+                    finishTransaction();
+                    return;
             }
         }
     }
@@ -72,11 +75,12 @@ public class Purchase {
         }
     }
 
+/** START: selectProduct() */
     public void selectProduct(Inventory inventory) throws IOException {
         inventory.getInventory();
 
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter in the product key you'd like to purchase: ");
+        System.out.println("Item to purchase (Enter product key): ");
         itemKey = input.nextLine();
 
         if (!(itemKey.equals("A1") || itemKey.equals("A2") ||itemKey.equals("A3") ||itemKey.equals("A4")
@@ -94,189 +98,205 @@ public class Purchase {
         itemType = inventory.getItemTypeMap().get(itemKey);
 
         // Start of Candy
-        if (itemType.equals("Candy")) {
-            Candy candy = new Candy();
-            if (itemSelected.equals("Moonpie")) {
-                if (balance >= candy.getMoonPiePrice() && candy.getMoonpiesLeft() > 0) {
-                    candyCounter++;
-                    logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - candy.getMoonPiePrice()));
-                    balance -= candy.getMoonPiePrice();
-                    totalSales += candy.getMoonPiePrice();
-                    candy.completeCandyPurchase(itemSelected);
+        switch (itemType) {
+            case "Candy":
+                Candy candy = new Candy();
+                if (itemSelected.equals("Moonpie")) {
+                    if (balance >= candy.getMoonPiePrice() && candy.getMoonpiesLeft() > 0) {
+                        candyCounter++;
+                        logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - candy.getMoonPiePrice()));
+                        balance -= candy.getMoonPiePrice();
+                        totalSales += candy.getMoonPiePrice();
+                        candy.completeCandyPurchase(itemSelected);
 
-                } else {
-                    System.out.println("Not enough funds or item is sold out, add more or choose another item");
-                }
-            }else if (itemSelected.equals("Cowtales")) {
-                if (balance >= candy.getCowtalesPrice() && (candy.getCowtalesLeft() > 0)) {
-                    candyCounter++;
-                    logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - candy.getCowtalesPrice()));
-                    balance -= candy.getCowtalesPrice();
-                    totalSales += candy.getCowtalesPrice();
-                    candy.completeCandyPurchase(itemSelected);
-                } else {
-                    System.out.println("Not enough funds or item is sold out, add more or choose another item");
-                }
-            } else if (itemSelected.equals("Crunchie")) {
-                if (balance >= candy.getCrunchiesPrice() && (candy.getCrunchiesLeft() > 0)) {
-                    candyCounter++;
-                    logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - candy.getCrunchiesPrice()));
-                    balance -= candy.getCrunchiesPrice();
-                    totalSales += candy.getCrunchiesPrice();
-                    candy.completeCandyPurchase(itemSelected);
-                } else {
-                    System.out.println("Not enough funds or item is sold out, add more or choose another item");
-                }
+                    } else {
+                        System.out.println("Not enough funds or item is sold out, add more or choose another item");
+                    }
+                } else if (itemSelected.equals("Cowtales")) {
+                    if (balance >= candy.getCowtalesPrice() && (candy.getCowtalesLeft() > 0)) {
+                        candyCounter++;
+                        logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - candy.getCowtalesPrice()));
+                        balance -= candy.getCowtalesPrice();
+                        totalSales += candy.getCowtalesPrice();
+                        candy.completeCandyPurchase(itemSelected);
+                    } else {
+                        System.out.println("Not enough funds or item is sold out, add more or choose another item");
+                    }
+                } else if (itemSelected.equals("Crunchie")) {
+                    if (balance >= candy.getCrunchiesPrice() && (candy.getCrunchiesLeft() > 0)) {
+                        candyCounter++;
+                        logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - candy.getCrunchiesPrice()));
+                        balance -= candy.getCrunchiesPrice();
+                        totalSales += candy.getCrunchiesPrice();
+                        candy.completeCandyPurchase(itemSelected);
+                    } else {
+                        System.out.println("Not enough funds or item is sold out, add more or choose another item");
+                    }
 
-            } else if (itemSelected.equals("Wonka Bar")) {
-                if (balance >= candy.getWonkaBarsPrice() && (candy.getWonkaBarsLeft() > 0)) {
-                    candyCounter++;
-                    logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - candy.getWonkaBarsPrice()));
-                    balance -= candy.getWonkaBarsPrice();
-                    totalSales += candy.getWonkaBarsPrice();
-                    candy.completeCandyPurchase(itemSelected);
-                } else {
-                    System.out.println("Not enough funds or item is sold out, add more or choose another item");
+                } else if (itemSelected.equals("Wonka Bar")) {
+                    if (balance >= candy.getWonkaBarsPrice() && (candy.getWonkaBarsLeft() > 0)) {
+                        candyCounter++;
+                        logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - candy.getWonkaBarsPrice()));
+                        balance -= candy.getWonkaBarsPrice();
+                        totalSales += candy.getWonkaBarsPrice();
+                        candy.completeCandyPurchase(itemSelected);
+                    } else {
+                        System.out.println("Not enough funds or item is sold out, add more or choose another item");
+                    }
                 }
+                // Start of Gum
+                break;
 
-            }
-        // Start of Gum
-        } else if (itemType.equals("Gum")) {
-            Gum gum = new Gum();
-            if (itemSelected.equals("U-Chews")) {
-                if (balance >= gum.getUChewsPrice() && (gum.getuChewsLeft() > 0)) {
-                    gumCounter++;
-                    logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - gum.getUChewsPrice()));
-                    balance -= gum.getUChewsPrice();
-                    totalSales += gum.getUChewsPrice();
-                    gum.completeGumPurchase(itemSelected);
+            case "Gum":
+                Gum gum = new Gum();
+                if (itemSelected.equals("U-Chews")) {
+                    if (balance >= gum.getUChewsPrice() && (gum.getuChewsLeft() > 0)) {
+                        gumCounter++;
+                        logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - gum.getUChewsPrice()));
+                        balance -= gum.getUChewsPrice();
+                        totalSales += gum.getUChewsPrice();
+                        gum.completeGumPurchase(itemSelected);
 
-                } else {
-                    System.out.println("Not enough funds or item is sold out, add more or choose another item");
-                }
-            } else if (itemSelected.equals("Little League Chew")) {
-                if (balance >= gum.getLittleLeaugeChewPrice() && (gum.getLittleLeaugeChewLeft() > 0)) {
-                    gumCounter++;
-                    logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - gum.getLittleLeaugeChewPrice()));
-                    balance -= gum.getLittleLeaugeChewPrice();
-                    totalSales += gum.getLittleLeaugeChewPrice();
-                    gum.completeGumPurchase(itemSelected);
-                } else {
-                    System.out.println("Not enough funds or item is sold out, add more or choose another item");
-                }
-            } else if(itemSelected.equals("Chiclets")) {
-                if (balance >= gum.getChicletsPrice() && (gum.getChicletsLeft() > 0)) {
-                    gumCounter++;
-                    logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - gum.getChicletsPrice()));
-                    balance -= gum.getChicletsPrice();
-                    totalSales += gum.getChicletsPrice();
-                    gum.completeGumPurchase(itemSelected);
-                } else {
-                    System.out.println("Not enough funds or item is sold out, add more or choose another item");
-                }
-            } else if (itemSelected.equals("Triplemint")) {
-                if (balance >= gum.getTriplemintPrice() && (gum.getTriplemintLeft() > 0)) {
-                    gumCounter++;
-                    logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - gum.getTriplemintPrice()));
-                    balance -= gum.getTriplemintPrice();
-                    totalSales += gum.getTriplemintPrice();
-                    gum.completeGumPurchase(itemSelected);
-                } else {
-                    System.out.println("Not enough funds or item is sold out, add more or choose another item");
-                }
-            }
-
-        // Start of Chips
-        } else if (itemType.equals("Chip")) {
-            Chips chips = new Chips();
-            if (itemSelected.equals("Potato Crisps")) {
-                if (balance >= chips.getPotatoCrispsPrice() && (chips.getPotatoCrispsLeft() > 0)) {
-                    chipsCounter++;
-                    logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - chips.getPotatoCrispsPrice()));
-                    balance -= chips.getPotatoCrispsPrice() ;
-                    totalSales += chips.getPotatoCrispsPrice();
-                    chips.completeChipsPurchase(itemSelected);
-
-                } else {
-                    System.out.println("Not enough funds or item is sold out, add more or choose another item");
-                }
-            } else if (itemSelected.equals("Grain Waves")) {
-                if (balance >= chips.getGrainWavesPrice() && (chips.getGrainWavesLeft() > 0)) {
-                    chipsCounter++;
-                    logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - chips.getGrainWavesPrice()));
-                    balance -= chips.getGrainWavesPrice();
-                    totalSales += chips.getGrainWavesPrice();
-                    chips.completeChipsPurchase(itemSelected);
-                } else {
-                    System.out.println("Not enough funds or item is sold out, add more or choose another item");
-                }
-            } else if (itemSelected.equals("Stackers")) {
-                if (balance >= chips.getStackersPrice() && (chips.getStackersLeft() > 0)) {
-                    chipsCounter++;
-                    logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - chips.getStackersPrice()));
-                    balance -= chips.getStackersPrice();
-                    totalSales += chips.getStackersPrice();
-                    chips.completeChipsPurchase(itemSelected);
-                } else {
-                    System.out.println("Not enough funds or item is sold out, add more or choose another item");
+                    } else {
+                        System.out.println("Not enough funds or item is sold out, add more or choose another item");
+                    }
+                } else if (itemSelected.equals("Little League Chew")) {
+                    if (balance >= gum.getLittleLeaugeChewPrice() && (gum.getLittleLeaugeChewLeft() > 0)) {
+                        gumCounter++;
+                        logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - gum.getLittleLeaugeChewPrice()));
+                        balance -= gum.getLittleLeaugeChewPrice();
+                        totalSales += gum.getLittleLeaugeChewPrice();
+                        gum.completeGumPurchase(itemSelected);
+                    } else {
+                        System.out.println("Not enough funds or item is sold out, add more or choose another item");
+                    }
+                } else if (itemSelected.equals("Chiclets")) {
+                    if (balance >= gum.getChicletsPrice() && (gum.getChicletsLeft() > 0)) {
+                        gumCounter++;
+                        logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - gum.getChicletsPrice()));
+                        balance -= gum.getChicletsPrice();
+                        totalSales += gum.getChicletsPrice();
+                        gum.completeGumPurchase(itemSelected);
+                    } else {
+                        System.out.println("Not enough funds or item is sold out, add more or choose another item");
+                    }
+                } else if (itemSelected.equals("Triplemint")) {
+                    if (balance >= gum.getTriplemintPrice() && (gum.getTriplemintLeft() > 0)) {
+                        gumCounter++;
+                        logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - gum.getTriplemintPrice()));
+                        balance -= gum.getTriplemintPrice();
+                        totalSales += gum.getTriplemintPrice();
+                        gum.completeGumPurchase(itemSelected);
+                    } else {
+                        System.out.println("Not enough funds or item is sold out, add more or choose another item");
+                    }
                 }
 
-            } else if (itemSelected.equals("Cloud Popcorn")) {
-                if (balance >= chips.getCloudPopcornPrice() && (chips.getCloudPopcornLeft() > 0)) {
-                    chipsCounter++;
-                    logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - chips.getCloudPopcornPrice()));
-                    balance -= chips.getCloudPopcornPrice();
-                    totalSales += chips.getCloudPopcornPrice();
-                    chips.completeChipsPurchase(itemSelected);
-                } else {
-                    System.out.println("Not enough funds or item is sold out, add more or choose another item");
-                }
-            }
+                // Start of Chips
+                break;
 
-        //Start of Drinks
-        } else if (itemType.equals("Drink")){
-            Drinks drinks = new Drinks();
-            if (itemSelected.equals("Cola")) {
-                if (balance >= drinks.getColaPrice() && (drinks.getColaLeft() > 0)) {
-                    drinksCounter++;
-                    logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - drinks.getColaPrice()));
-                    balance -= drinks.getColaPrice();
-                    totalSales += drinks.getColaPrice();
-                    drinks.completeDrinksPurchase(itemSelected);
-                } else {
-                    System.out.println("Not enough funds or item is sold out, add more or choose another item");
+            case "Chip":
+                Chips chips = new Chips();
+                switch (itemSelected) {
+                    case "Potato Crisps":
+                        if (balance >= chips.getPotatoCrispsPrice() && (chips.getPotatoCrispsLeft() > 0)) {
+                            chipsCounter++;
+                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - chips.getPotatoCrispsPrice()));
+                            balance -= chips.getPotatoCrispsPrice();
+                            totalSales += chips.getPotatoCrispsPrice();
+                            chips.completeChipsPurchase(itemSelected);
+
+                        } else {
+                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
+                        }
+                        break;
+                    case "Grain Waves":
+                        if (balance >= chips.getGrainWavesPrice() && (chips.getGrainWavesLeft() > 0)) {
+                            chipsCounter++;
+                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - chips.getGrainWavesPrice()));
+                            balance -= chips.getGrainWavesPrice();
+                            totalSales += chips.getGrainWavesPrice();
+                            chips.completeChipsPurchase(itemSelected);
+                        } else {
+                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
+                        }
+                        break;
+                    case "Stackers":
+                        if (balance >= chips.getStackersPrice() && (chips.getStackersLeft() > 0)) {
+                            chipsCounter++;
+                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - chips.getStackersPrice()));
+                            balance -= chips.getStackersPrice();
+                            totalSales += chips.getStackersPrice();
+                            chips.completeChipsPurchase(itemSelected);
+                        } else {
+                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
+                        }
+
+                        break;
+                    case "Cloud Popcorn":
+                        if (balance >= chips.getCloudPopcornPrice() && (chips.getCloudPopcornLeft() > 0)) {
+                            chipsCounter++;
+                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - chips.getCloudPopcornPrice()));
+                            balance -= chips.getCloudPopcornPrice();
+                            totalSales += chips.getCloudPopcornPrice();
+                            chips.completeChipsPurchase(itemSelected);
+                        } else {
+                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
+                        }
+                        break;
                 }
-            } else if (itemSelected.equals("Dr. Salt")) {
-                if (balance >= drinks.getDrSaltPrice() && (drinks.getDrSaltLeft() > 0)) {
-                    drinksCounter++;
-                    logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - drinks.getDrSaltPrice()));
-                    balance -= drinks.getDrSaltPrice();
-                    totalSales += drinks.getDrSaltPrice();
-                    drinks.completeDrinksPurchase(itemSelected);
-                } else {
-                    System.out.println("Not enough funds or item is sold out, add more or choose another item");
+
+                //Start of Drinks
+                break;
+            case "Drink":
+                Drinks drinks = new Drinks();
+                switch (itemSelected) {
+                    case "Cola":
+                        if (balance >= drinks.getColaPrice() && (drinks.getColaLeft() > 0)) {
+                            drinksCounter++;
+                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - drinks.getColaPrice()));
+                            balance -= drinks.getColaPrice();
+                            totalSales += drinks.getColaPrice();
+                            drinks.completeDrinksPurchase(itemSelected);
+                        } else {
+                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
+                        }
+                        break;
+                    case "Dr. Salt":
+                        if (balance >= drinks.getDrSaltPrice() && (drinks.getDrSaltLeft() > 0)) {
+                            drinksCounter++;
+                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - drinks.getDrSaltPrice()));
+                            balance -= drinks.getDrSaltPrice();
+                            totalSales += drinks.getDrSaltPrice();
+                            drinks.completeDrinksPurchase(itemSelected);
+                        } else {
+                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
+                        }
+                        break;
+                    case "Mountain Melter":
+                        if (balance >= drinks.getMountainMelterPrice() && (drinks.getMountainMelterLeft() > 0)) {
+                            drinksCounter++;
+                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - drinks.getMountainMelterPrice()));
+                            balance -= drinks.getMountainMelterPrice();
+                            totalSales += drinks.getMountainMelterPrice();
+                            drinks.completeDrinksPurchase(itemSelected);
+                        } else {
+                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
+                        }
+                        break;
+                    case "Heavy":
+                        if (balance >= drinks.getHeavyPrice() && (drinks.getHeavyLeft() > 0)) {
+                            drinksCounter++;
+                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - drinks.getHeavyPrice()));
+                            balance -= drinks.getHeavyPrice();
+                            totalSales += drinks.getHeavyPrice();
+                            drinks.completeDrinksPurchase(itemSelected);
+                        } else {
+                            System.out.println("Not enough funds item is sold out, add more or choose another item");
+                        }
+                        break;
                 }
-            } else if (itemSelected.equals("Mountain Melter")) {
-                if (balance >= drinks.getMountainMelterPrice() && (drinks.getMountainMelterLeft() > 0)) {
-                    drinksCounter++;
-                    logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - drinks.getMountainMelterPrice()));
-                    balance -= drinks.getMountainMelterPrice();
-                    totalSales += drinks.getMountainMelterPrice();
-                    drinks.completeDrinksPurchase(itemSelected);
-                } else {
-                    System.out.println("Not enough funds or item is sold out, add more or choose another item");
-                }
-            } else if (itemSelected.equals("Heavy")) {
-                if (balance >= drinks.getHeavyPrice() && (drinks.getHeavyLeft() > 0)) {
-                    drinksCounter++;
-                    logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - drinks.getHeavyPrice()));
-                    balance -=drinks.getHeavyPrice();
-                    totalSales += drinks.getHeavyPrice();
-                    drinks.completeDrinksPurchase(itemSelected);
-                } else {
-                    System.out.println("Not enough funds item is sold out, add more or choose another item");
-                }
-            }
+                break;
         }
     }
 /** END: selectProduct() */

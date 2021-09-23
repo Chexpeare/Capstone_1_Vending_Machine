@@ -35,7 +35,7 @@ public class Menu {
 		out.println();
 		for (int i = 0; i < (options.length - 1); i++) {
 			int optionNum = i + 1;
-			out.println(optionNum + ") " + options[i]);
+			out.println("[" + optionNum + "] " + options[i]);
 		}
 		out.print(System.lineSeparator() + "Please make a selection: ");
 		out.flush();

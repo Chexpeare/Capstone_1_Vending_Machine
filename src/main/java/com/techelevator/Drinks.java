@@ -6,41 +6,10 @@ public class Drinks extends Snack {
     private int mountainMelterLeft = 5;
     private int heavyLeft = 5;
 
-    public int getColaLeft() {
-        return colaLeft;
-    }
-
-    public int getDrSaltLeft() {
-        return drSaltLeft;
-    }
-
-    public int getMountainMelterLeft() {
-        return mountainMelterLeft;
-    }
-
-    public int getHeavyLeft() {
-        return heavyLeft;
-    }
-
-    public double getColaPrice() {
-        double colaPrice = 1.25;
-        return colaPrice;
-    }
-
-    public double getDrSaltPrice() {
-        double drSaltPrice = 1.50;
-        return drSaltPrice;
-    }
-
-    public double getMountainMelterPrice() {
-        double mountainMelterPrice = 1.50;
-        return mountainMelterPrice;
-    }
-
-    public double getHeavyPrice() {
-        double heavyPrice = 1.50;
-        return heavyPrice;
-    }
+    private double colaPrice = 1.25;
+    private double drSaltPrice = 1.50;
+    private double mountainMelterPrice = 1.50;
+    private double heavyPrice = 1.50;
 
     public void completeDrinksPurchase(String itemSelected) {
         if(itemSelected.equals("Cola")) {
@@ -52,6 +21,64 @@ public class Drinks extends Snack {
         }else if(itemSelected.equals("Heavy")) {
             heavyLeft--;
         }
+    }
+
+    /** Remaining: GETTERS & SETTERS */
+    public int getColaLeft() {
+        return colaLeft;
+    }
+    public void setColaLeft(int colaLeft) {
+        this.colaLeft = colaLeft;
+    }
+
+    public int getDrSaltLeft() {
+        return drSaltLeft;
+    }
+    public void setDrSaltLeft(int drSaltLeft) {
+        this.drSaltLeft = drSaltLeft;
+    }
+
+    public int getMountainMelterLeft() {
+        return mountainMelterLeft;
+    }
+    public void setMountainMelterLeft(int mountainMelterLeft) {
+        this.mountainMelterLeft = mountainMelterLeft;
+    }
+
+    public int getHeavyLeft() {
+        return heavyLeft;
+    }
+    public void setHeavyLeft(int heavyLeft) {
+        this.heavyLeft = heavyLeft;
+    }
+
+    /** Price: GETTERS & SETTERS */
+    public double getColaPrice() {
+        return colaPrice;
+    }
+    public void setColaPrice(double colaPrice) {
+        this.colaPrice = colaPrice;
+    }
+
+    public double getDrSaltPrice() {
+        return drSaltPrice;
+    }
+    public void setDrSaltPrice(double drSaltPrice) {
+        this.drSaltPrice = drSaltPrice;
+    }
+
+    public double getMountainMelterPrice() {
+        return mountainMelterPrice;
+    }
+    public void setMountainMelterPrice(double mountainMelterPrice) {
+        this.mountainMelterPrice = mountainMelterPrice;
+    }
+
+    public double getHeavyPrice() {
+        return heavyPrice;
+    }
+    public void setHeavyPrice(double heavyPrice) {
+        this.heavyPrice = heavyPrice;
     }
 
 }
