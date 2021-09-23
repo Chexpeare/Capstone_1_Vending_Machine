@@ -16,9 +16,9 @@ public class Inventory {
 
     /** METHODS */
     public void displayInventory() throws IOException {
-        File snackFile = new File(inventoryFile);
-        FileReader inputFile = new FileReader(snackFile);
-        BufferedReader reader = new BufferedReader(inputFile);
+        File inputFile = new File(inventoryFile);
+        FileReader readerFile = new FileReader(inputFile);
+        BufferedReader reader = new BufferedReader(readerFile);
         String currentLine = reader.readLine();
 
         while (currentLine != null) {
@@ -110,8 +110,8 @@ public class Inventory {
     }
 
     public void getInventory() throws IOException{
-        File snackFile = new File(inventoryFile);
-        BufferedReader reader = new BufferedReader(new FileReader(snackFile));
+        File inputFile = new File(inventoryFile);
+        BufferedReader reader = new BufferedReader(new FileReader(inputFile));
         String currentLine = reader.readLine();
 
         while(currentLine != null) {
