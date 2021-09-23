@@ -32,9 +32,18 @@ public class Menu {
 	// Creates list of options based on MAIN_MENU_OPTIONS in VendingMachineCLI
 	private void displayMenuOptions(Object[] options) {
 		out.println();
-		for (int i = 0; i < (options.length - 1); i++) {
-			int optionNum = i + 1;
-			out.println("[" + optionNum + "] " + options[i]);
+		int arrayLength = options.length;
+
+		if (arrayLength <= 3) {		// Prints purchase menu options
+			for (int i = 0; i < (options.length); i++) {
+				int optionNum = i + 1;
+				out.println("[" + optionNum + "] " + options[i]);
+			}
+		} else {
+			for (int i = 0; i < (options.length - 1); i++) {	// Prints main menu options with hidden #4
+				int optionNum = i + 1;
+				out.println("[" + optionNum + "] " + options[i]);
+			}
 		}
 		out.print(System.lineSeparator() + "Please make a selection: ");
 		out.flush();

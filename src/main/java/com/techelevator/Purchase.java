@@ -42,7 +42,7 @@ public class Purchase {
 
     public void run () throws IOException {
         while (true) {
-            System.out.printf('\n' + "Current balance is: $" + "%.2f",getCurrentBalance());
+            System.out.printf('\n' + "Current Money Provided: $" + "%.2f",getCurrentBalance());
             String choice = (String)menu.getChoiceFromOptions(MAIN_MENU_OPTIONS);
 
             switch (choice) {
@@ -64,10 +64,11 @@ public class Purchase {
         Scanner userInput = new Scanner(System.in);
         System.out.print("How much money would you like to deposit: ");
         deposit = userInput.nextDouble();
+//        System.out.println("Current Money Provided: $" + deposit);
 
         if (deposit > 0) {
             balance += deposit;
-            logFile("$"+deposit + "  " + "$" + balance);
+            logFile("$"+ deposit + "  " + "$" + balance);
         } else {
             System.out.println("\nInvalid Deposit");
             logFile("INVALID DEPOSIT");
