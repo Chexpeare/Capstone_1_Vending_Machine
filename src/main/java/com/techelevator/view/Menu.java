@@ -6,7 +6,6 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class Menu {
-
 	private final Scanner in;
 	private final PrintWriter out;
 
@@ -55,7 +54,7 @@ public class Menu {
 			// Display of error message is delegated to the following if statement
 		}
 		if (choice == null) {
-//			out.println(System.lineSeparator() + "*** " + userInput + " is not a valid option ***" + System.lineSeparator());
+			out.println(System.lineSeparator() + "*** " + userInput + " is not a valid option ***" + System.lineSeparator());
 		}
 		return choice;
 	}
