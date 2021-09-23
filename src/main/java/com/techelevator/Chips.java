@@ -14,23 +14,23 @@ public class Chips extends Snack {
     public void completeChipsPurchase(String itemSelected) {
         switch (itemSelected) {
             case "Potato Crisps":
-                potatoCrispsLeft--;
+                this.potatoCrispsLeft--;
                 break;
             case "Stackers":
-                stackersLeft--;
+                this.stackersLeft--;
                 break;
             case "Grain Waves":
-                grainWavesLeft--;
+                this.grainWavesLeft--;
                 break;
             case "Cloud Popcorn":
-                cloudPopcornLeft--;
+                this.cloudPopcornLeft--;
                 break;
         }
     }
 
     /** Remaining: GETTERS & SETTERS */
     public int getPotatoCrispsLeft() {
-        return potatoCrispsLeft;
+        return this.potatoCrispsLeft;
     }
     public void setPotatoCrispsLeft(int potatoCrispsLeft) {
         this.potatoCrispsLeft = potatoCrispsLeft;

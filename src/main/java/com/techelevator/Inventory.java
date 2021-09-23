@@ -9,11 +9,9 @@ public class Inventory {
     private final Map<String, String> itemTypeMap = new HashMap<>();
     private final Map<String, String> itemSelectedMap = new HashMap<>();
     private final String inventoryFile = "/Users/chexpeare/MeritAmerica/PairProgrammingBackup/capstone/vendingmachine.csv";
-//	private final String inputDataFile = "/capstone/vendingmachine.csv";
 
     /** CONSTRUCTOR */
     public Inventory() {
-
     }
 
     /** METHODS */
@@ -31,14 +29,19 @@ public class Inventory {
             if(splitItemLine[3].equals("Chip")) {
                 Chips chips = new Chips();
 
-                if(splitItemLine[1].equals("Potato Crisps")) {
-                    System.out.println("  " + chips.getPotatoCrispsLeft());
-                }else if(splitItemLine[1].equals("Stackers")) {
-                    System.out.println("  " +chips.getStackersLeft());
-                }else if(splitItemLine[1].equals("Grain Waves")) {
-                    System.out.println("  " +chips.getGrainWavesLeft());
-                }else if(splitItemLine[1].equals("Cloud Popcorn")) {
-                    System.out.println("  " +chips.getCloudPopcornLeft());
+                switch (splitItemLine[1]) {
+                    case "Potato Crisps":
+                        System.out.println("  " + chips.getPotatoCrispsLeft());
+                        break;
+                    case "Stackers":
+                        System.out.println("  " + chips.getStackersLeft());
+                        break;
+                    case "Grain Waves":
+                        System.out.println("  " + chips.getGrainWavesLeft());
+                        break;
+                    case "Cloud Popcorn":
+                        System.out.println("  " + chips.getCloudPopcornLeft());
+                        break;
                 }
             }
 

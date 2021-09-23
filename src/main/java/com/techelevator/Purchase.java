@@ -7,9 +7,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 import java.io.PrintWriter;
-// import java.sql.Date;
-// import org.mockito.asm.tree.TryCatchBlockNode;
-
+import java.util.Date;
 
 public class Purchase {
     private static final String MAIN_MENU_OPTION_FEED_MONEY = "Feed Money";
@@ -26,15 +24,15 @@ public class Purchase {
     private static int candyCounter = 0;
     private static int drinksCounter = 0;
     private static int gumCounter = 0;
-    private Menu menu;
+    private final Menu menu;
     private String itemSelected;
     private String itemType;
     private String itemKey;
     private int nickels;
     private int dimes;
     private int quarters;
-    private static File logFile = new File("log.txt");
-    private static java.util.Date date = new java.util.Date();
+    private static final File logFile = new File("/Users/chexpeare/MeritAmerica/PairProgrammingBackup/capstone/log.txt");
+    private static final Date date = new Date();
 
     public Purchase (Menu menu) {
         this.balance =0;
@@ -61,16 +59,17 @@ public class Purchase {
         }
     }
 
+/** feedMoney() */
     public void feedMoney() throws IOException {
-        Scanner input = new Scanner(System.in);
-        System.out.println("How much money would you like to deposit: ");
-        deposit = input.nextDouble();
+        Scanner userInput = new Scanner(System.in);
+        System.out.print("How much money would you like to deposit: ");
+        deposit = userInput.nextDouble();
 
         if (deposit > 0) {
             balance += deposit;
             logFile("$"+deposit + "  " + "$" + balance);
         } else {
-            System.out.println("Invalid Deposit");
+            System.out.println("\nInvalid Deposit");
             logFile("INVALID DEPOSIT");
         }
     }
@@ -79,9 +78,9 @@ public class Purchase {
     public void selectProduct(Inventory inventory) throws IOException {
         inventory.getInventory();
 
-        Scanner input = new Scanner(System.in);
-        System.out.println("Item to purchase (Enter product key): ");
-        itemKey = input.nextLine();
+        Scanner userInput = new Scanner(System.in);
+        System.out.print("Item to purchase (Enter product key): ");
+        itemKey = userInput.nextLine();
 
         if (!(itemKey.equals("A1") || itemKey.equals("A2") ||itemKey.equals("A3") ||itemKey.equals("A4")
                 ||itemKey.equals("B1") ||itemKey.equals("B2") ||itemKey.equals("B3") ||itemKey.equals("B4")
@@ -101,95 +100,105 @@ public class Purchase {
         switch (itemType) {
             case "Candy":
                 Candy candy = new Candy();
-                if (itemSelected.equals("Moonpie")) {
-                    if (balance >= candy.getMoonPiePrice() && candy.getMoonpiesLeft() > 0) {
-                        candyCounter++;
-                        logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - candy.getMoonPiePrice()));
-                        balance -= candy.getMoonPiePrice();
-                        totalSales += candy.getMoonPiePrice();
-                        candy.completeCandyPurchase(itemSelected);
+                switch (itemSelected) {
+                    case "Moonpie":
+                        if (balance >= candy.getMoonPiePrice() && candy.getMoonpiesLeft() > 0) {
+                            candyCounter++;
+                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - candy.getMoonPiePrice()));
+                            balance -= candy.getMoonPiePrice();
+                            totalSales += candy.getMoonPiePrice();
+                            candy.completeCandyPurchase(itemSelected);
 
-                    } else {
-                        System.out.println("Not enough funds or item is sold out, add more or choose another item");
-                    }
-                } else if (itemSelected.equals("Cowtales")) {
-                    if (balance >= candy.getCowtalesPrice() && (candy.getCowtalesLeft() > 0)) {
-                        candyCounter++;
-                        logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - candy.getCowtalesPrice()));
-                        balance -= candy.getCowtalesPrice();
-                        totalSales += candy.getCowtalesPrice();
-                        candy.completeCandyPurchase(itemSelected);
-                    } else {
-                        System.out.println("Not enough funds or item is sold out, add more or choose another item");
-                    }
-                } else if (itemSelected.equals("Crunchie")) {
-                    if (balance >= candy.getCrunchiesPrice() && (candy.getCrunchiesLeft() > 0)) {
-                        candyCounter++;
-                        logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - candy.getCrunchiesPrice()));
-                        balance -= candy.getCrunchiesPrice();
-                        totalSales += candy.getCrunchiesPrice();
-                        candy.completeCandyPurchase(itemSelected);
-                    } else {
-                        System.out.println("Not enough funds or item is sold out, add more or choose another item");
-                    }
+                        } else {
+                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
+                        }
+                        break;
+                    case "Cowtales":
+                        if (balance >= candy.getCowtalesPrice() && (candy.getCowtalesLeft() > 0)) {
+                            candyCounter++;
+                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - candy.getCowtalesPrice()));
+                            balance -= candy.getCowtalesPrice();
+                            totalSales += candy.getCowtalesPrice();
+                            candy.completeCandyPurchase(itemSelected);
+                        } else {
+                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
+                        }
+                        break;
+                    case "Crunchie":
+                        if (balance >= candy.getCrunchiesPrice() && (candy.getCrunchiesLeft() > 0)) {
+                            candyCounter++;
+                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - candy.getCrunchiesPrice()));
+                            balance -= candy.getCrunchiesPrice();
+                            totalSales += candy.getCrunchiesPrice();
+                            candy.completeCandyPurchase(itemSelected);
+                        } else {
+                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
+                        }
 
-                } else if (itemSelected.equals("Wonka Bar")) {
-                    if (balance >= candy.getWonkaBarsPrice() && (candy.getWonkaBarsLeft() > 0)) {
-                        candyCounter++;
-                        logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - candy.getWonkaBarsPrice()));
-                        balance -= candy.getWonkaBarsPrice();
-                        totalSales += candy.getWonkaBarsPrice();
-                        candy.completeCandyPurchase(itemSelected);
-                    } else {
-                        System.out.println("Not enough funds or item is sold out, add more or choose another item");
-                    }
+                        break;
+                    case "Wonka Bar":
+                        if (balance >= candy.getWonkaBarsPrice() && (candy.getWonkaBarsLeft() > 0)) {
+                            candyCounter++;
+                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - candy.getWonkaBarsPrice()));
+                            balance -= candy.getWonkaBarsPrice();
+                            totalSales += candy.getWonkaBarsPrice();
+                            candy.completeCandyPurchase(itemSelected);
+                        } else {
+                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
+                        }
+                        break;
                 }
                 // Start of Gum
                 break;
 
             case "Gum":
                 Gum gum = new Gum();
-                if (itemSelected.equals("U-Chews")) {
-                    if (balance >= gum.getUChewsPrice() && (gum.getuChewsLeft() > 0)) {
-                        gumCounter++;
-                        logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - gum.getUChewsPrice()));
-                        balance -= gum.getUChewsPrice();
-                        totalSales += gum.getUChewsPrice();
-                        gum.completeGumPurchase(itemSelected);
+                switch (itemSelected) {
+                    case "U-Chews":
+                        if (balance >= gum.getUChewsPrice() && (gum.getuChewsLeft() > 0)) {
+                            gumCounter++;
+                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - gum.getUChewsPrice()));
+                            balance -= gum.getUChewsPrice();
+                            totalSales += gum.getUChewsPrice();
+                            gum.completeGumPurchase(itemSelected);
 
-                    } else {
-                        System.out.println("Not enough funds or item is sold out, add more or choose another item");
-                    }
-                } else if (itemSelected.equals("Little League Chew")) {
-                    if (balance >= gum.getLittleLeaugeChewPrice() && (gum.getLittleLeaugeChewLeft() > 0)) {
-                        gumCounter++;
-                        logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - gum.getLittleLeaugeChewPrice()));
-                        balance -= gum.getLittleLeaugeChewPrice();
-                        totalSales += gum.getLittleLeaugeChewPrice();
-                        gum.completeGumPurchase(itemSelected);
-                    } else {
-                        System.out.println("Not enough funds or item is sold out, add more or choose another item");
-                    }
-                } else if (itemSelected.equals("Chiclets")) {
-                    if (balance >= gum.getChicletsPrice() && (gum.getChicletsLeft() > 0)) {
-                        gumCounter++;
-                        logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - gum.getChicletsPrice()));
-                        balance -= gum.getChicletsPrice();
-                        totalSales += gum.getChicletsPrice();
-                        gum.completeGumPurchase(itemSelected);
-                    } else {
-                        System.out.println("Not enough funds or item is sold out, add more or choose another item");
-                    }
-                } else if (itemSelected.equals("Triplemint")) {
-                    if (balance >= gum.getTriplemintPrice() && (gum.getTriplemintLeft() > 0)) {
-                        gumCounter++;
-                        logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - gum.getTriplemintPrice()));
-                        balance -= gum.getTriplemintPrice();
-                        totalSales += gum.getTriplemintPrice();
-                        gum.completeGumPurchase(itemSelected);
-                    } else {
-                        System.out.println("Not enough funds or item is sold out, add more or choose another item");
-                    }
+                        } else {
+                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
+                        }
+                        break;
+                    case "Little League Chew":
+                        if (balance >= gum.getLittleLeaugeChewPrice() && (gum.getLittleLeaugeChewLeft() > 0)) {
+                            gumCounter++;
+                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - gum.getLittleLeaugeChewPrice()));
+                            balance -= gum.getLittleLeaugeChewPrice();
+                            totalSales += gum.getLittleLeaugeChewPrice();
+                            gum.completeGumPurchase(itemSelected);
+                        } else {
+                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
+                        }
+                        break;
+                    case "Chiclets":
+                        if (balance >= gum.getChicletsPrice() && (gum.getChicletsLeft() > 0)) {
+                            gumCounter++;
+                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - gum.getChicletsPrice()));
+                            balance -= gum.getChicletsPrice();
+                            totalSales += gum.getChicletsPrice();
+                            gum.completeGumPurchase(itemSelected);
+                        } else {
+                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
+                        }
+                        break;
+                    case "Triplemint":
+                        if (balance >= gum.getTriplemintPrice() && (gum.getTriplemintLeft() > 0)) {
+                            gumCounter++;
+                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - gum.getTriplemintPrice()));
+                            balance -= gum.getTriplemintPrice();
+                            totalSales += gum.getTriplemintPrice();
+                            gum.completeGumPurchase(itemSelected);
+                        } else {
+                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
+                        }
+                        break;
                 }
 
                 // Start of Chips
@@ -346,9 +355,10 @@ public class Purchase {
         chipsCounter = 0;
     }
 
+    /** WRITE TO: log.txt*/
     private static void logFile(String message) throws IOException {
         try (PrintWriter logWriter = new PrintWriter(new FileWriter(logFile, true))) {
-            logWriter.println(date.toString() + " " + message);
+            logWriter.println(date + " " + message);
             } catch (FileNotFoundException e) {
         }
     }
