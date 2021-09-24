@@ -14,8 +14,6 @@ public class Chips extends Snack {
     public int completeChipsPurchase(String itemSelected) {
         switch (itemSelected) {
             case "Potato Crisps":
-//                int crispsLeft = this.potatoCrispsLeft--;
-//                return crispsLeft;
                 this.potatoCrispsLeft--;
                 return potatoCrispsLeft;
             case "Stackers":

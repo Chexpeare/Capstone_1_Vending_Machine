@@ -11,23 +11,24 @@ public class Candy extends Snack {
     private double wonkaBarsPrice = 1.50;
     private double crunchiesPrice = 1.75;
 
-    public void completeCandyPurchase(String itemSelected) {
+    public int completeCandyPurchase(String itemSelected) {
         switch (itemSelected) {
             case "Moonpie":
-                moonPiesLeft--;
-                break;
+                this.moonPiesLeft--;
+                return moonPiesLeft;
             case "Cowtales":
                 cowtalesLeft--;
-                break;
+                return cowtalesLeft;
             case "Wonka Bar":
                 wonkaBarsLeft--;
-                break;
+                return wonkaBarsLeft;
             case "Crunchie":
                 crunchiesLeft--;
-                break;
+                return crunchiesLeft;
             default:
                 break;
         }
+        return 0;
     }
 
     /** Remaining: GETTERS & SETTERS */

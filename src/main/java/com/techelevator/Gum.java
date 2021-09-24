@@ -11,23 +11,24 @@ public class Gum extends Snack {
     double chicletsPrice = 0.75;
     double tripleMintPrice = 0.75;
 
-    public void completeGumPurchase(String itemSelected) {
+    public int completeGumPurchase(String itemSelected) {
         switch (itemSelected) {
             case "U-Chews":
                 uChewsLeft--;
-                break;
+                return uChewsLeft;
             case "Little League Chew":
                 littleLeagueChewLeft--;
-                break;
+                return littleLeagueChewLeft;
             case "Chiclets":
                 chicletsLeft--;
-                break;
+                return chicletsLeft;
             case "Triplemint":
                 triplemintLeft--;
-                break;
+                return triplemintLeft;
             default:
                 break;
         }
+        return 0;
     }
 
     /** Remaining: GETTERS & SETTERS */

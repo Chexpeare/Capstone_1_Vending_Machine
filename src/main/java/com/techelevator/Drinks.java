@@ -11,23 +11,24 @@ public class Drinks extends Snack {
     private double mountainMelterPrice = 1.50;
     private double heavyPrice = 1.50;
 
-    public void completeDrinksPurchase(String itemSelected) {
+    public int completeDrinksPurchase(String itemSelected) {
         switch (itemSelected) {
             case "Cola":
                 colaLeft--;
-                break;
+                return colaLeft;
             case "Dr. Salt":
                 drSaltLeft--;
-                break;
+                return drSaltLeft;
             case "Mountain Melter":
                 mountainMelterLeft--;
-                break;
+                return mountainMelterLeft;
             case "Heavy":
                 heavyLeft--;
-                break;
+                return heavyLeft;
             default:
                 break;
         }
+        return 0;
     }
 
     /** Remaining: GETTERS & SETTERS */
