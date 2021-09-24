@@ -2,7 +2,7 @@ package com.techelevator;
 
 public class Gum extends Snack {
     private int uChewsLeft = 5;
-    private int littleLeaugeChewLeft = 5;
+    private int littleLeagueChewLeft = 5;
     private int chicletsLeft = 5;
     private int triplemintLeft = 5;
 
@@ -17,7 +17,7 @@ public class Gum extends Snack {
                 uChewsLeft--;
                 break;
             case "Little League Chew":
-                littleLeaugeChewLeft--;
+                littleLeagueChewLeft--;
                 break;
             case "Chiclets":
                 chicletsLeft--;
@@ -39,10 +39,10 @@ public class Gum extends Snack {
     }
 
     public int getLittleLeaugeChewLeft() {
-        return littleLeaugeChewLeft;
+        return littleLeagueChewLeft;
     }
     public void setLittleLeaugeChewLeft(int littleLeaugeChewLeft) {
-        this.littleLeaugeChewLeft = littleLeaugeChewLeft;
+        this.littleLeagueChewLeft = littleLeaugeChewLeft;
     }
 
     public int getChicletsLeft() {
