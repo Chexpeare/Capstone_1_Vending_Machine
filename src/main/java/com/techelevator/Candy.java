@@ -16,14 +16,14 @@ public class Candy extends Snack {
             case "Moonpie":
                 moonPiesLeft--;
                 break;
+            case "Cowtales":
+                cowtalesLeft--;
+                break;
             case "Wonka Bar":
                 wonkaBarsLeft--;
                 break;
             case "Crunchie":
                 crunchiesLeft--;
-                break;
-            case "Cowtales":
-                cowtalesLeft--;
                 break;
             default:
                 break;

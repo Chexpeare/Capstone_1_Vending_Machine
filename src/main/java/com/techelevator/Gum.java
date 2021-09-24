@@ -22,7 +22,7 @@ public class Gum extends Snack {
             case "Chiclets":
                 chicletsLeft--;
                 break;
-            case "Triplement":
+            case "Triplemint":
                 triplemintLeft--;
                 break;
             default:
