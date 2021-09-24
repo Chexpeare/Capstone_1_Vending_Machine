@@ -11,6 +11,7 @@ public class Candy extends Snack {
     private double wonkaBarsPrice = 1.50;
     private double crunchiesPrice = 1.75;
 
+    /** METHODS: Decrement product quantity */
     public int completeCandyPurchase(String itemSelected) {
         switch (itemSelected) {
             case "Moonpie":

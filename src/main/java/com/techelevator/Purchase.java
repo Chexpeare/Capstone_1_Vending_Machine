@@ -28,6 +28,7 @@ public class Purchase {
     private String itemSelected;
     private String itemType;
     private String itemKey;
+//    private String lowKey;
     private int nickels;
     private int dimes;
     private int quarters;
@@ -46,7 +47,8 @@ public class Purchase {
 
     public void run () throws IOException {
         while (true) {
-            System.out.printf('\n' + "Current Money Provided: $" + "%.2f",getCurrentBalance());
+            System.out.printf('\n' + "Current Money Provided: $" + "%.2f", getCurrentBalance());
+            System.out.println("\n");
             String choice = (String)menu.getChoiceFromOptions(MAIN_MENU_OPTIONS);
 
             switch (choice) {
@@ -86,6 +88,7 @@ public class Purchase {
         Scanner userInput = new Scanner(System.in);
         System.out.print("Item to purchase (Enter product key): ");
         itemKey = userInput.nextLine();
+//        lowKey = itemKey.toLowerCase();
 
         if (!(itemKey.equals("A1") || itemKey.equals("A2") ||itemKey.equals("A3") ||itemKey.equals("A4")
                 ||itemKey.equals("B1") ||itemKey.equals("B2") ||itemKey.equals("B3") ||itemKey.equals("B4")
@@ -379,6 +382,7 @@ public class Purchase {
         }
     }
 
+    /** GETTERS */
     public double getCurrentBalance() {
         return balance;
     }

@@ -11,6 +11,7 @@ public class Drinks extends Snack {
     private double mountainMelterPrice = 1.50;
     private double heavyPrice = 1.50;
 
+    /** METHODS: Decrement product quantity */
     public int completeDrinksPurchase(String itemSelected) {
         switch (itemSelected) {
             case "Cola":

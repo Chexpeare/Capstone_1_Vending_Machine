@@ -104,7 +104,6 @@ public class Inventory {
                         break;
                 }
             }
-
             currentLine = reader.readLine();
         }
     }
@@ -125,7 +124,6 @@ public class Inventory {
     public Map<String, String> getItemTypeMap() {
         return itemTypeMap;
     }
-
     public Map<String, String> getItemSelectedMap() {
         return itemSelectedMap;
     }

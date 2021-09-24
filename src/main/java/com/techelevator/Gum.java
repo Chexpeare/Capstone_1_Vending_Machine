@@ -11,6 +11,7 @@ public class Gum extends Snack {
     double chicletsPrice = 0.75;
     double tripleMintPrice = 0.75;
 
+    /** METHODS: Decrement product quantity */
     public int completeGumPurchase(String itemSelected) {
         switch (itemSelected) {
             case "U-Chews":

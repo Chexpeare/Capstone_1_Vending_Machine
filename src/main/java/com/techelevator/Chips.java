@@ -11,6 +11,7 @@ public class Chips extends Snack {
     private double grainWavesPrice = 2.75;
     private double cloudPopcornPrice = 3.65;
 
+    /** METHODS: Decrement product quantity */
     public int completeChipsPurchase(String itemSelected) {
         switch (itemSelected) {
             case "Potato Crisps":
