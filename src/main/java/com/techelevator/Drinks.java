@@ -12,14 +12,21 @@ public class Drinks extends Snack {
     private double heavyPrice = 1.50;
 
     public void completeDrinksPurchase(String itemSelected) {
-        if(itemSelected.equals("Cola")) {
-            colaLeft--;
-        }else if(itemSelected.equals("Dr. Salt")) {
-            drSaltLeft--;
-        }else if(itemSelected.equals("Mountain Melter")) {
-            mountainMelterLeft--;
-        }else if(itemSelected.equals("Heavy")) {
-            heavyLeft--;
+        switch (itemSelected) {
+            case "Cola":
+                colaLeft--;
+                break;
+            case "Dr. Salt":
+                drSaltLeft--;
+                break;
+            case "Mountain Melter":
+                mountainMelterLeft--;
+                break;
+            case "Heavy":
+                heavyLeft--;
+                break;
+            default:
+                break;
         }
     }
 

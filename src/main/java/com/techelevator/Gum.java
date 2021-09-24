@@ -12,14 +12,21 @@ public class Gum extends Snack {
     double tripleMintPrice = 0.75;
 
     public void completeGumPurchase(String itemSelected) {
-        if(itemSelected.equals("U-Chews")) {
-            uChewsLeft--;
-        }else if(itemSelected.equals("Little League Chew")) {
-            littleLeaugeChewLeft--;
-        }else if(itemSelected.equals("Chiclets")) {
-            chicletsLeft--;
-        }else if(itemSelected.equals("Triplement")) {
-            triplemintLeft--;
+        switch (itemSelected) {
+            case "U-Chews":
+                uChewsLeft--;
+                break;
+            case "Little League Chew":
+                littleLeaugeChewLeft--;
+                break;
+            case "Chiclets":
+                chicletsLeft--;
+                break;
+            case "Triplement":
+                triplemintLeft--;
+                break;
+            default:
+                break;
         }
     }
 

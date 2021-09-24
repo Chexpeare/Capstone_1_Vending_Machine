@@ -25,6 +25,8 @@ public class Candy extends Snack {
             case "Cowtales":
                 cowtalesLeft--;
                 break;
+            default:
+                break;
         }
     }
 
