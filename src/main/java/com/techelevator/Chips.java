@@ -25,6 +25,8 @@ public class Chips extends Snack {
             case "Cloud Popcorn":
                 this.cloudPopcornLeft--;
                 break;
+            default:
+                break;
         }
     }
 
