@@ -11,23 +11,26 @@ public class Chips extends Snack {
     private double grainWavesPrice = 2.75;
     private double cloudPopcornPrice = 3.65;
 
-    public void completeChipsPurchase(String itemSelected) {
+    public int completeChipsPurchase(String itemSelected) {
         switch (itemSelected) {
             case "Potato Crisps":
+//                int crispsLeft = this.potatoCrispsLeft--;
+//                return crispsLeft;
                 this.potatoCrispsLeft--;
-                break;
+                return potatoCrispsLeft;
             case "Stackers":
                 this.stackersLeft--;
-                break;
+                return stackersLeft;
             case "Grain Waves":
                 this.grainWavesLeft--;
-                break;
+                return grainWavesLeft;
             case "Cloud Popcorn":
                 this.cloudPopcornLeft--;
-                break;
+                return cloudPopcornLeft;
             default:
                 break;
         }
+        return 0;
     }
 
     /** Remaining: GETTERS & SETTERS */

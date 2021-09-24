@@ -108,7 +108,8 @@ public class Purchase {
                             logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - chips.getPotatoCrispsPrice()));
                             balance -= chips.getPotatoCrispsPrice();
                             totalSales += chips.getPotatoCrispsPrice();
-                            chips.completeChipsPurchase(itemSelected);
+                            int chipsLeft = chips.completeChipsPurchase(itemSelected);
+                            System.out.println("\nPotato Crisps remaining: " + chipsLeft);
 
                         } else {
                             System.out.println("Not enough funds or item is sold out, add more or choose another item");
