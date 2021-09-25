@@ -1,5 +1,6 @@
 package com.techelevator;
 
+/** Chips.java - Pushed from Backup */
 public class Chips extends Snack {
     private int potatoCrispsLeft = 5;
     private int stackersLeft = 5;

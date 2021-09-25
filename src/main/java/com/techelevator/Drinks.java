@@ -1,5 +1,6 @@
 package com.techelevator;
 
+/** Drinks.java - Pushed from Backup */
 public class Drinks extends Snack {
     private int colaLeft = 5;
     private int drSaltLeft = 5;

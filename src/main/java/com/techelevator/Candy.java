@@ -1,5 +1,6 @@
 package com.techelevator;
 
+/** Candy.java - Pushed from Backup */
 public class Candy extends Snack {
     private int moonPiesLeft = 5;
     private int cowtalesLeft = 5;

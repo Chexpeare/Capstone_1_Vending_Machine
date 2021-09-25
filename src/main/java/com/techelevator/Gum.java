@@ -1,5 +1,6 @@
 package com.techelevator;
 
+/** Gum.java - Pushed from Backup */
 public class Gum extends Snack {
     private int uChewsLeft = 5;
     private int littleLeagueChewLeft = 5;

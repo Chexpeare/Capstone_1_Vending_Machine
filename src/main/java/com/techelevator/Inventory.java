@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 
+/** Inventory.java - Pushed from Backup */
 public class Inventory {
     /** PROPERTIES */
     private final Map<String, String> itemTypeMap = new HashMap<>();

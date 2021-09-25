@@ -3,7 +3,7 @@ package com.techelevator;
 import com.techelevator.view.Menu;
 import java.io.IOException;
 
-/** VendingMachineCLI.java
+/** VendingMachineCLI.java - Pushed from Backup
  * 		1. Instantiates a menu object and a vending machine calling that menu object.
  * 		2. Run method passes menu options to menu.getChoiceFromOptions().
  * 		3. Menu returns user's choice and this vending machine then instantiates a class

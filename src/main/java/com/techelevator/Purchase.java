@@ -9,6 +9,7 @@ import java.util.Scanner;
 import java.io.PrintWriter;
 import java.util.Date;
 
+/** Purchase.java - Pushed from Backup */
 public class Purchase {
     private static final String MAIN_MENU_OPTION_FEED_MONEY = "Feed Money";
     private static final String MAIN_MENU_OPTION_SELECT_PRODUCT = "Select Product";
