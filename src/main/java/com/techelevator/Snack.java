@@ -1,6 +1,5 @@
 package com.techelevator;
 
-/** Snack.java - Pushed from Backup */
 public class Snack {
 
     String itemName;
@@ -16,3 +15,4 @@ public class Snack {
     }
 
 }
+

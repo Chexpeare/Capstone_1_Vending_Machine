@@ -6,16 +6,24 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
-/** Inventory.java - Pushed from Backup */
 public class Inventory {
     /** PROPERTIES */
     private final Map<String, String> itemTypeMap =  new HashMap<>();
     private final Map<String, String> itemSelectedMap = new HashMap<>();
+<<<<<<< HEAD
 
 
 
     private final String inventoryFile = "capstone/vendingmachine.csv";
 
+=======
+    private final String inventoryFile = "capstone/vendingmachine.csv";
+/*  getCanonicalPath()
+ *  platform specific method: directory path needs to conform to MacOS (/)or PC (\\)
+ *  private final String inventoryFile = "C:\\Users\\18325\\Desktop\\CapStone Backup\\capstone\\vendingmachine.csv";
+ *  private final String inventoryFile = "/Users/chexpeare/MeritAmerica/PairProgrammingBackup/capstone/vendingmachine.csv";
+*/
+>>>>>>> dae5f8c7ae83dfd16920e71defb03c79363e96a7
 
     /** CONSTRUCTOR */
     public Inventory() {
@@ -129,12 +137,11 @@ public class Inventory {
             currentLine = reader.readLine();
         }
     }
-
-    public Map<String, String> getItemTypeMap() {
-        return itemTypeMap;
-    }
     public Map<String, String> getItemSelectedMap() {
         return itemSelectedMap;
+    }
+    public Map<String, String> getItemTypeMap() {
+        return itemTypeMap;
     }
 }
 

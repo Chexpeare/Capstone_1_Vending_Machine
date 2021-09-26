@@ -3,8 +3,12 @@ package com.techelevator;
 import com.techelevator.view.Menu;
 import java.io.IOException;
 
+<<<<<<< HEAD
 
 /** VendingMachineCLI.java - Pushed from Backup
+=======
+/** VendingMachineCLI.java
+>>>>>>> dae5f8c7ae83dfd16920e71defb03c79363e96a7
  * 		1. Instantiates a menu object and a vending machine calling that menu object.
  * 		2. Run method passes menu options to menu.getChoiceFromOptions().
  * 		3. Menu returns user's choice and this vending machine then instantiates a class
@@ -58,15 +62,11 @@ public class VendingMachineCLI {
 					 time so each sales report is uniquely named.
 					 */
 					SalesReport salesReport = new SalesReport(menu);
-					System.out.println("\n(Optional) Choice #4 is hidden and reserved for a Sales Report\n");
-					System.out.println("____________________________________");
-					System.out.println("Vendo-Matic 800 Sales Report");
-					System.out.println("------------------------------------");
-					System.out.println("<<<Report will appear here>>>\n");
-					System.out.println("____________________________________");
-					System.out.println("*** End of report ***");
+					salesReport.displayReport();
+
 					System.exit(0);   // break;
 			}
 		}
 	}
 }
+
