@@ -1,6 +1,8 @@
 package com.techelevator;
 
 import java.io.*;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,7 +11,11 @@ public class Inventory {
     /** PROPERTIES */
     private final Map<String, String> itemTypeMap = new HashMap<>();
     private final Map<String, String> itemSelectedMap = new HashMap<>();
+<<<<<<< HEAD
     private final String inventoryFile = "C:\\Users\\18325\\Desktop\\CapStone Backup\\capstone\\vendingmachine.csv";
+=======
+    private final String inventoryFile = "capstone/vendingmachine.csv";
+>>>>>>> 1f31643a909438f94f9515d7d1775c1ad38f5b09
 
     /** CONSTRUCTOR */
     public Inventory() {
@@ -18,7 +24,9 @@ public class Inventory {
     /** METHODS */
     public void displayInventory() throws IOException {
         File inputFile = new File(inventoryFile);
-        FileReader readerFile = new FileReader(inputFile);
+        String canonical = inputFile.getCanonicalPath();
+
+        FileReader readerFile = new FileReader(canonical);
         BufferedReader reader = new BufferedReader(readerFile);
         String currentLine = reader.readLine();
 

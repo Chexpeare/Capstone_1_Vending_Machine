@@ -18,7 +18,6 @@ public class Purchase {
                                                         MAIN_MENU_OPTION_SELECT_PRODUCT ,
                                                         MAIN_MENU_OPTION_FINISH_TRANSACTION};
     private float balance;
-    private double deposit;
     private double change;
     private static double totalSales = 0.0;
     private static int chipsCounter = 0;
@@ -35,10 +34,12 @@ public class Purchase {
     private int quarters;
     private static final File logFile = new File("/Users/chexpeare/MeritAmerica/PairProgrammingBackup/capstone/log.txt");
     private static final Date date = new Date();
-    private int chipsRemaining;
-    private int candyRemaining;
-    private int drinkRemaining;
-    private int gumRemaining;
+
+    protected double deposit;
+    protected int chipsRemaining;
+    protected int candyRemaining;
+    protected int drinkRemaining;
+    protected int gumRemaining;
 
     public Purchase (Menu menu) {
         this.balance =0;
@@ -379,7 +380,8 @@ public class Purchase {
     private static void logFile(String message) throws IOException {
         try (PrintWriter logWriter = new PrintWriter(new FileWriter(logFile, true))) {
             logWriter.println(date + " " + message);
-            } catch (FileNotFoundException e) {
+            } catch (IOException e) {
+            System.out.println("Unable to write to file.");
         }
     }
 

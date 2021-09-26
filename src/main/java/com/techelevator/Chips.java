@@ -2,10 +2,10 @@ package com.techelevator;
 
 /** Chips.java - Pushed from Backup */
 public class Chips extends Snack {
-    private int potatoCrispsLeft = 5;
-    private int stackersLeft = 5;
-    private int grainWavesLeft = 5;
-    private int cloudPopcornLeft = 5;
+    private static int potatoCrispsLeft = 5;
+    private static int stackersLeft = 5;
+    private static int grainWavesLeft = 5;
+    private static int cloudPopcornLeft = 5;
 
     private double potatoCrispsPrice = 3.05;
     private double stackersPrice = 1.45;
@@ -14,52 +14,53 @@ public class Chips extends Snack {
 
     /** METHODS: Decrement product quantity */
     public int completeChipsPurchase(String itemSelected) {
-        switch (itemSelected) {
-            case "Potato Crisps":
-                this.potatoCrispsLeft--;
-                return potatoCrispsLeft;
-            case "Stackers":
-                this.stackersLeft--;
-                return stackersLeft;
-            case "Grain Waves":
-                this.grainWavesLeft--;
-                return grainWavesLeft;
-            case "Cloud Popcorn":
-                this.cloudPopcornLeft--;
-                return cloudPopcornLeft;
-            default:
-                break;
+        Snack snack = new Snack();
+            switch (itemSelected) {
+                case "Potato Crisps":
+                    potatoCrispsLeft--;
+                    return potatoCrispsLeft;
+                case "Stackers":
+                    stackersLeft--;
+                    return stackersLeft;
+                case "Grain Waves":
+                    grainWavesLeft--;
+                    return grainWavesLeft;
+                case "Cloud Popcorn":
+                    cloudPopcornLeft--;
+                    return cloudPopcornLeft;
+                default:
+                    break;
+            }
+            return 0;
         }
-        return 0;
-    }
 
     /** Remaining: GETTERS & SETTERS */
     public int getPotatoCrispsLeft() {
-        return this.potatoCrispsLeft;
+        return potatoCrispsLeft;
     }
     public void setPotatoCrispsLeft(int potatoCrispsLeft) {
-        this.potatoCrispsLeft = potatoCrispsLeft;
+        Chips.potatoCrispsLeft = potatoCrispsLeft;
     }
 
     public int getStackersLeft() {
         return stackersLeft;
     }
     public void setStackersLeft(int stackersLeft) {
-        this.stackersLeft = stackersLeft;
+        Chips.stackersLeft = stackersLeft;
     }
 
     public int getGrainWavesLeft() {
         return grainWavesLeft;
     }
     public void setGrainWavesLeft(int grainWavesLeft) {
-        this.grainWavesLeft = grainWavesLeft;
+        Chips.grainWavesLeft = grainWavesLeft;
     }
 
     public int getCloudPopcornLeft() {
         return cloudPopcornLeft;
     }
     public void setCloudPopcornLeft(int cloudPopcornLeft) {
-        this.cloudPopcornLeft = cloudPopcornLeft;
+        Chips.cloudPopcornLeft = cloudPopcornLeft;
     }
 
     /** Price: GETTERS & SETTERS */

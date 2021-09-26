@@ -1,42 +1,47 @@
-{"_id":"3cj3Ah3sHJSiUoxD","name":"","sourceId":"vz4T8rdcdzEooflp","targetId":"YdsQWeFsl4UxS6yX","diagramId":"xiLIEmVnlAJGEDUE","visibility":"public","kind":"Relationship","relationshipKind":"Inheritance"}
+{"_id":"3cj3Ah3sHJSiUoxD","name":"extends","sourceId":"vz4T8rdcdzEooflp","targetId":"YdsQWeFsl4UxS6yX","diagramId":"xiLIEmVnlAJGEDUE","visibility":"public","kind":"Relationship","relationshipKind":"Inheritance"}
 {"_id":"44Zt1ieCOa22LJKL","name":"public run","isAbstract":false,"type":"9INqUICHyMalRAfZ","visibility":"public","isStatic":false,"classifierId":"aBHbAcUdQKHM6SEi","discriminator":"Method","kind":"Method","index":1,"parameters":[]}
 {"_id":"4yM6Wp9pHy8ymNbf","name":"exit","isAbstract":false,"type":"85usIPcEFfd0yfym","isReadOnly":false,"visibility":"public","isStatic":false,"classifierId":"aBHbAcUdQKHM6SEi","discriminator":"Property","kind":"Property","index":2}
 {"_id":"5UpknJvF5nBcZMeF","name":"boolean","kind":"StandardType","visibility":"public"}
 {"_id":"5hIjfkoCOMay0pDm","name":"any","kind":"StandardType","visibility":"public"}
-{"_id":"6GFwRfQWtkV05ooV","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"xiLIEmVnlAJGEDUE","name":"Menu","kind":"Class","position":{"x":41.5,"y":202},"discriminator":"Class"}
+{"_id":"6GFwRfQWtkV05ooV","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"xiLIEmVnlAJGEDUE","name":"Menu","kind":"Class","position":{"x":659.5,"y":61},"discriminator":"Class"}
 {"_id":"6VryhfvZNBD4LNp3","name":"VendingMachineCLI","isAbstract":false,"type":"9INqUICHyMalRAfZ","visibility":"public","isStatic":false,"classifierId":"aBHbAcUdQKHM6SEi","discriminator":"Method","kind":"Method","index":0,"parameters":[]}
 {"_id":"85usIPcEFfd0yfym","name":"string","kind":"StandardType","visibility":"public"}
+{"_id":"96teLsPtkdXKfYtZ","name":"calls","sourceId":"6GFwRfQWtkV05ooV","targetId":"EBNY9EM79hTmpYGT","diagramId":"xiLIEmVnlAJGEDUE","visibility":"public","kind":"Relationship","relationshipKind":"Usage"}
 {"_id":"9INqUICHyMalRAfZ","name":"void","kind":"StandardType","visibility":"public"}
-{"_id":"BtbnbaKYQfI251lv","name":"uses","sourceId":"aBHbAcUdQKHM6SEi","targetId":"6GFwRfQWtkV05ooV","diagramId":"xiLIEmVnlAJGEDUE","visibility":"public","kind":"Relationship","relationshipKind":"Usage"}
+{"_id":"B2qCzZzj9Sj4niNF","name":"calls","sourceId":"6GFwRfQWtkV05ooV","targetId":"sleBcvKcsQ7WXC3E","diagramId":"xiLIEmVnlAJGEDUE","visibility":"public","kind":"Relationship","relationshipKind":"Usage"}
+{"_id":"BtbnbaKYQfI251lv","name":"calls","sourceId":"aBHbAcUdQKHM6SEi","targetId":"6GFwRfQWtkV05ooV","diagramId":"xiLIEmVnlAJGEDUE","visibility":"public","kind":"Relationship","relationshipKind":"Usage"}
 {"_id":"D3cRFA9fmPA60S1e","name":"date","kind":"StandardType","visibility":"public"}
-{"_id":"EBNY9EM79hTmpYGT","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"xiLIEmVnlAJGEDUE","name":"Inventory","kind":"Class","position":{"x":940.5,"y":188},"discriminator":"Class"}
-{"_id":"EEyh4e6PkBHPjivj","name":"","sourceId":"PoGU4Ek77WXuaIrh","targetId":"YdsQWeFsl4UxS6yX","diagramId":"xiLIEmVnlAJGEDUE","visibility":"public","kind":"Relationship","relationshipKind":"Inheritance"}
+{"_id":"EBNY9EM79hTmpYGT","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"xiLIEmVnlAJGEDUE","name":"Inventory","kind":"Class","position":{"x":328.5,"y":224},"discriminator":"Class"}
+{"_id":"EEyh4e6PkBHPjivj","name":"Extends","sourceId":"PoGU4Ek77WXuaIrh","targetId":"YdsQWeFsl4UxS6yX","diagramId":"xiLIEmVnlAJGEDUE","visibility":"public","kind":"Relationship","relationshipKind":"Inheritance"}
 {"_id":"G6cEWuEdLfZlYbMk","name":"float","kind":"StandardType","visibility":"public"}
 {"_id":"JgTL1rd7eMC3ckil","name":"displayItems","isAbstract":false,"type":"85usIPcEFfd0yfym","isReadOnly":false,"visibility":"public","isStatic":false,"classifierId":"aBHbAcUdQKHM6SEi","discriminator":"Property","kind":"Property","index":0}
-{"_id":"MyO9P9poHMPRFHkA","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"xiLIEmVnlAJGEDUE","name":"Drinks","kind":"Class","position":{"x":1158.5,"y":685},"discriminator":"Class"}
+{"_id":"MyO9P9poHMPRFHkA","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"xiLIEmVnlAJGEDUE","name":"Drinks","kind":"Class","position":{"x":850.5,"y":790},"discriminator":"Class"}
 {"_id":"NZcLJjICdEgKnKss","name":"Scanner","kind":"StandardType","visibility":"public"}
+{"_id":"PLuhKxyi6i53YR9s","name":"Reads","sourceId":"EBNY9EM79hTmpYGT","targetId":"p9rpvBipFdAMhnCt","diagramId":"xiLIEmVnlAJGEDUE","visibility":"public","kind":"Relationship","relationshipKind":"Usage"}
 {"_id":"PPfzPs5YWDOYPddp","name":"uses","sourceId":"bkUbBvn8ZhZk5C3u","targetId":"YdsQWeFsl4UxS6yX","diagramId":"xiLIEmVnlAJGEDUE","visibility":"public","kind":"Relationship","relationshipKind":"Usage"}
-{"_id":"PoGU4Ek77WXuaIrh","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"xiLIEmVnlAJGEDUE","name":"Candy","kind":"Class","position":{"x":1042.5,"y":684},"discriminator":"Class"}
-{"_id":"T0cWDe5jt4tfYxwo","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"xiLIEmVnlAJGEDUE","name":"log.txt","kind":"Class","position":{"x":95.5,"y":584},"discriminator":"Class"}
+{"_id":"PoGU4Ek77WXuaIrh","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"xiLIEmVnlAJGEDUE","name":"Chips","kind":"Class","position":{"x":715.5,"y":790},"discriminator":"Class"}
+{"_id":"T0cWDe5jt4tfYxwo","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"xiLIEmVnlAJGEDUE","name":"log.txt","kind":"Class","position":{"x":301.5,"y":562},"discriminator":"Class"}
 {"_id":"WWRyQEavgIMlP7UF","name":"double","kind":"StandardType","visibility":"public"}
 {"_id":"YWxQDOv2weNeATRM","name":"int","kind":"StandardType","visibility":"public"}
-{"_id":"YdsQWeFsl4UxS6yX","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"xiLIEmVnlAJGEDUE","name":"Snack","kind":"Class","position":{"x":1105.5,"y":540},"discriminator":"Class"}
+{"_id":"YdsQWeFsl4UxS6yX","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"xiLIEmVnlAJGEDUE","name":"Snack","kind":"Class","position":{"x":778.5,"y":646},"discriminator":"Class"}
 {"methodId":"6VryhfvZNBD4LNp3","name":"Menu menu)","type":"9INqUICHyMalRAfZ","kind":"Parameter","discriminator":"Parameter","visibility":"public","index":1,"_id":"YfrZ9LcEsZsNWmxD"}
-{"_id":"aBHbAcUdQKHM6SEi","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"xiLIEmVnlAJGEDUE","name":"VendingMachineCLI App","kind":"Class","color":"#f6f7f9","position":{"x":448.5,"y":239},"discriminator":"Class"}
+{"_id":"aBHbAcUdQKHM6SEi","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"xiLIEmVnlAJGEDUE","name":"VendingMachineCLI App","kind":"Class","color":"#f6f7f9","position":{"x":657.5,"y":230},"discriminator":"Class"}
 {"_id":"bVkRc0CLWuV35ag8","name":"char","kind":"StandardType","visibility":"public"}
-{"_id":"bkUbBvn8ZhZk5C3u","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"xiLIEmVnlAJGEDUE","name":"PUrchase","kind":"Class","position":{"x":938.5,"y":446},"discriminator":"Class"}
+{"_id":"bkUbBvn8ZhZk5C3u","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"xiLIEmVnlAJGEDUE","name":"PUrchase","kind":"Class","position":{"x":765.5,"y":528},"discriminator":"Class"}
 {"_id":"dsnP2mUlYW97c6l5","name":"time","kind":"StandardType","visibility":"public"}
 {"_id":"hWnfG4DdYgp8CqIX","name":"private final PrintWriter out;","isAbstract":false,"type":"tbRhpu4JguHHjdmy","isReadOnly":false,"visibility":"public","isStatic":false,"classifierId":"6GFwRfQWtkV05ooV","discriminator":"Property","kind":"Property","index":1}
-{"_id":"kwArIO0PqprBEMZa","name":"uses","sourceId":"aBHbAcUdQKHM6SEi","targetId":"EBNY9EM79hTmpYGT","diagramId":"xiLIEmVnlAJGEDUE","visibility":"public","kind":"Relationship","relationshipKind":"Usage"}
-{"_id":"mx2VzYnhtWx9Sfpx","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"xiLIEmVnlAJGEDUE","name":"Products","kind":"Class","position":{"x":934.5,"y":688},"discriminator":"Class"}
-{"_id":"p9rpvBipFdAMhnCt","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"xiLIEmVnlAJGEDUE","name":"vendingmachine.csv","kind":"Class","position":{"x":52.5,"y":509},"discriminator":"Class"}
+{"_id":"kwArIO0PqprBEMZa","name":"calls","sourceId":"aBHbAcUdQKHM6SEi","targetId":"EBNY9EM79hTmpYGT","diagramId":"xiLIEmVnlAJGEDUE","visibility":"public","kind":"Relationship","relationshipKind":"Usage"}
+{"_id":"mx2VzYnhtWx9Sfpx","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"xiLIEmVnlAJGEDUE","name":"Products","kind":"Class","position":{"x":513.5,"y":792},"discriminator":"Class"}
+{"_id":"p9rpvBipFdAMhnCt","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"xiLIEmVnlAJGEDUE","name":"vendingmachine.csv","kind":"Class","position":{"x":242.5,"y":401},"discriminator":"Class"}
 {"_id":"sGfJ3Lhe5fKmQ3nq","name":"salesReport","isAbstract":false,"type":"85usIPcEFfd0yfym","isReadOnly":false,"visibility":"public","isStatic":false,"classifierId":"aBHbAcUdQKHM6SEi","discriminator":"Property","kind":"Property","index":3}
-{"_id":"sleBcvKcsQ7WXC3E","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"xiLIEmVnlAJGEDUE","name":"Sales Report","kind":"Class","position":{"x":1142.5,"y":218},"discriminator":"Class"}
+{"_id":"sleBcvKcsQ7WXC3E","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"xiLIEmVnlAJGEDUE","name":"Sales Report","kind":"Class","position":{"x":1202.5,"y":222},"discriminator":"Class"}
 {"_id":"tbRhpu4JguHHjdmy","name":"PrintWriter","kind":"StandardType","visibility":"public"}
 {"_id":"u5V4c6xSuV6SG0WX","name":"private final Scanner in;","isAbstract":false,"type":"NZcLJjICdEgKnKss","isReadOnly":false,"visibility":"public","isStatic":false,"classifierId":"6GFwRfQWtkV05ooV","discriminator":"Property","kind":"Property","index":0}
-{"_id":"u9wTNInViJFU5NyB","name":"uses","sourceId":"aBHbAcUdQKHM6SEi","targetId":"bkUbBvn8ZhZk5C3u","diagramId":"xiLIEmVnlAJGEDUE","visibility":"public","kind":"Relationship","relationshipKind":"Usage"}
-{"_id":"v9GN95EyzUxqJn25","name":"","sourceId":"mx2VzYnhtWx9Sfpx","targetId":"YdsQWeFsl4UxS6yX","diagramId":"xiLIEmVnlAJGEDUE","visibility":"public","kind":"Relationship","relationshipKind":"Inheritance"}
-{"_id":"vz4T8rdcdzEooflp","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"xiLIEmVnlAJGEDUE","name":"Gum","kind":"Class","position":{"x":1268.5,"y":691},"discriminator":"Class"}
+{"_id":"u9wTNInViJFU5NyB","name":"calls","sourceId":"aBHbAcUdQKHM6SEi","targetId":"bkUbBvn8ZhZk5C3u","diagramId":"xiLIEmVnlAJGEDUE","visibility":"public","kind":"Relationship","relationshipKind":"Usage"}
+{"_id":"v9GN95EyzUxqJn25","name":"Extends","sourceId":"mx2VzYnhtWx9Sfpx","targetId":"YdsQWeFsl4UxS6yX","diagramId":"xiLIEmVnlAJGEDUE","visibility":"public","kind":"Relationship","relationshipKind":"Inheritance"}
+{"_id":"vd56g3yr2zuwHEwm","discriminator":"Note","position":{"x":1281,"y":351},"diagramId":"xiLIEmVnlAJGEDUE","text":"Interface?","kind":"Note","showNoteBackgroundTexture":true}
+{"_id":"vz4T8rdcdzEooflp","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"xiLIEmVnlAJGEDUE","name":"Gum","kind":"Class","position":{"x":1058.5,"y":800},"discriminator":"Class"}
 {"_id":"w2GlmSBd40uqyWEP","name":"purchaseItem","isAbstract":false,"type":"85usIPcEFfd0yfym","isReadOnly":false,"visibility":"public","isStatic":false,"classifierId":"aBHbAcUdQKHM6SEi","discriminator":"Property","kind":"Property","index":1}
-{"_id":"xhjLqCnmslQqkJaR","name":"","sourceId":"MyO9P9poHMPRFHkA","targetId":"YdsQWeFsl4UxS6yX","diagramId":"xiLIEmVnlAJGEDUE","visibility":"public","kind":"Relationship","relationshipKind":"Inheritance"}
+{"_id":"x0VAxcwxwv0eMqQg","name":"writes to","sourceId":"aBHbAcUdQKHM6SEi","targetId":"sleBcvKcsQ7WXC3E","diagramId":"xiLIEmVnlAJGEDUE","visibility":"public","kind":"Relationship","relationshipKind":"Usage"}
+{"_id":"xhjLqCnmslQqkJaR","name":"Extends","sourceId":"MyO9P9poHMPRFHkA","targetId":"YdsQWeFsl4UxS6yX","diagramId":"xiLIEmVnlAJGEDUE","visibility":"public","kind":"Relationship","relationshipKind":"Inheritance"}
 {"_id":"xiLIEmVnlAJGEDUE","name":"Vendo-Matic 800","kind":"ClassDiagram","titlePosition":{"x":550,"y":24}}
