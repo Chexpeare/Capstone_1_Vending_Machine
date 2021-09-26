@@ -3,8 +3,6 @@ package com.techelevator;
 import com.techelevator.view.Menu;
 import java.io.IOException;
 
-<<<<<<< HEAD
-
 /** VendingMachineCLI.java - Pushed from Backup
 =======
 /** VendingMachineCLI.java
