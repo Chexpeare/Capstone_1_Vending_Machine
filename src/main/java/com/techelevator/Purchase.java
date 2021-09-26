@@ -119,7 +119,6 @@ public class Purchase {
                             totalSales += chips.getPotatoCrispsPrice();
                             chipsRemaining = chips.completeChipsPurchase(itemSelected);
                             System.out.println("\nPotato Crisps remaining: " + chipsRemaining);
-
                         } else if (chipsRemaining == 0) {
 //                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
                             System.out.println(itemSelected + "are SOLD OUT.\nPlease select another product or press [3] to finish your transaction.");
