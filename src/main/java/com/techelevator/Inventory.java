@@ -9,13 +9,13 @@ import java.util.Map;
 /** Inventory.java - Pushed from Backup */
 public class Inventory {
     /** PROPERTIES */
-    private final Map<String, String> itemTypeMap = new HashMap<>();
+    private final Map<String, String> itemTypeMap =  new HashMap<>();
     private final Map<String, String> itemSelectedMap = new HashMap<>();
-<<<<<<< HEAD
-    private final String inventoryFile = "C:\\Users\\18325\\Desktop\\CapStone Backup\\capstone\\vendingmachine.csv";
-=======
+
+
+
     private final String inventoryFile = "capstone/vendingmachine.csv";
->>>>>>> 1f31643a909438f94f9515d7d1775c1ad38f5b09
+
 
     /** CONSTRUCTOR */
     public Inventory() {
