@@ -2,10 +2,10 @@ package com.techelevator;
 
 /** Candy.java - Pushed from Backup */
 public class Candy extends Snack {
-    private int moonPiesLeft = 5;
-    private int cowtalesLeft = 5;
-    private int wonkaBarsLeft = 5;
-    private int crunchiesLeft = 5;
+    private static int moonPiesLeft = 5;
+    private static int cowtalesLeft = 5;
+    private static int wonkaBarsLeft = 5;
+    private static int crunchiesLeft = 5;
 
     private double moonPiePrice = 1.80;
     private double cowtalesPrice = 1.50;
@@ -16,7 +16,7 @@ public class Candy extends Snack {
     public int completeCandyPurchase(String itemSelected) {
         switch (itemSelected) {
             case "Moonpie":
-                this.moonPiesLeft--;
+                moonPiesLeft--;
                 return moonPiesLeft;
             case "Cowtales":
                 cowtalesLeft--;
@@ -38,11 +38,11 @@ public class Candy extends Snack {
         return moonPiesLeft;
     }
     public void setMoonPiesLeft(int moonPiesLeft) {
-        this.moonPiesLeft = moonPiesLeft;
+        Candy.moonPiesLeft = moonPiesLeft;
     }
 
     public void setCowtalesLeft(int cowtalesLeft) {
-        this.cowtalesLeft = cowtalesLeft;
+        Candy.cowtalesLeft = cowtalesLeft;
     }
     public int getCowtalesLeft() {
         return cowtalesLeft;
@@ -52,14 +52,14 @@ public class Candy extends Snack {
         return wonkaBarsLeft;
     }
     public void setWonkaBarsLeft(int wonkaBarsLeft) {
-        this.wonkaBarsLeft = wonkaBarsLeft;
+        Candy.wonkaBarsLeft = wonkaBarsLeft;
     }
 
     public int getCrunchiesLeft() {
         return crunchiesLeft;
     }
     public void setCrunchiesLeft(int crunchiesLeft) {
-        this.crunchiesLeft = crunchiesLeft;
+        Candy.crunchiesLeft = crunchiesLeft;
     }
 
     /** Price: GETTERS & SETTERS */

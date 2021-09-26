@@ -2,15 +2,15 @@ package com.techelevator;
 
 /** Gum.java - Pushed from Backup */
 public class Gum extends Snack {
-    private int uChewsLeft = 5;
-    private int littleLeagueChewLeft = 5;
-    private int chicletsLeft = 5;
-    private int triplemintLeft = 5;
+    private static int uChewsLeft = 5;
+    private static int littleLeagueChewLeft = 5;
+    private static int chicletsLeft = 5;
+    private static int triplemintLeft = 5;
 
-    double uChewsPrice = 0.85;
-    double littleLeagueChewPrice = 0.95;
-    double chicletsPrice = 0.75;
-    double tripleMintPrice = 0.75;
+    private double uChewsPrice = 0.85;
+    private double littleLeagueChewPrice = 0.95;
+    private double chicletsPrice = 0.75;
+    private double tripleMintPrice = 0.75;
 
     /** METHODS: Decrement product quantity */
     public int completeGumPurchase(String itemSelected) {
@@ -38,28 +38,28 @@ public class Gum extends Snack {
         return uChewsLeft;
     }
     public void setuChewsLeft(int uChewsLeft) {
-        this.uChewsLeft = uChewsLeft;
+        Gum.uChewsLeft = uChewsLeft;
     }
 
     public int getLittleLeaugeChewLeft() {
         return littleLeagueChewLeft;
     }
     public void setLittleLeaugeChewLeft(int littleLeaugeChewLeft) {
-        this.littleLeagueChewLeft = littleLeaugeChewLeft;
+        littleLeagueChewLeft = littleLeaugeChewLeft;
     }
 
     public int getChicletsLeft() {
         return chicletsLeft;
     }
     public void setChicletsLeft(int chicletsLeft) {
-        this.chicletsLeft = chicletsLeft;
+        Gum.chicletsLeft = chicletsLeft;
     }
 
     public int getTriplemintLeft() {
         return triplemintLeft;
     }
     public void setTriplemintLeft(int triplemintLeft) {
-        this.triplemintLeft = triplemintLeft;
+        Gum.triplemintLeft = triplemintLeft;
     }
 
     /** Price: GETTERS & SETTERS */
