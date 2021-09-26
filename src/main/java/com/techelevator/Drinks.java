@@ -2,10 +2,10 @@ package com.techelevator;
 
 /** Drinks.java - Pushed from Backup */
 public class Drinks extends Snack {
-    private int colaLeft = 5;
-    private int drSaltLeft = 5;
-    private int mountainMelterLeft = 5;
-    private int heavyLeft = 5;
+    private static int colaLeft = 5;
+    private static int drSaltLeft = 5;
+    private static int mountainMelterLeft = 5;
+    private static int heavyLeft = 5;
 
     private double colaPrice = 1.25;
     private double drSaltPrice = 1.50;
@@ -38,28 +38,28 @@ public class Drinks extends Snack {
         return colaLeft;
     }
     public void setColaLeft(int colaLeft) {
-        this.colaLeft = colaLeft;
+        Drinks.colaLeft = colaLeft;
     }
 
     public int getDrSaltLeft() {
         return drSaltLeft;
     }
     public void setDrSaltLeft(int drSaltLeft) {
-        this.drSaltLeft = drSaltLeft;
+        Drinks.drSaltLeft = drSaltLeft;
     }
 
     public int getMountainMelterLeft() {
         return mountainMelterLeft;
     }
     public void setMountainMelterLeft(int mountainMelterLeft) {
-        this.mountainMelterLeft = mountainMelterLeft;
+        Drinks.mountainMelterLeft = mountainMelterLeft;
     }
 
     public int getHeavyLeft() {
         return heavyLeft;
     }
     public void setHeavyLeft(int heavyLeft) {
-        this.heavyLeft = heavyLeft;
+        Drinks.heavyLeft = heavyLeft;
     }
 
     /** Price: GETTERS & SETTERS */
