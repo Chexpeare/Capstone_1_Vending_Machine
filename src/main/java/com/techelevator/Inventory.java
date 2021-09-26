@@ -8,7 +8,6 @@ import java.util.Map;
 
 public class Inventory {
     /** PROPERTIES */
-    /** PROPERTIES */
     private final Map<String, String> itemTypeMap = new HashMap<>();
     private final Map<String, String> itemSelectedMap = new HashMap<>();
     private final String inventoryFile = "capstone/vendingmachine.csv";

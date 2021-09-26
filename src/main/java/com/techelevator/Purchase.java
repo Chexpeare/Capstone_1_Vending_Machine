@@ -34,15 +34,6 @@ public class Purchase {
     private int quarters;
     private static final File logFile = new File("/Users/chexpeare/MeritAmerica/PairProgrammingBackup/capstone/log.txt");
     private static final Date date = new Date();
-//<<<<<<< HEAD
-//=======
-//
-//    protected double deposit;
-//    protected int chipsRemaining;
-//    protected int candyRemaining;
-//    protected int drinkRemaining;
-//    protected int gumRemaining;
-//>>>>>>> a99b83a7beb861fb71ba865b97339ddde5ab17b0
 
     protected double deposit;
     protected int itemsRemaining;
@@ -126,22 +117,12 @@ public class Purchase {
                             logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - chips.getPotatoCrispsPrice()));
                             balance -= chips.getPotatoCrispsPrice();
                             totalSales += chips.getPotatoCrispsPrice();
-//<<<<<<< HEAD
                             itemsRemaining = chips.completeChipsPurchase(itemSelected);
                             itemsRemainingFormat();
                         } else if (itemsRemaining == 0) {
                             soldOutFormat();
                         } else if (getCurrentBalance() <= balance) {
                             addFundsFormat();
-//=======
-//                            chipsRemaining = chips.completeChipsPurchase(itemSelected);
-//                            System.out.println("\nPotato Crisps remaining: " + chipsRemaining);
-//                        } else if (chipsRemaining == 0) {
-////                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
-//                            System.out.println(itemSelected + "are SOLD OUT.\nPlease select another product or press [3] to finish your transaction.");
-//                        } else if (getCurrentBalance() <= balance) {
-//                            System.out.println("Please add additional funds or press [3] to finish your transaction.");
-//>>>>>>> a99b83a7beb861fb71ba865b97339ddde5ab17b0
                         }
                         break;
                     case "Grain Waves":
@@ -150,22 +131,12 @@ public class Purchase {
                             logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - chips.getGrainWavesPrice()));
                             balance -= chips.getGrainWavesPrice();
                             totalSales += chips.getGrainWavesPrice();
-//<<<<<<< HEAD
                             itemsRemaining = chips.completeChipsPurchase(itemSelected);
                             itemsRemainingFormat();
                         } else if (itemsRemaining == 0) {
                             soldOutFormat();
                         } else if (getCurrentBalance() <= balance) {
                             addFundsFormat();
-//=======
-//                            chipsRemaining = chips.completeChipsPurchase(itemSelected);
-//                            System.out.println("\nGrain Waves remaining: " + chipsRemaining);
-//                        } else if (chipsRemaining == 0) {
-////                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
-//                            System.out.println(itemSelected + "are SOLD OUT.\nPlease select another product or press [3] to finish your transaction.");
-//                        } else if (getCurrentBalance() <= balance) {
-//                            System.out.println("Please add additional funds or press [3] to finish your transaction.");
-//>>>>>>> a99b83a7beb861fb71ba865b97339ddde5ab17b0
                         }
                         break;
                     case "Stackers":
@@ -174,22 +145,12 @@ public class Purchase {
                             logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - chips.getStackersPrice()));
                             balance -= chips.getStackersPrice();
                             totalSales += chips.getStackersPrice();
-//<<<<<<< HEAD
                             itemsRemaining = chips.completeChipsPurchase(itemSelected);
                             itemsRemainingFormat();
                         } else if (itemsRemaining == 0) {
                             soldOutFormat();
                         } else if (getCurrentBalance() <= balance) {
                             addFundsFormat();
-//=======
-//                            chipsRemaining = chips.completeChipsPurchase(itemSelected);
-//                            System.out.println("\nStackers remaining: " + chipsRemaining);
-//                        } else if (chipsRemaining == 0) {
-////                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
-//                            System.out.println(itemSelected + "are SOLD OUT.\nPlease select another product or press [3] to finish your transaction.");
-//                        } else if (getCurrentBalance() <= balance) {
-//                            System.out.println("Please add additional funds or press [3] to finish your transaction.");
-//>>>>>>> a99b83a7beb861fb71ba865b97339ddde5ab17b0
                         }
                         break;
                     case "Cloud Popcorn":
@@ -198,22 +159,12 @@ public class Purchase {
                             logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - chips.getCloudPopcornPrice()));
                             balance -= chips.getCloudPopcornPrice();
                             totalSales += chips.getCloudPopcornPrice();
-//<<<<<<< HEAD
                             itemsRemaining = chips.completeChipsPurchase(itemSelected);
                             itemsRemainingFormat();
                         } else if (itemsRemaining == 0) {
                             soldOutFormat();
                         } else if (getCurrentBalance() <= balance) {
                             addFundsFormat();
-//=======
-//                            chipsRemaining = chips.completeChipsPurchase(itemSelected);
-//                            System.out.println("\nCloud Popcorn remaining: " + chipsRemaining);
-//                        } else if (chipsRemaining == 0) {
-////                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
-//                            System.out.println(itemSelected + "are SOLD OUT.\nPlease select another product or press [3] to finish your transaction.");
-//                        } else if (getCurrentBalance() <= balance) {
-//                            System.out.println("Please add additional funds or press [3] to finish your transaction.");
-//>>>>>>> a99b83a7beb861fb71ba865b97339ddde5ab17b0
                         }
                         break;
                 }
@@ -229,22 +180,12 @@ public class Purchase {
                             logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - candy.getMoonPiePrice()));
                             balance -= candy.getMoonPiePrice();
                             totalSales += candy.getMoonPiePrice();
-//<<<<<<< HEAD
                             itemsRemaining = candy.completeCandyPurchase(itemSelected);
                             itemsRemainingFormat();
                         } else if (itemsRemaining == 0) {
                             soldOutFormat();
                         } else if (getCurrentBalance() <= balance) {
                             addFundsFormat();
-//=======
-//                            candyRemaining = candy.completeCandyPurchase(itemSelected);
-//                            System.out.println("\nMoonpies remaining: " + candyRemaining);
-//                        } else if (chipsRemaining == 0) {
-////                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
-//                            System.out.println(itemSelected + "are SOLD OUT.\nPlease select another product or press [3] to finish your transaction.");
-//                        } else if (getCurrentBalance() <= balance) {
-//                            System.out.println("Please add additional funds or press [3] to finish your transaction.");
-//>>>>>>> a99b83a7beb861fb71ba865b97339ddde5ab17b0
                         }
                         break;
                     case "Cowtales":
@@ -253,22 +194,12 @@ public class Purchase {
                             logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - candy.getCowtalesPrice()));
                             balance -= candy.getCowtalesPrice();
                             totalSales += candy.getCowtalesPrice();
-//<<<<<<< HEAD
                             itemsRemaining = candy.completeCandyPurchase(itemSelected);
                             itemsRemainingFormat();
                         } else if (itemsRemaining == 0) {
                             soldOutFormat();
                         } else if (getCurrentBalance() <= balance) {
                             addFundsFormat();
-//=======
-//                            candyRemaining = candy.completeCandyPurchase(itemSelected);
-//                            System.out.println("\nCowtales remaining: " + candyRemaining);
-//                        } else if (chipsRemaining == 0) {
-////                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
-//                            System.out.println(itemSelected + "are SOLD OUT.\nPlease select another product or press [3] to finish your transaction.");
-//                        } else if (getCurrentBalance() <= balance) {
-//                            System.out.println("Please add additional funds or press [3] to finish your transaction.");
-//>>>>>>> a99b83a7beb861fb71ba865b97339ddde5ab17b0
                         }
                         break;
                     case "Crunchie":
@@ -277,22 +208,12 @@ public class Purchase {
                             logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - candy.getCrunchiesPrice()));
                             balance -= candy.getCrunchiesPrice();
                             totalSales += candy.getCrunchiesPrice();
-//<<<<<<< HEAD
                             itemsRemaining = candy.completeCandyPurchase(itemSelected);
                             itemsRemainingFormat();
                         } else if (itemsRemaining == 0) {
                             soldOutFormat();
                         } else if (getCurrentBalance() <= balance) {
                             addFundsFormat();
-//=======
-//                            candyRemaining = candy.completeCandyPurchase(itemSelected);
-//                            System.out.println("\nCrunchies remaining: " + candyRemaining);
-//                        } else if (chipsRemaining == 0) {
-////                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
-//                            System.out.println(itemSelected + "are SOLD OUT.\nPlease select another product or press [3] to finish your transaction.");
-//                        } else if (getCurrentBalance() <= balance) {
-//                            System.out.println("Please add additional funds or press [3] to finish your transaction.");
-//>>>>>>> a99b83a7beb861fb71ba865b97339ddde5ab17b0
                         }
                         break;
                     case "Wonka Bar":
@@ -301,22 +222,12 @@ public class Purchase {
                             logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - candy.getWonkaBarsPrice()));
                             balance -= candy.getWonkaBarsPrice();
                             totalSales += candy.getWonkaBarsPrice();
-//<<<<<<< HEAD
                             itemsRemaining = candy.completeCandyPurchase(itemSelected);
                             itemsRemainingFormat();
                         } else if (itemsRemaining == 0) {
                             soldOutFormat();
                         } else if (getCurrentBalance() <= balance) {
                             addFundsFormat();
-//=======
-//                            candyRemaining = candy.completeCandyPurchase(itemSelected);
-//                            System.out.println("\nWonka Bar remaining: " + candyRemaining);
-//                        } else if (chipsRemaining == 0) {
-////                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
-//                            System.out.println(itemSelected + "are SOLD OUT.\nPlease select another product or press [3] to finish your transaction.");
-//                        } else if (getCurrentBalance() <= balance) {
-//                            System.out.println("Please add additional funds or press [3] to finish your transaction.");
-//>>>>>>> a99b83a7beb861fb71ba865b97339ddde5ab17b0
                         }
                         break;
                 }
@@ -332,22 +243,12 @@ public class Purchase {
                             logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - drinks.getColaPrice()));
                             balance -= drinks.getColaPrice();
                             totalSales += drinks.getColaPrice();
-//<<<<<<< HEAD
                             itemsRemaining = drinks.completeDrinksPurchase(itemSelected);
                             itemsRemainingFormat();
                         } else if (itemsRemaining == 0) {
                             soldOutFormat();
                         } else if (getCurrentBalance() <= balance) {
                             addFundsFormat();
-//=======
-//                            drinkRemaining = drinks.completeDrinksPurchase(itemSelected);
-//                            System.out.println("\nCola remaining: " + drinkRemaining);
-//                        } else if (chipsRemaining == 0) {
-////                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
-//                            System.out.println(itemSelected + "are SOLD OUT.\nPlease select another product or press [3] to finish your transaction.");
-//                        } else if (getCurrentBalance() <= balance) {
-//                            System.out.println("Please add additional funds or press [3] to finish your transaction.");
-//>>>>>>> a99b83a7beb861fb71ba865b97339ddde5ab17b0
                         }
                         break;
                     case "Dr. Salt":
@@ -356,22 +257,12 @@ public class Purchase {
                             logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - drinks.getDrSaltPrice()));
                             balance -= drinks.getDrSaltPrice();
                             totalSales += drinks.getDrSaltPrice();
-//<<<<<<< HEAD
                             itemsRemaining = drinks.completeDrinksPurchase(itemSelected);
                             itemsRemainingFormat();
                         } else if (itemsRemaining == 0) {
                             soldOutFormat();
                         } else if (getCurrentBalance() <= balance) {
                             addFundsFormat();
-//=======
-//                            drinkRemaining = drinks.completeDrinksPurchase(itemSelected);
-//                            System.out.println("\nDr. Salt remaining: " + drinkRemaining);
-//                        } else if (chipsRemaining == 0) {
-////                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
-//                            System.out.println(itemSelected + "are SOLD OUT.\nPlease select another product or press [3] to finish your transaction.");
-//                        } else if (getCurrentBalance() <= balance) {
-//                            System.out.println("Please add additional funds or press [3] to finish your transaction.");
-//>>>>>>> a99b83a7beb861fb71ba865b97339ddde5ab17b0
                         }
                         break;
                     case "Mountain Melter":
@@ -380,22 +271,12 @@ public class Purchase {
                             logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - drinks.getMountainMelterPrice()));
                             balance -= drinks.getMountainMelterPrice();
                             totalSales += drinks.getMountainMelterPrice();
-//<<<<<<< HEAD
                             itemsRemaining = drinks.completeDrinksPurchase(itemSelected);
                             itemsRemainingFormat();
                         } else if (itemsRemaining == 0) {
                             soldOutFormat();
                         } else if (getCurrentBalance() <= balance) {
                             addFundsFormat();
-//=======
-//                            drinkRemaining = drinks.completeDrinksPurchase(itemSelected);
-//                            System.out.println("\nMountain Melter remaining: " + drinkRemaining);
-//                        } else if (chipsRemaining == 0) {
-////                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
-//                            System.out.println(itemSelected + "are SOLD OUT.\nPlease select another product or press [3] to finish your transaction.");
-//                        } else if (getCurrentBalance() <= balance) {
-//                            System.out.println("Please add additional funds or press [3] to finish your transaction.");
-//>>>>>>> a99b83a7beb861fb71ba865b97339ddde5ab17b0
                         }
                         break;
                     case "Heavy":
@@ -404,22 +285,12 @@ public class Purchase {
                             logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - drinks.getHeavyPrice()));
                             balance -= drinks.getHeavyPrice();
                             totalSales += drinks.getHeavyPrice();
-//<<<<<<< HEAD
                             itemsRemaining = drinks.completeDrinksPurchase(itemSelected);
                             itemsRemainingFormat();
                         } else if (itemsRemaining == 0) {
                             soldOutFormat();
                         } else if (getCurrentBalance() <= balance) {
                             addFundsFormat();
-//=======
-//                            drinkRemaining = drinks.completeDrinksPurchase(itemSelected);
-//                            System.out.println("\nHeavy remaining: " + drinkRemaining);
-//                        } else if (chipsRemaining == 0) {
-////                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
-//                            System.out.println(itemSelected + "are SOLD OUT.\nPlease select another product or press [3] to finish your transaction.");
-//                        } else if (getCurrentBalance() <= balance) {
-//                            System.out.println("Please add additional funds or press [3] to finish your transaction.");
-//>>>>>>> a99b83a7beb861fb71ba865b97339ddde5ab17b0
                         }
                         break;
                 }
@@ -435,22 +306,12 @@ public class Purchase {
                             logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - gum.getUChewsPrice()));
                             balance -= gum.getUChewsPrice();
                             totalSales += gum.getUChewsPrice();
-//<<<<<<< HEAD
                             itemsRemaining = gum.completeGumPurchase(itemSelected);
                             itemsRemainingFormat();
                         } else if (itemsRemaining == 0) {
                             soldOutFormat();
                         } else if (getCurrentBalance() <= balance) {
                             addFundsFormat();
-//=======
-//                            gumRemaining = gum.completeGumPurchase(itemSelected);
-//                            System.out.println("\nU-Chews remaining: " + gumRemaining);
-//                        } else if (chipsRemaining == 0) {
-////                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
-//                            System.out.println(itemSelected + "are SOLD OUT.\nPlease select another product or press [3] to finish your transaction.");
-//                        } else if (getCurrentBalance() <= balance) {
-//                            System.out.println("Please add additional funds or press [3] to finish your transaction.");
-//>>>>>>> a99b83a7beb861fb71ba865b97339ddde5ab17b0
                         }
                         break;
                     case "Little League Chew":
@@ -459,22 +320,12 @@ public class Purchase {
                             logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - gum.getLittleLeaugeChewPrice()));
                             balance -= gum.getLittleLeaugeChewPrice();
                             totalSales += gum.getLittleLeaugeChewPrice();
-//<<<<<<< HEAD
                             itemsRemaining = gum.completeGumPurchase(itemSelected);
                             itemsRemainingFormat();
                         } else if (itemsRemaining == 0) {
                             soldOutFormat();
                         } else if (getCurrentBalance() <= balance) {
                             addFundsFormat();
-//=======
-//                            gumRemaining = gum.completeGumPurchase(itemSelected);
-//                            System.out.println("\nLittle League Chew remaining: " + gumRemaining);
-//                        } else if (chipsRemaining == 0) {
-////                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
-//                            System.out.println(itemSelected + "are SOLD OUT.\nPlease select another product or press [3] to finish your transaction.");
-//                        } else if (getCurrentBalance() <= balance) {
-//                            System.out.println("Please add additional funds or press [3] to finish your transaction.");
-//>>>>>>> a99b83a7beb861fb71ba865b97339ddde5ab17b0
                         }
                         break;
                     case "Chiclets":
@@ -483,22 +334,12 @@ public class Purchase {
                             logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - gum.getChicletsPrice()));
                             balance -= gum.getChicletsPrice();
                             totalSales += gum.getChicletsPrice();
-//<<<<<<< HEAD
                             itemsRemaining = gum.completeGumPurchase(itemSelected);
                             itemsRemainingFormat();
                         } else if (itemsRemaining == 0) {
                             soldOutFormat();
                         } else if (getCurrentBalance() <= balance) {
                             addFundsFormat();
-//=======
-//                            gumRemaining = gum.completeGumPurchase(itemSelected);
-//                            System.out.println("\nChiclets remaining: " + gumRemaining);
-//                        } else if (chipsRemaining == 0) {
-////                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
-//                            System.out.println(itemSelected + "are SOLD OUT.\nPlease select another product or press [3] to finish your transaction.");
-//                        } else if (getCurrentBalance() <= balance) {
-//                            System.out.println("Please add additional funds or press [3] to finish your transaction.");
-//>>>>>>> a99b83a7beb861fb71ba865b97339ddde5ab17b0
                         }
                         break;
                     case "Triplemint":
@@ -507,22 +348,12 @@ public class Purchase {
                             logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - gum.getTriplemintPrice()));
                             balance -= gum.getTriplemintPrice();
                             totalSales += gum.getTriplemintPrice();
-//<<<<<<< HEAD
                             itemsRemaining = gum.completeGumPurchase(itemSelected);
                             itemsRemainingFormat();
                         } else if (itemsRemaining == 0) {
                             soldOutFormat();
                         } else if (getCurrentBalance() <= balance) {
                             addFundsFormat();
-//=======
-//                            gumRemaining = gum.completeGumPurchase(itemSelected);
-//                            System.out.println("\nTriplemint remaining: " + gumRemaining);
-//                        } else if (chipsRemaining == 0) {
-////                            System.out.println("Not enough funds or item is sold out, add more or choose another item");
-//                            System.out.println(itemSelected + "are SOLD OUT.\nPlease select another product or press [3] to finish your transaction.");
-//                        } else if (getCurrentBalance() <= balance) {
-//                            System.out.println("Please add additional funds or press [3] to finish your transaction.");
-//>>>>>>> a99b83a7beb861fb71ba865b97339ddde5ab17b0
                         }
                         break;
                 }
@@ -580,11 +411,7 @@ public class Purchase {
     private static void logFile(String message) throws IOException {
         try (PrintWriter logWriter = new PrintWriter(new FileWriter(logFile, true))) {
             logWriter.println(date + " " + message);
-//<<<<<<< HEAD
         } catch (IOException e) {
-//=======
-//            } catch (IOException e) {
-//>>>>>>> a99b83a7beb861fb71ba865b97339ddde5ab17b0
             System.out.println("Unable to write to file.");
         }
     }
