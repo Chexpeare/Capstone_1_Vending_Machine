@@ -39,6 +39,10 @@
 {"_id":"u5V4c6xSuV6SG0WX","name":"private final Scanner in;","isAbstract":false,"type":"NZcLJjICdEgKnKss","isReadOnly":false,"visibility":"public","isStatic":false,"classifierId":"6GFwRfQWtkV05ooV","discriminator":"Property","kind":"Property","index":0}
 {"_id":"u9wTNInViJFU5NyB","name":"calls","sourceId":"aBHbAcUdQKHM6SEi","targetId":"bkUbBvn8ZhZk5C3u","diagramId":"xiLIEmVnlAJGEDUE","visibility":"public","kind":"Relationship","relationshipKind":"Usage"}
 {"_id":"v9GN95EyzUxqJn25","name":"Extends","sourceId":"mx2VzYnhtWx9Sfpx","targetId":"YdsQWeFsl4UxS6yX","diagramId":"xiLIEmVnlAJGEDUE","visibility":"public","kind":"Relationship","relationshipKind":"Inheritance"}
+<<<<<<< HEAD
+=======
+{"_id":"vd56g3yr2zuwHEwm","discriminator":"Note","position":{"x":1281,"y":351},"diagramId":"xiLIEmVnlAJGEDUE","text":"Interface?","kind":"Note","showNoteBackgroundTexture":true}
+>>>>>>> a99b83a7beb861fb71ba865b97339ddde5ab17b0
 {"_id":"vz4T8rdcdzEooflp","isAbstract":false,"isFinal":false,"isInterface":false,"visibility":"public","diagramId":"xiLIEmVnlAJGEDUE","name":"Gum","kind":"Class","position":{"x":1058.5,"y":800},"discriminator":"Class"}
 {"_id":"w2GlmSBd40uqyWEP","name":"purchaseItem","isAbstract":false,"type":"85usIPcEFfd0yfym","isReadOnly":false,"visibility":"public","isStatic":false,"classifierId":"aBHbAcUdQKHM6SEi","discriminator":"Property","kind":"Property","index":1}
 {"_id":"x0VAxcwxwv0eMqQg","name":"writes to","sourceId":"aBHbAcUdQKHM6SEi","targetId":"sleBcvKcsQ7WXC3E","diagramId":"xiLIEmVnlAJGEDUE","visibility":"public","kind":"Relationship","relationshipKind":"Usage"}

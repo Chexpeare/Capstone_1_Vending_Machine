@@ -15,6 +15,7 @@ public class Chips extends Snack {
     /** METHODS: Decrement product quantity */
     public int completeChipsPurchase(String itemSelected) {
         Snack snack = new Snack();
+<<<<<<< HEAD
         switch (itemSelected) {
             case "Potato Crisps":
                 potatoCrispsLeft--;
@@ -30,9 +31,26 @@ public class Chips extends Snack {
                 return cloudPopcornLeft;
             default:
                 break;
+=======
+            switch (itemSelected) {
+                case "Potato Crisps":
+                    potatoCrispsLeft--;
+                    return potatoCrispsLeft;
+                case "Stackers":
+                    stackersLeft--;
+                    return stackersLeft;
+                case "Grain Waves":
+                    grainWavesLeft--;
+                    return grainWavesLeft;
+                case "Cloud Popcorn":
+                    cloudPopcornLeft--;
+                    return cloudPopcornLeft;
+                default:
+                    break;
+            }
+            return 0;
+>>>>>>> a99b83a7beb861fb71ba865b97339ddde5ab17b0
         }
-        return 0;
-    }
 
     /** Remaining: GETTERS & SETTERS */
     public int getPotatoCrispsLeft() {
