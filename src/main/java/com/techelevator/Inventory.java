@@ -11,14 +11,11 @@ public class Inventory {
     private final Map<String, String> itemTypeMap = new HashMap<>();
     private final Map<String, String> itemSelectedMap = new HashMap<>();
     private final String inventoryFile = "capstone/vendingmachine.csv";
-<<<<<<< HEAD
-=======
 /*  getCanonicalPath()
-    platform specific method: directory path needs to conform to MacOS (/)or PC (\\)
-    private final String inventoryFile = "C:\\Users\\18325\\Desktop\\CapStone Backup\\capstone\\vendingmachine.csv";
-    private final String inventoryFile = "/Users/chexpeare/MeritAmerica/PairProgrammingBackup/capstone/vendingmachine.csv";
+ *  platform specific method: directory path needs to conform to MacOS (/)or PC (\\)
+ *  private final String inventoryFile = "C:\\Users\\18325\\Desktop\\CapStone Backup\\capstone\\vendingmachine.csv";
+ *  private final String inventoryFile = "/Users/chexpeare/MeritAmerica/PairProgrammingBackup/capstone/vendingmachine.csv";
 */
->>>>>>> a99b83a7beb861fb71ba865b97339ddde5ab17b0
 
     /** CONSTRUCTOR */
     public Inventory() {
