@@ -2,6 +2,9 @@ package com.techelevator;
 
 import com.techelevator.view.Menu;
 import java.io.IOException;
+import java.util.Date;
+
+//import static jdk.tools.jaotc.LogPrinter.logFile;
 
 /** VendingMachineCLI.java
  * 		1. Instantiates a menu object and a vending machine calling that menu object.
@@ -22,6 +25,7 @@ public class VendingMachineCLI {
 	private static final String[] MAIN_MENU_OPTIONS = { MAIN_MENU_OPTION_DISPLAY_ITEMS, MAIN_MENU_OPTION_PURCHASE,
 			MAIN_MENU_OPTION_EXIT, MAIN_MENU_OPTION_SALES_REPORT };
 	private final Menu menu;
+	private static final Date date = new Date();
 
 	/** CONSTRUCTOR */
 	public VendingMachineCLI(Menu menu) {
@@ -51,6 +55,8 @@ public class VendingMachineCLI {
 					break;
 				case MAIN_MENU_OPTION_EXIT:	// Exit the program
 					System.out.println("Thank you for shopping the Vendo-Matic 800!");
+					Purchase.logFile("Exiting program.");
+					Purchase.logFile("Process ended normally.");
 					System.exit(0);
 				case (MAIN_MENU_OPTION_SALES_REPORT): // generate a sales report (call SalesReport.java)
 					/** TODO: OPTIONAL SALES REPORT CODE

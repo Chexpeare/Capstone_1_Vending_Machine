@@ -1,9 +1,7 @@
 package com.techelevator;
 
 import java.io.*;
-
 import com.techelevator.view.Menu;
-
 import java.util.Scanner;
 import java.util.Date;
 
@@ -47,7 +45,7 @@ public class Purchase {
 
     public void run () throws IOException {
         while (true) {
-            System.out.printf('\n' + "Current Money Provided: $" + "%.2f", getCurrentBalance());
+            System.out.printf('\n' + "Current Balance: $" + "%.2f", getCurrentBalance());
 //            System.out.println("\n");
             String choice = (String)menu.getChoiceFromOptions(MAIN_MENU_OPTIONS);
 
@@ -110,9 +108,10 @@ public class Purchase {
                 Chips chips = new Chips();
                 switch (itemSelected) {
                     case "Potato Crisps": // A1
-                        if (balance >= chips.getPotatoCrispsPrice() && (chips.getPotatoCrispsLeft() > 0)) {
+                        if ( (balance >= chips.getPotatoCrispsPrice()) && (chips.getPotatoCrispsLeft() > 0) ) {
                             chipsCounter++;
-                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - chips.getPotatoCrispsPrice()));
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                                    + "New Balance: $" + (balance - chips.getPotatoCrispsPrice()));
                             balance -= chips.getPotatoCrispsPrice();
                             totalSales += chips.getPotatoCrispsPrice();
                             itemsRemaining = chips.completeChipsPurchase(itemSelected);
@@ -124,9 +123,10 @@ public class Purchase {
                         }
                         break;
                     case "Grain Waves":
-                        if (balance >= chips.getGrainWavesPrice() && (chips.getGrainWavesLeft() > 0)) {
+                        if ( (balance >= chips.getGrainWavesPrice()) && (chips.getGrainWavesLeft() > 0) ) {
                             chipsCounter++;
-                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - chips.getGrainWavesPrice()));
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
+                                    + "New Balance: $" + (balance - chips.getGrainWavesPrice()));
                             balance -= chips.getGrainWavesPrice();
                             totalSales += chips.getGrainWavesPrice();
                             itemsRemaining = chips.completeChipsPurchase(itemSelected);
@@ -138,9 +138,10 @@ public class Purchase {
                         }
                         break;
                     case "Stackers":
-                        if (balance >= chips.getStackersPrice() && (chips.getStackersLeft() > 0)) {
+                        if ( (balance >= chips.getStackersPrice()) && (chips.getStackersLeft() > 0) ) {
                             chipsCounter++;
-                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - chips.getStackersPrice()));
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
+                                    + "New Balance: $" + (balance - chips.getStackersPrice()));
                             balance -= chips.getStackersPrice();
                             totalSales += chips.getStackersPrice();
                             itemsRemaining = chips.completeChipsPurchase(itemSelected);
@@ -152,9 +153,10 @@ public class Purchase {
                         }
                         break;
                     case "Cloud Popcorn":
-                        if (balance >= chips.getCloudPopcornPrice() && (chips.getCloudPopcornLeft() > 0)) {
+                        if ( (balance >= chips.getCloudPopcornPrice()) && (chips.getCloudPopcornLeft() > 0) ) {
                             chipsCounter++;
-                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - chips.getCloudPopcornPrice()));
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
+                                    + "New Balance: $" + (balance - chips.getCloudPopcornPrice()));
                             balance -= chips.getCloudPopcornPrice();
                             totalSales += chips.getCloudPopcornPrice();
                             itemsRemaining = chips.completeChipsPurchase(itemSelected);
@@ -173,9 +175,10 @@ public class Purchase {
                 Candy candy = new Candy();
                 switch (itemSelected) {
                     case "Moonpie":
-                        if (balance >= candy.getMoonPiePrice() && candy.getMoonpiesLeft() > 0) {
+                        if ( (balance >= candy.getMoonPiePrice()) && (candy.getMoonpiesLeft() > 0) ) {
                             candyCounter++;
-                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - candy.getMoonPiePrice()));
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
+                                    + "New Balance: $" + (balance - candy.getMoonPiePrice()));
                             balance -= candy.getMoonPiePrice();
                             totalSales += candy.getMoonPiePrice();
                             itemsRemaining = candy.completeCandyPurchase(itemSelected);
@@ -187,9 +190,10 @@ public class Purchase {
                         }
                         break;
                     case "Cowtales":
-                        if (balance >= candy.getCowtalesPrice() && (candy.getCowtalesLeft() > 0)) {
+                        if ( (balance >= candy.getCowtalesPrice()) && (candy.getCowtalesLeft() > 0) ) {
                             candyCounter++;
-                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - candy.getCowtalesPrice()));
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
+                                    + "New Balance: $" + (balance - candy.getCowtalesPrice()));
                             balance -= candy.getCowtalesPrice();
                             totalSales += candy.getCowtalesPrice();
                             itemsRemaining = candy.completeCandyPurchase(itemSelected);
@@ -201,9 +205,10 @@ public class Purchase {
                         }
                         break;
                     case "Crunchie":
-                        if (balance >= candy.getCrunchiesPrice() && (candy.getCrunchiesLeft() > 0)) {
+                        if ( (balance >= candy.getCrunchiesPrice()) && (candy.getCrunchiesLeft() > 0) ) {
                             candyCounter++;
-                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - candy.getCrunchiesPrice()));
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
+                                    + "New Balance: $" + (balance - candy.getCrunchiesPrice()));
                             balance -= candy.getCrunchiesPrice();
                             totalSales += candy.getCrunchiesPrice();
                             itemsRemaining = candy.completeCandyPurchase(itemSelected);
@@ -215,9 +220,10 @@ public class Purchase {
                         }
                         break;
                     case "Wonka Bar":
-                        if (balance >= candy.getWonkaBarsPrice() && (candy.getWonkaBarsLeft() > 0)) {
+                        if ( (balance >= candy.getWonkaBarsPrice()) && (candy.getWonkaBarsLeft() > 0) ) {
                             candyCounter++;
-                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - candy.getWonkaBarsPrice()));
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
+                                    + "New Balance: $" + (balance - candy.getWonkaBarsPrice()));
                             balance -= candy.getWonkaBarsPrice();
                             totalSales += candy.getWonkaBarsPrice();
                             itemsRemaining = candy.completeCandyPurchase(itemSelected);
@@ -236,9 +242,10 @@ public class Purchase {
                 Drinks drinks = new Drinks();
                 switch (itemSelected) {
                     case "Cola":
-                        if (balance >= drinks.getColaPrice() && (drinks.getColaLeft() > 0)) {
+                        if ( (balance >= drinks.getColaPrice()) && (drinks.getColaLeft() > 0) ) {
                             drinksCounter++;
-                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - drinks.getColaPrice()));
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
+                                    + "New Balance: $" + (balance - drinks.getColaPrice()));
                             balance -= drinks.getColaPrice();
                             totalSales += drinks.getColaPrice();
                             itemsRemaining = drinks.completeDrinksPurchase(itemSelected);
@@ -250,9 +257,10 @@ public class Purchase {
                         }
                         break;
                     case "Dr. Salt":
-                        if (balance >= drinks.getDrSaltPrice() && (drinks.getDrSaltLeft() > 0)) {
+                        if ( (balance >= drinks.getDrSaltPrice()) && (drinks.getDrSaltLeft() > 0) ) {
                             drinksCounter++;
-                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - drinks.getDrSaltPrice()));
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
+                                    + "New Balance: $" + (balance - drinks.getDrSaltPrice()));
                             balance -= drinks.getDrSaltPrice();
                             totalSales += drinks.getDrSaltPrice();
                             itemsRemaining = drinks.completeDrinksPurchase(itemSelected);
@@ -264,9 +272,10 @@ public class Purchase {
                         }
                         break;
                     case "Mountain Melter":
-                        if (balance >= drinks.getMountainMelterPrice() && (drinks.getMountainMelterLeft() > 0)) {
+                        if ( (balance >= drinks.getMountainMelterPrice()) && (drinks.getMountainMelterLeft() > 0) ) {
                             drinksCounter++;
-                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - drinks.getMountainMelterPrice()));
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
+                                    + "New Balance: $" + (balance - drinks.getMountainMelterPrice()));
                             balance -= drinks.getMountainMelterPrice();
                             totalSales += drinks.getMountainMelterPrice();
                             itemsRemaining = drinks.completeDrinksPurchase(itemSelected);
@@ -278,9 +287,10 @@ public class Purchase {
                         }
                         break;
                     case "Heavy":
-                        if (balance >= drinks.getHeavyPrice() && (drinks.getHeavyLeft() > 0)) {
+                        if ( (balance >= drinks.getHeavyPrice()) && (drinks.getHeavyLeft() > 0) ) {
                             drinksCounter++;
-                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - drinks.getHeavyPrice()));
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
+                                    + "New Balance: $" + (balance - drinks.getHeavyPrice()));
                             balance -= drinks.getHeavyPrice();
                             totalSales += drinks.getHeavyPrice();
                             itemsRemaining = drinks.completeDrinksPurchase(itemSelected);
@@ -299,9 +309,10 @@ public class Purchase {
                 Gum gum = new Gum();
                 switch (itemSelected) {
                     case "U-Chews":
-                        if (balance >= gum.getUChewsPrice() && (gum.getuChewsLeft() > 0)) {
+                        if ( (balance >= gum.getUChewsPrice()) && (gum.getuChewsLeft() > 0) ) {
                             gumCounter++;
-                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - gum.getUChewsPrice()));
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
+                                    + "New Balance: $" + (balance - gum.getUChewsPrice()));
                             balance -= gum.getUChewsPrice();
                             totalSales += gum.getUChewsPrice();
                             itemsRemaining = gum.completeGumPurchase(itemSelected);
@@ -313,9 +324,10 @@ public class Purchase {
                         }
                         break;
                     case "Little League Chew":
-                        if (balance >= gum.getLittleLeaugeChewPrice() && (gum.getLittleLeaugeChewLeft() > 0)) {
+                        if ( (balance >= gum.getLittleLeaugeChewPrice()) && (gum.getLittleLeaugeChewLeft() > 0) ) {
                             gumCounter++;
-                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - gum.getLittleLeaugeChewPrice()));
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
+                                    + "New Balance: $" + (balance - gum.getLittleLeaugeChewPrice()));
                             balance -= gum.getLittleLeaugeChewPrice();
                             totalSales += gum.getLittleLeaugeChewPrice();
                             itemsRemaining = gum.completeGumPurchase(itemSelected);
@@ -327,9 +339,10 @@ public class Purchase {
                         }
                         break;
                     case "Chiclets":
-                        if (balance >= gum.getChicletsPrice() && (gum.getChicletsLeft() > 0)) {
+                        if ( (balance >= gum.getChicletsPrice()) && (gum.getChicletsLeft() > 0) ) {
                             gumCounter++;
-                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - gum.getChicletsPrice()));
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
+                                    + "New Balance: $" + (balance - gum.getChicletsPrice()));
                             balance -= gum.getChicletsPrice();
                             totalSales += gum.getChicletsPrice();
                             itemsRemaining = gum.completeGumPurchase(itemSelected);
@@ -341,9 +354,10 @@ public class Purchase {
                         }
                         break;
                     case "Triplemint":
-                        if (balance >= gum.getTriplemintPrice() && (gum.getTriplemintLeft() > 0)) {
+                        if ( (balance >= gum.getTriplemintPrice()) && (gum.getTriplemintLeft() > 0) ) {
                             gumCounter++;
-                            logFile(itemSelected + " " + itemKey + " $" + balance + " $" + (balance - gum.getTriplemintPrice()));
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
+                                    + "New Balance: $" + (balance - gum.getTriplemintPrice()));
                             balance -= gum.getTriplemintPrice();
                             totalSales += gum.getTriplemintPrice();
                             itemsRemaining = gum.completeGumPurchase(itemSelected);
@@ -367,7 +381,7 @@ public class Purchase {
         double totalChange =0;
         double quarterRemainder;
         double dimesRemainder;
-        logFile("GIVE CHANGE $" + balance + " $" + "0.00");
+        logFile("Change given: $" + balance);
 
         if (balance > 0) {
             totalChange = balance;
@@ -383,8 +397,8 @@ public class Purchase {
         nickels = (int)(dimesRemainder/5);
         totalChange /= 100;
 
-        System.out.println("Transaction Completed" + '\n');
-        System.out.printf('\n' + "Your change is " + "$%.2f" + '\n' , totalChange);
+        System.out.println("\nTransaction Completed" + '\n');
+        System.out.printf("Your change is " + "$%.2f" + '\n' , totalChange);
         System.out.println("Quarters: " + quarters + "   " + "Dimes "+dimes+"   " +"Nickels " + nickels);
 
         for (int i = 0; i < candyCounter; i++) {

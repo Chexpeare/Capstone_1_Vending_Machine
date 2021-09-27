@@ -377,3 +377,163 @@ Mon Sep 27 10:42:14 EDT 2021 Heavy C4 $499.25 $497.75
 Mon Sep 27 10:42:14 EDT 2021 Crunchie B4 $497.75 $496.0
 Mon Sep 27 10:42:14 EDT 2021 Cloud Popcorn A4 $496.0 $492.35
 Mon Sep 27 10:42:14 EDT 2021 GIVE CHANGE $492.35 $0.00
+Mon Sep 27 11:30:10 EDT 2021 *****************************************************
+Mon Sep 27 11:30:10 EDT 2021 ******** New Launch Event: VendingMachineCLI ********
+Mon Sep 27 11:30:10 EDT 2021 *****************************************************
+Mon Sep 27 11:30:10 EDT 2021 $150.0  $150.0
+Mon Sep 27 11:30:10 EDT 2021 Potato Crisps A1 $150.0 $146.95
+Mon Sep 27 11:30:10 EDT 2021 Potato Crisps A1 $146.95 $143.89999694824218
+Mon Sep 27 11:30:10 EDT 2021 Potato Crisps A1 $143.9 $140.84999389648436
+Mon Sep 27 11:30:10 EDT 2021 Potato Crisps A1 $140.84999 $137.79999084472655
+Mon Sep 27 11:30:10 EDT 2021 Potato Crisps A1 $137.79999 $134.74998779296874
+Mon Sep 27 11:30:10 EDT 2021 Moonpie B1 $134.74998 $132.94998474121093
+Mon Sep 27 11:30:10 EDT 2021 Moonpie B1 $132.94998 $131.1499816894531
+Mon Sep 27 11:30:10 EDT 2021 Moonpie B1 $131.14998 $129.3499786376953
+Mon Sep 27 11:30:10 EDT 2021 Moonpie B1 $129.34998 $127.5499755859375
+Mon Sep 27 11:30:10 EDT 2021 Moonpie B1 $127.54997 $125.74997253417969
+Mon Sep 27 11:30:10 EDT 2021 Wonka Bar B3 $125.74997 $124.24996948242188
+Mon Sep 27 11:30:10 EDT 2021 Wonka Bar B3 $124.24997 $122.74996948242188
+Mon Sep 27 11:30:10 EDT 2021 Wonka Bar B3 $122.74997 $121.24996948242188
+Mon Sep 27 11:30:10 EDT 2021 Wonka Bar B3 $121.24997 $119.74996948242188
+Mon Sep 27 11:30:10 EDT 2021 Wonka Bar B3 $119.74997 $118.24996948242188
+Mon Sep 27 11:30:10 EDT 2021 GIVE CHANGE $118.24997 $0.00
+Mon Sep 27 11:43:21 EDT 2021 *****************************************************
+Mon Sep 27 11:43:21 EDT 2021 ******** New Launch Event: VendingMachineCLI ********
+Mon Sep 27 11:43:21 EDT 2021 *****************************************************
+Mon Sep 27 11:43:21 EDT 2021 $100.0  $100.0
+Mon Sep 27 11:43:21 EDT 2021 Wonka Bar B3 $100.0 $98.5
+Mon Sep 27 11:43:21 EDT 2021 Heavy C4 $98.5 $97.0
+Mon Sep 27 11:43:21 EDT 2021 GIVE CHANGE $97.0 $0.00
+Mon Sep 27 11:46:32 EDT 2021 *****************************************************
+Mon Sep 27 11:46:32 EDT 2021 ******** New Launch Event: VendingMachineCLI ********
+Mon Sep 27 11:46:32 EDT 2021 *****************************************************
+Mon Sep 27 11:46:32 EDT 2021 $5.0  $5.0
+Mon Sep 27 11:46:32 EDT 2021 A1|Potato Crisps| $5.0 $1.95
+Mon Sep 27 11:46:32 EDT 2021 GIVE CHANGE $1.95 $0.00
+Mon Sep 27 11:54:39 EDT 2021 *****************************************************
+Mon Sep 27 11:54:39 EDT 2021 ******** New Launch Event: VendingMachineCLI ********
+Mon Sep 27 11:54:39 EDT 2021 *****************************************************
+Mon Sep 27 11:54:39 EDT 2021 $335.0  $335.0
+Mon Sep 27 11:54:39 EDT 2021 Crunchie B4 $335.0 $333.25
+Mon Sep 27 11:54:39 EDT 2021 GIVE CHANGE $333.25 $0.00
+Mon Sep 27 11:56:39 EDT 2021 *****************************************************
+Mon Sep 27 11:56:39 EDT 2021 ******** New Launch Event: VendingMachineCLI ********
+Mon Sep 27 11:56:39 EDT 2021 *****************************************************
+Mon Sep 27 11:56:39 EDT 2021 $100.0  $100.0
+Mon Sep 27 11:56:39 EDT 2021 A1|Potato Crisps| $100.0 $96.95
+Mon Sep 27 11:56:39 EDT 2021 Stackers A2 $96.95 $95.49999694824218
+Mon Sep 27 11:56:39 EDT 2021 Grain Waves A3 $95.5 $92.75
+Mon Sep 27 11:56:39 EDT 2021 Cloud Popcorn A4 $92.75 $89.1
+Mon Sep 27 11:56:39 EDT 2021 GIVE CHANGE $89.1 $0.00
+Mon Sep 27 12:16:54 EDT 2021 *****************************************************
+Mon Sep 27 12:16:54 EDT 2021 ******** New Launch Event: VendingMachineCLI ********
+Mon Sep 27 12:16:54 EDT 2021 *****************************************************
+Mon Sep 27 12:16:54 EDT 2021 $100.0  $100.0
+Mon Sep 27 12:16:54 EDT 2021 A1|Potato Crisps|Current Balance: $100.0New Balance: $96.95
+Mon Sep 27 12:16:54 EDT 2021 A1|Potato Crisps|Current Balance: $96.95New Balance: $93.899994
+Mon Sep 27 12:16:54 EDT 2021 A1|Potato Crisps|Current Balance: $93.899994New Balance: $90.84999
+Mon Sep 27 12:16:54 EDT 2021 A1|Potato Crisps|Current Balance: $90.84999New Balance: $87.79999
+Mon Sep 27 12:16:54 EDT 2021 GIVE CHANGE $87.79999 $0.00
+Mon Sep 27 12:19:55 EDT 2021 *****************************************************
+Mon Sep 27 12:19:55 EDT 2021 ******** New Launch Event: VendingMachineCLI ********
+Mon Sep 27 12:19:55 EDT 2021 *****************************************************
+Mon Sep 27 12:19:55 EDT 2021 $100.0  $100.0
+Mon Sep 27 12:19:55 EDT 2021 A1|Potato Crisps|Current Balance: $100.0|New Balance: $96.95
+Mon Sep 27 12:19:55 EDT 2021 A1|Potato Crisps|Current Balance: $96.95|New Balance: $93.899994
+Mon Sep 27 12:19:55 EDT 2021 A1|Potato Crisps|Current Balance: $93.899994|New Balance: $90.84999
+Mon Sep 27 12:19:55 EDT 2021 A1|Potato Crisps|Current Balance: $90.84999|New Balance: $87.79999
+Mon Sep 27 12:19:55 EDT 2021 A1|Potato Crisps|Current Balance: $87.79999|New Balance: $84.749985
+Mon Sep 27 12:19:55 EDT 2021 GIVE CHANGE $84.749985 $0.00
+Mon Sep 27 12:24:00 EDT 2021 *****************************************************
+Mon Sep 27 12:24:00 EDT 2021 ******** New Launch Event: VendingMachineCLI ********
+Mon Sep 27 12:24:00 EDT 2021 *****************************************************
+Mon Sep 27 12:24:00 EDT 2021 $100.0  $100.0
+Mon Sep 27 12:24:00 EDT 2021 A1|Potato Crisps|Current Balance: $100.0|New Balance: $96.95
+Mon Sep 27 12:24:00 EDT 2021 A1|Potato Crisps|Current Balance: $96.94999694824219|New Balance: $93.89999694824219
+Mon Sep 27 12:24:00 EDT 2021 A1|Potato Crisps|Current Balance: $93.89999389648438|New Balance: $90.84999389648438
+Mon Sep 27 12:24:00 EDT 2021 A1|Potato Crisps|Current Balance: $90.84999084472656|New Balance: $87.79999084472657
+Mon Sep 27 12:24:00 EDT 2021 A1|Potato Crisps|Current Balance: $87.79998779296875|New Balance: $84.74998779296875
+Mon Sep 27 12:24:00 EDT 2021 GIVE CHANGE $84.749985 $0.00
+Mon Sep 27 12:29:23 EDT 2021 *****************************************************
+Mon Sep 27 12:29:23 EDT 2021 ******** New Launch Event: VendingMachineCLI ********
+Mon Sep 27 12:29:23 EDT 2021 *****************************************************
+Mon Sep 27 12:30:33 EDT 2021 *****************************************************
+Mon Sep 27 12:30:33 EDT 2021 ******** New Launch Event: VendingMachineCLI ********
+Mon Sep 27 12:30:33 EDT 2021 *****************************************************
+Mon Sep 27 12:30:33 EDT 2021 $100.0  $100.0
+Mon Sep 27 12:30:33 EDT 2021 A1|Potato Crisps|Current Balance: $100.0|New Balance: $96.95
+Mon Sep 27 12:30:33 EDT 2021 A1|Potato Crisps|Current Balance: $96.95|New Balance: $93.899994
+Mon Sep 27 12:30:33 EDT 2021 A1|Potato Crisps|Current Balance: $93.899994|New Balance: $90.84999
+Mon Sep 27 12:30:33 EDT 2021 A1|Potato Crisps|Current Balance: $90.84999|New Balance: $87.79999
+Mon Sep 27 12:30:33 EDT 2021 A1|Potato Crisps|Current Balance: $87.79999|New Balance: $84.749985
+Mon Sep 27 12:30:33 EDT 2021 GIVE CHANGE $84.749985 $0.00
+Mon Sep 27 12:42:11 EDT 2021 *****************************************************
+Mon Sep 27 12:42:11 EDT 2021 ******** New Launch Event: VendingMachineCLI ********
+Mon Sep 27 12:42:11 EDT 2021 *****************************************************
+Mon Sep 27 12:42:11 EDT 2021 $100.0  $100.0
+Mon Sep 27 12:42:11 EDT 2021 A1|Potato Crisps|Current Balance: $100.0|New Balance: $96.95
+Mon Sep 27 12:42:11 EDT 2021 A1|Potato Crisps|Current Balance: $96.95|New Balance: $93.89999694824219
+Mon Sep 27 12:42:11 EDT 2021 A1|Potato Crisps|Current Balance: $93.899994|New Balance: $90.84999389648438
+Mon Sep 27 12:42:11 EDT 2021 A1|Potato Crisps|Current Balance: $90.84999|New Balance: $87.79999084472657
+Mon Sep 27 12:42:11 EDT 2021 A1|Potato Crisps|Current Balance: $87.79999|New Balance: $84.74998779296875
+Mon Sep 27 12:42:11 EDT 2021 GIVE CHANGE $84.749985 $0.00
+Mon Sep 27 12:46:53 EDT 2021 *****************************************************
+Mon Sep 27 12:46:53 EDT 2021 ******** New Launch Event: VendingMachineCLI ********
+Mon Sep 27 12:46:53 EDT 2021 *****************************************************
+Mon Sep 27 12:46:53 EDT 2021 $100.0  $100.0
+Mon Sep 27 12:46:53 EDT 2021 A1|Potato Crisps|Current Balance: $%.2f100.0|New Balance: $96.95
+Mon Sep 27 12:46:53 EDT 2021 GIVE CHANGE $96.95 $0.00
+Mon Sep 27 12:48:51 EDT 2021 *****************************************************
+Mon Sep 27 12:48:51 EDT 2021 ******** New Launch Event: VendingMachineCLI ********
+Mon Sep 27 12:48:51 EDT 2021 *****************************************************
+Mon Sep 27 12:48:51 EDT 2021 $100.0  $100.0
+Mon Sep 27 12:48:51 EDT 2021 A1|Potato Crisps|Current Balance: $%.2f100.0|New Balance: $96.95
+Mon Sep 27 12:48:51 EDT 2021 Change given: $96.95
+Mon Sep 27 12:50:41 EDT 2021 *****************************************************
+Mon Sep 27 12:50:41 EDT 2021 ******** New Launch Event: VendingMachineCLI ********
+Mon Sep 27 12:50:41 EDT 2021 *****************************************************
+Mon Sep 27 12:50:41 EDT 2021 $100.0  $100.0
+Mon Sep 27 12:50:41 EDT 2021 A1|Potato Crisps|Current Balance: $100.0|New Balance: $96.95
+Mon Sep 27 12:50:41 EDT 2021 A2|Stackers|Current Balance: $96.95|New Balance: $95.49999694824218
+Mon Sep 27 12:50:41 EDT 2021 A3|Grain Waves|Current Balance: $95.5|New Balance: $92.75
+Mon Sep 27 12:50:41 EDT 2021 A4|Cloud Popcorn|Current Balance: $92.75|New Balance: $89.1
+Mon Sep 27 12:50:41 EDT 2021 Change given: $89.1
+Mon Sep 27 12:51:57 EDT 2021 *****************************************************
+Mon Sep 27 12:51:57 EDT 2021 ******** New Launch Event: VendingMachineCLI ********
+Mon Sep 27 12:51:57 EDT 2021 *****************************************************
+Mon Sep 27 12:51:57 EDT 2021 $100.0  $100.0
+Mon Sep 27 12:51:57 EDT 2021 A1|Potato Crisps|Current Balance: $100.0|New Balance: $96.95
+Mon Sep 27 12:51:57 EDT 2021 A1|Potato Crisps|Current Balance: $96.95|New Balance: $93.89999694824219
+Mon Sep 27 12:51:57 EDT 2021 Change given: $93.899994
+Mon Sep 27 13:20:52 EDT 2021 *****************************************************
+Mon Sep 27 13:20:52 EDT 2021 ******** New Launch Event: VendingMachineCLI ********
+Mon Sep 27 13:20:52 EDT 2021 *****************************************************
+Mon Sep 27 13:20:52 EDT 2021 $100.0  $100.0
+Mon Sep 27 13:20:52 EDT 2021 A1|Potato Crisps|Current Balance: $100.0|New Balance: $96.95
+Mon Sep 27 13:20:52 EDT 2021 Change given: $96.95
+Mon Sep 27 13:20:52 EDT 2021 
+Process ended normally.
+Mon Sep 27 13:23:02 EDT 2021 *****************************************************
+Mon Sep 27 13:23:02 EDT 2021 ******** New Launch Event: VendingMachineCLI ********
+Mon Sep 27 13:23:02 EDT 2021 *****************************************************
+Mon Sep 27 13:23:02 EDT 2021 $100.0  $100.0
+Mon Sep 27 13:23:02 EDT 2021 A1|Potato Crisps|Current Balance: $100.0|New Balance: $96.95
+Mon Sep 27 13:23:02 EDT 2021 Change given: $96.95
+Mon Sep 27 13:23:02 EDT 2021 
+Mon Sep 27 13:23:02 EDT 2021 Process ended normally.
+Mon Sep 27 13:24:15 EDT 2021 *****************************************************
+Mon Sep 27 13:24:15 EDT 2021 ******** New Launch Event: VendingMachineCLI ********
+Mon Sep 27 13:24:15 EDT 2021 *****************************************************
+Mon Sep 27 13:24:15 EDT 2021 $100.0  $100.0
+Mon Sep 27 13:24:15 EDT 2021 A1|Potato Crisps|Current Balance: $100.0|New Balance: $96.95
+Mon Sep 27 13:24:15 EDT 2021 Change given: $96.95
+Mon Sep 27 13:24:15 EDT 2021 Exiting program.
+Mon Sep 27 13:24:15 EDT 2021 Mon Sep 27 13:24:15 EDT 2021 Process ended normally.
+Mon Sep 27 13:24:51 EDT 2021 *****************************************************
+Mon Sep 27 13:24:51 EDT 2021 ******** New Launch Event: VendingMachineCLI ********
+Mon Sep 27 13:24:51 EDT 2021 *****************************************************
+Mon Sep 27 13:24:51 EDT 2021 $100.0  $100.0
+Mon Sep 27 13:24:51 EDT 2021 A1|Potato Crisps|Current Balance: $100.0|New Balance: $96.95
+Mon Sep 27 13:24:51 EDT 2021 Change given: $96.95
+Mon Sep 27 13:24:51 EDT 2021 Exiting program.
+Mon Sep 27 13:24:51 EDT 2021 Process ended normally.
