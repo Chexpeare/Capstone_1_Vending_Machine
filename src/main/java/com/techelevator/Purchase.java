@@ -1,12 +1,10 @@
 package com.techelevator;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.*;
+
 import com.techelevator.view.Menu;
-import java.io.FileWriter;
-import java.io.IOException;
+
 import java.util.Scanner;
-import java.io.PrintWriter;
 import java.util.Date;
 
 /** Purchase.java - Pushed from Backup */
@@ -17,8 +15,8 @@ public class Purchase {
     private static final String[] MAIN_MENU_OPTIONS = { MAIN_MENU_OPTION_FEED_MONEY,
             MAIN_MENU_OPTION_SELECT_PRODUCT ,
             MAIN_MENU_OPTION_FINISH_TRANSACTION};
-    private float balance;
-    private double change;
+    private static final String logFilePath = "capstone/log.txt";
+    private static final Date date = new Date();
     private static double totalSales = 0.0;
     private static int chipsCounter = 0;
     private static int candyCounter = 0;
@@ -29,15 +27,15 @@ public class Purchase {
     private String itemType;
     private String itemKey;
     //    private String lowKey;
+    private float balance;
+    private double change;
     private int nickels;
     private int dimes;
     private int quarters;
-    private static final File logFile = new File("/Users/chexpeare/MeritAmerica/PairProgrammingBackup/capstone/log.txt");
-    private static final Date date = new Date();
 
     protected double deposit;
     protected int itemsRemaining;
-    protected String soldOutString = " are SOLD OUT.\nPlease select another product or press [3] to finish your transaction.";
+    protected String soldOutString = " SOLD OUT.\nPlease select another product or press [3] to finish your transaction.";
     protected String addFundsString = "Please add additional funds or press [3] to finish your transaction.";
 
     /** CONSTRUCTOR */
@@ -407,9 +405,14 @@ public class Purchase {
         chipsCounter = 0;
     }
 
-    /** WRITE TO: log.txt*/
-    private static void logFile(String message) throws IOException {
-        try (PrintWriter logWriter = new PrintWriter(new FileWriter(logFile, true))) {
+    /** METHODS: logFile() WRITE TO log.txt
+     * uses getCanonicalPath();
+     */
+    protected static void logFile(String message) throws IOException {
+        File outputFile = new File(logFilePath);
+        String canonical = outputFile.getCanonicalPath();
+
+        try ( PrintWriter logWriter = new PrintWriter(new FileWriter(String.valueOf(canonical), true)) ) {
             logWriter.println(date + " " + message);
         } catch (IOException e) {
             System.out.println("Unable to write to file.");

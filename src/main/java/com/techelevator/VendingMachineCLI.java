@@ -3,10 +3,7 @@ package com.techelevator;
 import com.techelevator.view.Menu;
 import java.io.IOException;
 
-/** VendingMachineCLI.java - Pushed from Backup
-=======
 /** VendingMachineCLI.java
->>>>>>> dae5f8c7ae83dfd16920e71defb03c79363e96a7
  * 		1. Instantiates a menu object and a vending machine calling that menu object.
  * 		2. Run method passes menu options to menu.getChoiceFromOptions().
  * 		3. Menu returns user's choice and this vending machine then instantiates a class
@@ -23,7 +20,7 @@ public class VendingMachineCLI {
 	private static final String MAIN_MENU_OPTION_EXIT = "Exit";
 	private static final String MAIN_MENU_OPTION_SALES_REPORT = "";
 	private static final String[] MAIN_MENU_OPTIONS = { MAIN_MENU_OPTION_DISPLAY_ITEMS, MAIN_MENU_OPTION_PURCHASE,
-														MAIN_MENU_OPTION_EXIT, MAIN_MENU_OPTION_SALES_REPORT };
+			MAIN_MENU_OPTION_EXIT, MAIN_MENU_OPTION_SALES_REPORT };
 	private final Menu menu;
 
 	/** CONSTRUCTOR */
@@ -32,6 +29,8 @@ public class VendingMachineCLI {
 	}
 
 	public static void main(String[] args) throws IOException {
+		logLaunchComments(args);
+
 		Menu menu = new Menu(System.in, System.out);
 		VendingMachineCLI cli = new VendingMachineCLI(menu);
 		cli.run();
@@ -66,5 +65,13 @@ public class VendingMachineCLI {
 			}
 		}
 	}
+
+	/** METHODS */
+	private static void logLaunchComments(String[] args) throws IOException {
+		Purchase.logFile("*****************************************************");
+		Purchase.logFile("******** New Launch Event: VendingMachineCLI ********");
+		Purchase.logFile("*****************************************************");
+	}
+
 }
 
