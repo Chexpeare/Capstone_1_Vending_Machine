@@ -16,6 +16,7 @@ public class Purchase {
     private static final String logFilePath = "capstone/log.txt";
     private static final Date date = new Date();
     private static double totalSales = 0.0;
+    private static double itemPrice = 0.0;
     private static int chipsCounter = 0;
     private static int candyCounter = 0;
     private static int drinksCounter = 0;
@@ -110,60 +111,64 @@ public class Purchase {
                     case "Potato Crisps": // A1
                         if ( (balance >= chips.getPotatoCrispsPrice()) && (chips.getPotatoCrispsLeft() > 0) ) {
                             chipsCounter++;
+                            itemPrice = chips.getPotatoCrispsPrice();
                             logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
-                                    + "New Balance: $" + (balance - chips.getPotatoCrispsPrice()));
-                            balance -= chips.getPotatoCrispsPrice();
-                            totalSales += chips.getPotatoCrispsPrice();
+                                    + "New Balance: $" + (balance - itemPrice));
+                            balance -= itemPrice;
+                            totalSales += itemPrice;
                             itemsRemaining = chips.completeChipsPurchase(itemSelected);
                             itemsRemainingFormat();
-                        } else if (getCurrentBalance() <= balance) {
+                        } else if ( (balance < itemPrice) && (chips.getPotatoCrispsLeft() > 0) ) {
                             addFundsFormat();
-                        } else if (itemsRemaining == 0) {
+                        } else if ( (balance >= itemPrice) && (chips.getPotatoCrispsLeft() == 0) ) {
                             soldOutFormat();
                         }
                         break;
                     case "Grain Waves":
                         if ( (balance >= chips.getGrainWavesPrice()) && (chips.getGrainWavesLeft() > 0) ) {
                             chipsCounter++;
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
-                                    + "New Balance: $" + (balance - chips.getGrainWavesPrice()));
-                            balance -= chips.getGrainWavesPrice();
-                            totalSales += chips.getGrainWavesPrice();
+                            itemPrice = chips.getGrainWavesPrice();
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                                    + "New Balance: $" + (balance - itemPrice));
+                            balance -= itemPrice;
+                            totalSales += itemPrice;
                             itemsRemaining = chips.completeChipsPurchase(itemSelected);
                             itemsRemainingFormat();
-                        } else if (getCurrentBalance() <= balance) {
+                        } else if ( (balance < itemPrice) && (chips.getGrainWavesLeft() > 0) ) {
                             addFundsFormat();
-                        } else if (itemsRemaining == 0) {
+                        } else if ( (balance >= itemPrice) && (chips.getGrainWavesLeft() == 0) ) {
                             soldOutFormat();
                         }
                         break;
                     case "Stackers":
                         if ( (balance >= chips.getStackersPrice()) && (chips.getStackersLeft() > 0) ) {
                             chipsCounter++;
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
-                                    + "New Balance: $" + (balance - chips.getStackersPrice()));
-                            balance -= chips.getStackersPrice();
-                            totalSales += chips.getStackersPrice();
+                            itemPrice = chips.getStackersPrice();
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                                    + "New Balance: $" + (balance - itemPrice));
+                            balance -= itemPrice;
+                            totalSales += itemPrice;
                             itemsRemaining = chips.completeChipsPurchase(itemSelected);
                             itemsRemainingFormat();
-                        } else if (getCurrentBalance() <= balance) {
+                        } else if ( (balance < itemPrice) && (chips.getStackersLeft() > 0) ) {
                             addFundsFormat();
-                        } else if (itemsRemaining == 0) {
+                        } else if ( (balance >= itemPrice) && (chips.getStackersLeft() == 0) ) {
                             soldOutFormat();
                         }
                         break;
                     case "Cloud Popcorn":
                         if ( (balance >= chips.getCloudPopcornPrice()) && (chips.getCloudPopcornLeft() > 0) ) {
                             chipsCounter++;
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
-                                    + "New Balance: $" + (balance - chips.getCloudPopcornPrice()));
-                            balance -= chips.getCloudPopcornPrice();
-                            totalSales += chips.getCloudPopcornPrice();
+                            itemPrice = chips.getCloudPopcornPrice();
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                                    + "New Balance: $" + (balance - itemPrice));
+                            balance -= itemPrice;
+                            totalSales += itemPrice;
                             itemsRemaining = chips.completeChipsPurchase(itemSelected);
                             itemsRemainingFormat();
-                        } else if (getCurrentBalance() <= balance) {
+                        } else if ( (balance < itemPrice) && (chips.getCloudPopcornLeft() > 0) ) {
                             addFundsFormat();
-                        } else if (itemsRemaining == 0) {
+                        } else if ( (balance >= itemPrice) && (chips.getCloudPopcornLeft() == 0) ) {
                             soldOutFormat();
                         }
                         break;
@@ -177,60 +182,64 @@ public class Purchase {
                     case "Moonpie":
                         if ( (balance >= candy.getMoonPiePrice()) && (candy.getMoonpiesLeft() > 0) ) {
                             candyCounter++;
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
-                                    + "New Balance: $" + (balance - candy.getMoonPiePrice()));
-                            balance -= candy.getMoonPiePrice();
-                            totalSales += candy.getMoonPiePrice();
+                            itemPrice = candy.getMoonPiePrice();
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                                    + "New Balance: $" + (balance - itemPrice));
+                            balance -= itemPrice;
+                            totalSales += itemPrice;
                             itemsRemaining = candy.completeCandyPurchase(itemSelected);
                             itemsRemainingFormat();
-                        } else if (getCurrentBalance() <= balance) {
+                        } else if ( (balance < itemPrice) && (candy.getMoonpiesLeft() > 0) ) {
                             addFundsFormat();
-                        } else if (itemsRemaining == 0) {
+                        } else if ( (balance >= itemPrice) && (candy.getMoonpiesLeft() == 0) ) {
                             soldOutFormat();
                         }
                         break;
                     case "Cowtales":
                         if ( (balance >= candy.getCowtalesPrice()) && (candy.getCowtalesLeft() > 0) ) {
                             candyCounter++;
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
-                                    + "New Balance: $" + (balance - candy.getCowtalesPrice()));
-                            balance -= candy.getCowtalesPrice();
-                            totalSales += candy.getCowtalesPrice();
+                            itemPrice = candy.getCowtalesPrice();
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                                    + "New Balance: $" + (balance - itemPrice));
+                            balance -= itemPrice;
+                            totalSales += itemPrice;
                             itemsRemaining = candy.completeCandyPurchase(itemSelected);
                             itemsRemainingFormat();
-                        } else if (getCurrentBalance() <= balance) {
+                        } else if ( (balance < itemPrice) && (candy.getCowtalesLeft() > 0) ) {
                             addFundsFormat();
-                        } else if (itemsRemaining == 0) {
+                        } else if ( (balance >= itemPrice) && (candy.getCowtalesLeft() == 0) ) {
                             soldOutFormat();
                         }
                         break;
                     case "Crunchie":
                         if ( (balance >= candy.getCrunchiesPrice()) && (candy.getCrunchiesLeft() > 0) ) {
                             candyCounter++;
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
-                                    + "New Balance: $" + (balance - candy.getCrunchiesPrice()));
-                            balance -= candy.getCrunchiesPrice();
-                            totalSales += candy.getCrunchiesPrice();
+                            itemPrice = candy.getCrunchiesPrice();
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                                    + "New Balance: $" + (balance - itemPrice));
+                            balance -= itemPrice;
+                            totalSales += itemPrice;
                             itemsRemaining = candy.completeCandyPurchase(itemSelected);
                             itemsRemainingFormat();
-                        } else if (getCurrentBalance() <= balance) {
+                        } else if ( (balance < itemPrice) && (candy.getCrunchiesLeft() > 0) ) {
                             addFundsFormat();
-                        } else if (itemsRemaining == 0) {
+                        } else if ( (balance >= itemPrice) && (candy.getCrunchiesLeft() == 0) ) {
                             soldOutFormat();
                         }
                         break;
                     case "Wonka Bar":
                         if ( (balance >= candy.getWonkaBarsPrice()) && (candy.getWonkaBarsLeft() > 0) ) {
                             candyCounter++;
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
-                                    + "New Balance: $" + (balance - candy.getWonkaBarsPrice()));
-                            balance -= candy.getWonkaBarsPrice();
-                            totalSales += candy.getWonkaBarsPrice();
+                            itemPrice = candy.getWonkaBarsPrice();
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                                    + "New Balance: $" + (balance - itemPrice));
+                            balance -= itemPrice;
+                            totalSales += itemPrice;
                             itemsRemaining = candy.completeCandyPurchase(itemSelected);
                             itemsRemainingFormat();
-                        } else if (getCurrentBalance() <= balance) {
+                        } else if ( (balance < itemPrice) && (candy.getWonkaBarsLeft() > 0) ) {
                             addFundsFormat();
-                        } else if (itemsRemaining == 0) {
+                        } else if ( (balance >= itemPrice) && (candy.getWonkaBarsLeft() == 0) ) {
                             soldOutFormat();
                         }
                         break;
@@ -244,60 +253,64 @@ public class Purchase {
                     case "Cola":
                         if ( (balance >= drinks.getColaPrice()) && (drinks.getColaLeft() > 0) ) {
                             drinksCounter++;
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
-                                    + "New Balance: $" + (balance - drinks.getColaPrice()));
-                            balance -= drinks.getColaPrice();
-                            totalSales += drinks.getColaPrice();
+                            itemPrice = drinks.getColaPrice();
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                                    + "New Balance: $" + (balance - itemPrice));
+                            balance -= itemPrice;
+                            totalSales += itemPrice;
                             itemsRemaining = drinks.completeDrinksPurchase(itemSelected);
                             itemsRemainingFormat();
-                        } else if (getCurrentBalance() <= balance) {
+                        } else if ( (balance < itemPrice) && (drinks.getColaLeft() > 0) ) {
                             addFundsFormat();
-                        } else if (itemsRemaining == 0) {
+                        } else if ( (balance >= itemPrice) && (drinks.getColaLeft() == 0) ) {
                             soldOutFormat();
                         }
                         break;
                     case "Dr. Salt":
                         if ( (balance >= drinks.getDrSaltPrice()) && (drinks.getDrSaltLeft() > 0) ) {
                             drinksCounter++;
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
-                                    + "New Balance: $" + (balance - drinks.getDrSaltPrice()));
-                            balance -= drinks.getDrSaltPrice();
-                            totalSales += drinks.getDrSaltPrice();
+                            itemPrice = drinks.getDrSaltPrice();
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                                    + "New Balance: $" + (balance - itemPrice));
+                            balance -= itemPrice;
+                            totalSales += itemPrice;
                             itemsRemaining = drinks.completeDrinksPurchase(itemSelected);
                             itemsRemainingFormat();
-                        } else if (getCurrentBalance() <= balance) {
+                        } else if ( (balance < itemPrice) && (drinks.getDrSaltLeft() > 0) ) {
                             addFundsFormat();
-                        } else if (itemsRemaining == 0) {
+                        } else if ( (balance >= itemPrice) && (drinks.getDrSaltLeft() == 0) ) {
                             soldOutFormat();
                         }
                         break;
                     case "Mountain Melter":
                         if ( (balance >= drinks.getMountainMelterPrice()) && (drinks.getMountainMelterLeft() > 0) ) {
                             drinksCounter++;
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
-                                    + "New Balance: $" + (balance - drinks.getMountainMelterPrice()));
-                            balance -= drinks.getMountainMelterPrice();
-                            totalSales += drinks.getMountainMelterPrice();
+                            itemPrice = drinks.getMountainMelterPrice();
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                                    + "New Balance: $" + (balance - itemPrice));
+                            balance -= itemPrice;
+                            totalSales += itemPrice;
                             itemsRemaining = drinks.completeDrinksPurchase(itemSelected);
                             itemsRemainingFormat();
-                        } else if (getCurrentBalance() <= balance) {
+                        } else if ( (balance < itemPrice) && (drinks.getMountainMelterLeft() > 0) ) {
                             addFundsFormat();
-                        } else if (itemsRemaining == 0) {
+                        } else if ( (balance >= itemPrice) && (drinks.getMountainMelterLeft() == 0) ) {
                             soldOutFormat();
                         }
                         break;
                     case "Heavy":
                         if ( (balance >= drinks.getHeavyPrice()) && (drinks.getHeavyLeft() > 0) ) {
                             drinksCounter++;
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
-                                    + "New Balance: $" + (balance - drinks.getHeavyPrice()));
-                            balance -= drinks.getHeavyPrice();
-                            totalSales += drinks.getHeavyPrice();
+                            itemPrice = drinks.getHeavyPrice();
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                                    + "New Balance: $" + (balance - itemPrice));
+                            balance -= itemPrice;
+                            totalSales += itemPrice;
                             itemsRemaining = drinks.completeDrinksPurchase(itemSelected);
                             itemsRemainingFormat();
-                        } else if (getCurrentBalance() <= balance) {
+                        } else if ( (balance < itemPrice) && (drinks.getHeavyLeft() > 0) ) {
                             addFundsFormat();
-                        } else if (itemsRemaining == 0) {
+                        } else if ( (balance >= itemPrice) && (drinks.getHeavyLeft() == 0) ) {
                             soldOutFormat();
                         }
                         break;
@@ -311,60 +324,64 @@ public class Purchase {
                     case "U-Chews":
                         if ( (balance >= gum.getUChewsPrice()) && (gum.getuChewsLeft() > 0) ) {
                             gumCounter++;
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
-                                    + "New Balance: $" + (balance - gum.getUChewsPrice()));
-                            balance -= gum.getUChewsPrice();
-                            totalSales += gum.getUChewsPrice();
+                            itemPrice = gum.getUChewsPrice();
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                                    + "New Balance: $" + (balance - itemPrice));
+                            balance -= itemPrice;
+                            totalSales += itemPrice;
                             itemsRemaining = gum.completeGumPurchase(itemSelected);
                             itemsRemainingFormat();
-                        } else if (getCurrentBalance() <= balance) {
+                        } else if ( (balance < itemPrice) && (gum.getuChewsLeft() > 0) ) {
                             addFundsFormat();
-                        } else if (itemsRemaining == 0) {
+                        } else if ( (balance >= itemPrice) && (gum.getuChewsLeft() == 0) ) {
                             soldOutFormat();
                         }
                         break;
                     case "Little League Chew":
                         if ( (balance >= gum.getLittleLeaugeChewPrice()) && (gum.getLittleLeaugeChewLeft() > 0) ) {
                             gumCounter++;
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
-                                    + "New Balance: $" + (balance - gum.getLittleLeaugeChewPrice()));
-                            balance -= gum.getLittleLeaugeChewPrice();
-                            totalSales += gum.getLittleLeaugeChewPrice();
+                            itemPrice = gum.getLittleLeaugeChewPrice();
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                                    + "New Balance: $" + (balance - itemPrice));
+                            balance -= itemPrice;
+                            totalSales += itemPrice;
                             itemsRemaining = gum.completeGumPurchase(itemSelected);
                             itemsRemainingFormat();
-                        } else if (getCurrentBalance() <= balance) {
+                        } else if ( (balance < itemPrice) && (gum.getLittleLeaugeChewLeft() > 0) ) {
                             addFundsFormat();
-                        } else if (itemsRemaining == 0) {
+                        } else if ( (balance >= itemPrice) && (gum.getLittleLeaugeChewLeft() == 0) ) {
                             soldOutFormat();
                         }
                         break;
                     case "Chiclets":
                         if ( (balance >= gum.getChicletsPrice()) && (gum.getChicletsLeft() > 0) ) {
                             gumCounter++;
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
-                                    + "New Balance: $" + (balance - gum.getChicletsPrice()));
-                            balance -= gum.getChicletsPrice();
-                            totalSales += gum.getChicletsPrice();
+                            itemPrice = gum.getChicletsPrice();
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                                    + "New Balance: $" + (balance - itemPrice));
+                            balance -= itemPrice;
+                            totalSales += itemPrice;
                             itemsRemaining = gum.completeGumPurchase(itemSelected);
                             itemsRemainingFormat();
-                        } else if (getCurrentBalance() <= balance) {
+                        } else if ( (balance < itemPrice) && (gum.getChicletsLeft() > 0) ) {
                             addFundsFormat();
-                        } else if (itemsRemaining == 0) {
+                        } else if ( (balance >= itemPrice) && (gum.getChicletsLeft() == 0) ) {
                             soldOutFormat();
                         }
                         break;
                     case "Triplemint":
                         if ( (balance >= gum.getTriplemintPrice()) && (gum.getTriplemintLeft() > 0) ) {
                             gumCounter++;
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: $" + balance  + "|"
-                                    + "New Balance: $" + (balance - gum.getTriplemintPrice()));
-                            balance -= gum.getTriplemintPrice();
-                            totalSales += gum.getTriplemintPrice();
+                            itemPrice = gum.getTriplemintPrice();
+                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                                    + "New Balance: $" + (balance - itemPrice));
+                            balance -= itemPrice;
+                            totalSales += itemPrice;
                             itemsRemaining = gum.completeGumPurchase(itemSelected);
                             itemsRemainingFormat();
-                        } else if (getCurrentBalance() <= balance) {
+                        } else if ( (balance < itemPrice) && (gum.getTriplemintLeft() > 0) ) {
                             addFundsFormat();
-                        } else if (itemsRemaining == 0) {
+                        } else if ( (balance >= itemPrice) && (gum.getTriplemintLeft() == 0) ) {
                             soldOutFormat();
                         }
                         break;
