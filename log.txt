@@ -784,3 +784,17 @@ Tue Sep 28 01:15:29 EDT 2021 B2|Cowtales|Current Balance: $934.0|New Balance: $9
 Tue Sep 28 01:15:29 EDT 2021 Change given: $932.5
 Tue Sep 28 01:15:29 EDT 2021 Exiting program.
 Tue Sep 28 01:15:29 EDT 2021 Process ended normally.
+Tue Sep 28 02:59:37 EDT 2021 *****************************************************
+Tue Sep 28 02:59:37 EDT 2021 ******** New Launch Event: VendingMachineCLI ********
+Tue Sep 28 02:59:37 EDT 2021 *****************************************************
+Tue Sep 28 02:59:37 EDT 2021 $10.0  $10.0
+Tue Sep 28 02:59:37 EDT 2021 D1|U-Chews|Current Balance: $10.0|New Balance: $9.15
+Tue Sep 28 02:59:37 EDT 2021 D1|U-Chews|Current Balance: $9.15|New Balance: $8.299999618530274
+Tue Sep 28 02:59:37 EDT 2021 D1|U-Chews|Current Balance: $8.299999|New Balance: $7.449999237060547
+Tue Sep 28 02:59:37 EDT 2021 D1|U-Chews|Current Balance: $7.4499993|New Balance: $6.599999332427979
+Tue Sep 28 02:59:37 EDT 2021 D1|U-Chews|Current Balance: $6.5999994|New Balance: $5.7499994277954105
+Tue Sep 28 02:59:37 EDT 2021 Change given: $5.7499995
+Tue Sep 28 02:59:37 EDT 2021 $5.0  $5.0
+Tue Sep 28 02:59:37 EDT 2021 C2|Dr. Salt|Current Balance: $5.0|New Balance: $3.5
+Tue Sep 28 02:59:37 EDT 2021 C2|Dr. Salt|Current Balance: $3.5|New Balance: $2.0
+Tue Sep 28 02:59:37 EDT 2021 C2|Dr. Salt|Current Balance: $2.0|New Balance: $0.5
