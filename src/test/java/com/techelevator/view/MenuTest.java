@@ -28,8 +28,8 @@ public class MenuTest {
 
 		menu.getChoiceFromOptions(options);
 
-		String expected = System.lineSeparator() + "1) " + options[0].toString() + System.lineSeparator() + "2) " + options[1].toString() + System.lineSeparator() + "3) "
-				+ options[2].toString() + System.lineSeparator() + System.lineSeparator() + "Please choose an option >>> ";
+		String expected = System.lineSeparator() + "[1] " + options[0].toString() + System.lineSeparator() + "[2] " + options[1].toString() + System.lineSeparator() + "[3] "
+				+ options[2].toString() + System.lineSeparator() + System.lineSeparator() + "Please make a selection: ";
 		Assert.assertEquals(expected, output.toString());
 	}
 
@@ -51,8 +51,8 @@ public class MenuTest {
 
 		menu.getChoiceFromOptions(options);
 
-		String menuDisplay = System.lineSeparator() + "1) " + options[0].toString() + System.lineSeparator() + "2) " + options[1].toString() + System.lineSeparator() + "3) "
-				+ options[2].toString() + System.lineSeparator() + System.lineSeparator() + "Please choose an option >>> ";
+		String menuDisplay = System.lineSeparator() + "[1] " + options[0].toString() + System.lineSeparator() + "[2] " + options[1].toString() + System.lineSeparator() + "[3] "
+				+ options[2].toString() + System.lineSeparator() + System.lineSeparator() + "Please make a selection: ";
 
 		String expected = menuDisplay + System.lineSeparator() + "*** 4 is not a valid option ***" + System.lineSeparator() + System.lineSeparator() + menuDisplay;
 
@@ -66,8 +66,8 @@ public class MenuTest {
 
 		menu.getChoiceFromOptions(options);
 
-		String menuDisplay = System.lineSeparator() + "1) " + options[0].toString() + System.lineSeparator() + "2) " + options[1].toString() + System.lineSeparator() + "3) "
-				+ options[2].toString() + System.lineSeparator() + System.lineSeparator() + "Please choose an option >>> ";
+		String menuDisplay = System.lineSeparator() + "[1] " + options[0].toString() + System.lineSeparator() + "[2] " + options[1].toString() + System.lineSeparator() + "[3] "
+				+ options[2].toString() + System.lineSeparator() + System.lineSeparator() + "Please make a selection: ";
 
 		String expected = menuDisplay + System.lineSeparator() + "*** 0 is not a valid option ***" + System.lineSeparator() + System.lineSeparator() + menuDisplay;
 
@@ -81,8 +81,8 @@ public class MenuTest {
 
 		menu.getChoiceFromOptions(options);
 
-		String menuDisplay = System.lineSeparator() + "1) " + options[0].toString() + System.lineSeparator() + "2) " + options[1].toString() + System.lineSeparator() + "3) "
-				+ options[2].toString() + System.lineSeparator() + System.lineSeparator() + "Please choose an option >>> ";
+		String menuDisplay = System.lineSeparator() + "[1] " + options[0].toString() + System.lineSeparator() + "[2] " + options[1].toString() + System.lineSeparator() + "[3] "
+				+ options[2].toString() + System.lineSeparator() + System.lineSeparator() + "Please make a selection: ";
 
 		String expected = menuDisplay + System.lineSeparator() + "*** Mickey Mouse is not a valid option ***" + System.lineSeparator() + System.lineSeparator() + menuDisplay;
 
