@@ -13,7 +13,7 @@ public class Inventory {
     private final Map<String, String> itemSelectedMap = new HashMap<>();
     private final String inventoryFile = "capstone/vendingmachine.csv";
     /*  getCanonicalPath()
-     *  platform specific method: directory path needs to conform to MacOS (/)or PC (\\)
+     *  platform specific method: directory path needs to conform to Unix:MacOS (/) or PC (\\)
      *  private final String inventoryFile = "C:\\Users\\18325\\Desktop\\CapStone Backup\\capstone\\vendingmachine.csv";
      *  private final String inventoryFile = "/Users/chexpeare/MeritAmerica/PairProgrammingBackup/capstone/vendingmachine.csv";
      */
@@ -33,7 +33,8 @@ public class Inventory {
 
         while (currentLine != null) {
             String[] splitItemLine = currentLine.split("\\|");
-            System.out.print(splitItemLine[0] + "  " +  splitItemLine[1] + "  $" + splitItemLine[2]);
+            System.out.print(  splitItemLine[0] + "|" +  splitItemLine[1] + "|"
+                            +  splitItemLine[2] + "|" +  splitItemLine[3]);
 
 //          INVENTORY: CHIPS
             if(splitItemLine[3].equals("Chip")) {
