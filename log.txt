@@ -157,8 +157,6 @@ Thu Sep 23 23:56:35 EDT 2021 GIVE CHANGE $0.95 $0.00
 Fri Sep 24 00:00:42 EDT 2021 $5.0  $5.0
 Fri Sep 24 00:00:42 EDT 2021 Cowtales B2 $5.0 $3.5
 Fri Sep 24 00:00:42 EDT 2021 GIVE CHANGE $3.5 $0.00
-<<<<<<< HEAD
-<<<<<<< HEAD
 Fri Sep 24 01:32:22 EDT 2021 $5.0  $5.0
 Fri Sep 24 01:32:22 EDT 2021 Potato Crisps A1 $5.0 $1.9500000000000002
 Fri Sep 24 01:32:22 EDT 2021 GIVE CHANGE $1.95 $0.00
@@ -178,9 +176,6 @@ Sat Sep 25 15:03:59 EDT 2021 Potato Crisps A1 $46.95 $43.900000762939456
 Sat Sep 25 15:03:59 EDT 2021 Moonpie B1 $43.9 $42.10000152587891
 Sat Sep 25 15:03:59 EDT 2021 Moonpie B1 $42.100002 $40.30000228881836
 Sat Sep 25 15:03:59 EDT 2021 GIVE CHANGE $40.300003 $0.00
-=======
-=======
->>>>>>> a99b83a7beb861fb71ba865b97339ddde5ab17b0
 Sat Sep 25 18:48:12 EDT 2021 $5.0  $5.0
 Sat Sep 25 18:48:12 EDT 2021 Potato Crisps A1 $5.0 $1.9500000000000002
 Sat Sep 25 18:57:56 EDT 2021 $5.0  $5.0
@@ -263,11 +258,8 @@ Sat Sep 25 21:20:36 EDT 2021 $5.0  $5.0
 Sat Sep 25 21:20:36 EDT 2021 Potato Crisps A1 $5.0 $1.9500000000000002
 Sat Sep 25 21:22:20 EDT 2021 $5.0  $5.0
 Sat Sep 25 21:22:20 EDT 2021 Potato Crisps A1 $5.0 $1.9500000000000002
-<<<<<<< HEAD
-<<<<<<< HEAD
 Sat Sep 25 23:32:08 EDT 2021 $5.0  $5.0
 Sat Sep 25 23:32:08 EDT 2021 Potato Crisps A1 $5.0 $1.9500000000000002
->>>>>>> 4ec6dcf (Update: Update: Adjusted code for sold out product and funds replenishment)
 Sun Sep 26 00:25:07 EDT 2021 $2.0  $2.0
 Sun Sep 26 00:25:07 EDT 2021 Stackers A2 $2.0 $0.55
 Sun Sep 26 00:38:40 EDT 2021 $5.0  $5.0
@@ -276,11 +268,9 @@ Sun Sep 26 00:44:12 EDT 2021 $5.0  $5.0
 Sun Sep 26 00:44:42 EDT 2021 $5.0  $5.0
 Sun Sep 26 00:44:42 EDT 2021 Wonka Bar B3 $5.0 $3.5
 Sun Sep 26 00:44:42 EDT 2021 Potato Crisps A1 $3.5 $0.4500000000000002
-=======
 Sun Sep 26 01:10:10 EDT 2021 $5.0  $5.0
 Sun Sep 26 01:10:10 EDT 2021 Moonpie B1 $5.0 $3.2
 Sun Sep 26 01:10:10 EDT 2021 Potato Crisps A1 $3.2 $0.150000047683716
->>>>>>> 5ffeb2f (Update: attempting to rebuild lost updates to Inventory.getCanonicalPath())
 Sun Sep 26 01:20:39 EDT 2021 $5.0  $5.0
 Sun Sep 26 01:20:39 EDT 2021 Potato Crisps A1 $5.0 $1.9500000000000002
 Sun Sep 26 01:20:39 EDT 2021 Chiclets D3 $1.95 $1.2000000476837158
@@ -364,8 +354,6 @@ Sun Sep 26 02:33:12 EDT 2021 Grain Waves A3 $959.19995 $956.449951171875
 Sun Sep 26 02:33:12 EDT 2021 Cloud Popcorn A4 $956.44995 $952.799951171875
 Sun Sep 26 02:33:12 EDT 2021 Cloud Popcorn A4 $952.7999 $949.1499267578125
 Sun Sep 26 02:33:12 EDT 2021 Cloud Popcorn A4 $949.1499 $945.49990234375
-=======
->>>>>>> a99b83a7beb861fb71ba865b97339ddde5ab17b0
 Mon Sep 27 10:05:16 EDT 2021 $150.0  $150.0
 Mon Sep 27 10:05:16 EDT 2021 Potato Crisps A1 $150.0 $146.95
 Mon Sep 27 10:05:16 EDT 2021 Heavy C4 $146.95 $145.4499969482422
@@ -790,3 +778,17 @@ Tue Sep 28 16:18:08 EDT 2021 ***************************************************
 Tue Sep 28 16:41:33 EDT 2021 *****************************************************
 Tue Sep 28 16:41:33 EDT 2021 ******** New Launch Event: VendingMachineCLI ********
 Tue Sep 28 16:41:33 EDT 2021 *****************************************************
+Tue Sep 28 02:59:37 EDT 2021 *****************************************************
+Tue Sep 28 02:59:37 EDT 2021 ******** New Launch Event: VendingMachineCLI ********
+Tue Sep 28 02:59:37 EDT 2021 *****************************************************
+Tue Sep 28 02:59:37 EDT 2021 $10.0  $10.0
+Tue Sep 28 02:59:37 EDT 2021 D1|U-Chews|Current Balance: $10.0|New Balance: $9.15
+Tue Sep 28 02:59:37 EDT 2021 D1|U-Chews|Current Balance: $9.15|New Balance: $8.299999618530274
+Tue Sep 28 02:59:37 EDT 2021 D1|U-Chews|Current Balance: $8.299999|New Balance: $7.449999237060547
+Tue Sep 28 02:59:37 EDT 2021 D1|U-Chews|Current Balance: $7.4499993|New Balance: $6.599999332427979
+Tue Sep 28 02:59:37 EDT 2021 D1|U-Chews|Current Balance: $6.5999994|New Balance: $5.7499994277954105
+Tue Sep 28 02:59:37 EDT 2021 Change given: $5.7499995
+Tue Sep 28 02:59:37 EDT 2021 $5.0  $5.0
+Tue Sep 28 02:59:37 EDT 2021 C2|Dr. Salt|Current Balance: $5.0|New Balance: $3.5
+Tue Sep 28 02:59:37 EDT 2021 C2|Dr. Salt|Current Balance: $3.5|New Balance: $2.0
+Tue Sep 28 02:59:37 EDT 2021 C2|Dr. Salt|Current Balance: $2.0|New Balance: $0.5

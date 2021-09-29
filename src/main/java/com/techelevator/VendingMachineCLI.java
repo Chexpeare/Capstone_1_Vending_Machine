@@ -4,8 +4,6 @@ import com.techelevator.view.Menu;
 import java.io.IOException;
 import java.util.Date;
 
-//import static jdk.tools.jaotc.LogPrinter.logFile;
-
 /** VendingMachineCLI.java
  * 		This CLI (Command Line Interface):
  * 		1. Instantiates a menu object and a vending machine object calling that menu object.
