@@ -159,7 +159,7 @@ public class Inventory {
         } else if (unitsRemaining == 0) {
             System.out.println("|" + "\033[31m" + unitsRemaining + "\033[32m");
         } else {
-            System.out.println("|" + "\033[33m" + unitsRemaining + "\033[32m");
+            System.out.println("|" + "\033[34m" + unitsRemaining + "\033[32m");
         }
 
     }
