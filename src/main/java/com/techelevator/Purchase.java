@@ -433,8 +433,8 @@ public class Purchase {
         totalChange /= 100;
 
         System.out.println("\nTransaction Completed" + '\n');
-        System.out.printf("Your change is " + "$%.2f" + '\n' , totalChange);
-        System.out.println("Quarters: " + quarters + "   " + "Dimes "+dimes+"   " +"Nickels " + nickels);
+        System.out.printf("\033[32m" + "Your change is " + "$%.2f" + "\033[38m" + '\n' , totalChange);
+        System.out.println("Quarters: " + quarters + "   " + "Dimes "+dimes+"   " +"Nickels " + nickels + "\n");
 
         for (int i = 0; i < candyCounter; i++) {
             System.out.println("Munch Munch, Yum!");

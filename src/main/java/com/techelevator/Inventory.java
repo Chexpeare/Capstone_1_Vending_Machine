@@ -45,19 +45,19 @@ public class Inventory {
                 switch (splitItemLine[1]) {
                     case "Potato Crisps":
                         unitsRemaining = chips.getPotatoCrispsLeft();
-                        itemSelectedPrint(unitsRemaining);
+                        totalRemainingColor(unitsRemaining);
                         break;
                     case "Stackers":
                         unitsRemaining = chips.getStackersLeft();
-                        itemSelectedPrint(unitsRemaining);
+                        totalRemainingColor(unitsRemaining);
                         break;
                     case "Grain Waves":
                         unitsRemaining = chips.getGrainWavesLeft();
-                        itemSelectedPrint(unitsRemaining);
+                        totalRemainingColor(unitsRemaining);
                         break;
                     case "Cloud Popcorn":
                         unitsRemaining = chips.getCloudPopcornLeft();
-                        itemSelectedPrint(unitsRemaining);
+                        totalRemainingColor(unitsRemaining);
                         break;
                 }
             }
@@ -69,19 +69,19 @@ public class Inventory {
                 switch (splitItemLine[1]) {
                     case "Moonpie":
                         unitsRemaining = candy.getMoonpiesLeft();
-                        itemSelectedPrint(unitsRemaining);
+                        totalRemainingColor(unitsRemaining);
                         break;
                     case "Cowtales":
                         unitsRemaining = candy.getCowtalesLeft();
-                        itemSelectedPrint(unitsRemaining);
+                        totalRemainingColor(unitsRemaining);
                         break;
                     case "Wonka Bar":
                         unitsRemaining = candy.getWonkaBarsLeft();
-                        itemSelectedPrint(unitsRemaining);
+                        totalRemainingColor(unitsRemaining);
                         break;
                     case "Crunchie":
                         unitsRemaining = candy.getCrunchiesLeft();
-                        itemSelectedPrint(unitsRemaining);
+                        totalRemainingColor(unitsRemaining);
                         break;
                 }
             }
@@ -93,19 +93,19 @@ public class Inventory {
                 switch (splitItemLine[1]) {
                     case "Cola":
                         unitsRemaining = drinks.getColaLeft();
-                        itemSelectedPrint(unitsRemaining);
+                        totalRemainingColor(unitsRemaining);
                         break;
                     case "Dr. Salt":
                         unitsRemaining = drinks.getDrSaltLeft();
-                        itemSelectedPrint(unitsRemaining);
+                        totalRemainingColor(unitsRemaining);
                         break;
                     case "Mountain Melter":
                         unitsRemaining = drinks.getMountainMelterLeft();
-                        itemSelectedPrint(unitsRemaining);
+                        totalRemainingColor(unitsRemaining);
                         break;
                     case "Heavy":
                         unitsRemaining = drinks.getHeavyLeft();
-                        itemSelectedPrint(unitsRemaining);
+                        totalRemainingColor(unitsRemaining);
                         break;
                 }
             }
@@ -117,19 +117,19 @@ public class Inventory {
                 switch (splitItemLine[1]) {
                     case "U-Chews":
                         unitsRemaining = gum.getuChewsLeft();
-                        itemSelectedPrint(unitsRemaining);
+                        totalRemainingColor(unitsRemaining);
                         break;
                     case "Little League Chew":
                         unitsRemaining = gum.getLittleLeaugeChewLeft();
-                        itemSelectedPrint(unitsRemaining);
+                        totalRemainingColor(unitsRemaining);
                         break;
                     case "Chiclets":
                         unitsRemaining = gum.getChicletsLeft();
-                        itemSelectedPrint(unitsRemaining);
+                        totalRemainingColor(unitsRemaining);
                         break;
                     case "Triplemint":
                         unitsRemaining = gum.getTriplemintLeft();
-                        itemSelectedPrint(unitsRemaining);
+                        totalRemainingColor(unitsRemaining);
                         break;
                 }
             }
@@ -153,11 +153,13 @@ public class Inventory {
         }
     }
 
-    private void itemSelectedPrint(int unitsRemaining) {
+    private void totalRemainingColor(int unitsRemaining) {
         if (unitsRemaining == 5) {
             System.out.println("|" + unitsRemaining);
-        } else {
+        } else if (unitsRemaining == 0) {
             System.out.println("|" + "\033[31m" + unitsRemaining + "\033[32m");
+        } else {
+            System.out.println("|" + "\033[33m" + unitsRemaining + "\033[32m");
         }
 
     }

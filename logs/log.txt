@@ -100,3 +100,44 @@ Tue Sep 28 23:19:20 EDT 2021 Process ended normally.
 >09/29/21 14:46:18 : A1|Potato Crisps|Current Balance: $5.0|New Balance: $1.9500000000000002
 >09/29/21 14:46:26 : D3|Chiclets|Current Balance: $1.95|New Balance: $1.2000000476837158
 >09/29/21 14:46:29 : GIVE CHANGE: $1.2
+>09/29/21 15:14:55 : FEED MONEY: $10.0  $10.0
+>09/29/21 15:15:00 : A1|Potato Crisps|Current Balance: $10.0|New Balance: $6.95
+>09/29/21 15:15:04 : D4|Triplemint|Current Balance: $6.95|New Balance: $6.199999809265137
+>09/29/21 15:15:09 : C2|Dr. Salt|Current Balance: $6.2|New Balance: $4.699999809265137
+>09/29/21 15:15:14 : B3|Wonka Bar|Current Balance: $4.7|New Balance: $3.1999998092651367
+>09/29/21 15:15:20 : A1|Potato Crisps|Current Balance: $3.1999998|New Balance: $0.1499998092651369
+>09/29/21 15:15:47 : GIVE CHANGE: $0.14999981
+>09/29/21 15:18:07 : FEED MONEY: $100.0  $100.0
+>09/29/21 15:18:16 : D1|U-Chews|Current Balance: $100.0|New Balance: $99.15
+>09/29/21 15:18:23 : B3|Wonka Bar|Current Balance: $99.15|New Balance: $97.6500015258789
+>09/29/21 15:18:27 : B3|Wonka Bar|Current Balance: $97.65|New Balance: $96.1500015258789
+>09/29/21 15:18:28 : B3|Wonka Bar|Current Balance: $96.15|New Balance: $94.6500015258789
+>09/29/21 15:18:31 : B3|Wonka Bar|Current Balance: $94.65|New Balance: $93.1500015258789
+>09/29/21 15:18:34 : B3|Wonka Bar|Current Balance: $93.15|New Balance: $91.6500015258789
+>09/29/21 15:18:50 : A1|Potato Crisps|Current Balance: $91.65|New Balance: $88.60000152587891
+>09/29/21 15:18:58 : C4|Heavy|Current Balance: $88.6|New Balance: $87.0999984741211
+>09/29/21 15:19:02 : C4|Heavy|Current Balance: $87.1|New Balance: $85.5999984741211
+>09/29/21 15:19:04 : GIVE CHANGE: $85.6
+>09/29/21 15:21:21 : FEED MONEY: $100.0  $100.0
+>09/29/21 15:21:28 : A1|Potato Crisps|Current Balance: $100.0|New Balance: $96.95
+>09/29/21 15:21:36 : C1|Cola|Current Balance: $96.95|New Balance: $95.69999694824219
+>09/29/21 15:21:39 : B1|Moonpie|Current Balance: $95.7|New Balance: $93.89999694824219
+>09/29/21 15:21:45 : D1|U-Chews|Current Balance: $93.899994|New Balance: $93.04999389648438
+>09/29/21 15:22:02 : C3|Mountain Melter|Current Balance: $93.049995|New Balance: $91.54999542236328
+>09/29/21 15:22:15 : C3|Mountain Melter|Current Balance: $91.549995|New Balance: $90.04999542236328
+>09/29/21 15:22:17 : C3|Mountain Melter|Current Balance: $90.049995|New Balance: $88.54999542236328
+>09/29/21 15:22:19 : C3|Mountain Melter|Current Balance: $88.549995|New Balance: $87.04999542236328
+>09/29/21 15:22:21 : C3|Mountain Melter|Current Balance: $87.049995|New Balance: $85.54999542236328
+>09/29/21 15:22:34 : GIVE CHANGE: $85.549995
+>09/29/21 15:23:00 : Exiting program. Process ended normally.
+>09/29/21 15:25:18 : FEED MONEY: $100.0  $100.0
+>09/29/21 15:25:26 : A1|Potato Crisps|Current Balance: $100.0|New Balance: $96.95
+>09/29/21 15:25:29 : B1|Moonpie|Current Balance: $96.95|New Balance: $95.14999694824219
+>09/29/21 15:25:32 : C1|Cola|Current Balance: $95.149994|New Balance: $93.89999389648438
+>09/29/21 15:25:34 : D1|U-Chews|Current Balance: $93.899994|New Balance: $93.04999389648438
+>09/29/21 15:25:49 : D4|Triplemint|Current Balance: $93.049995|New Balance: $92.29999542236328
+>09/29/21 15:25:51 : D4|Triplemint|Current Balance: $92.299995|New Balance: $91.54999542236328
+>09/29/21 15:25:52 : D4|Triplemint|Current Balance: $91.549995|New Balance: $90.79999542236328
+>09/29/21 15:25:55 : D4|Triplemint|Current Balance: $90.799995|New Balance: $90.04999542236328
+>09/29/21 15:25:58 : D4|Triplemint|Current Balance: $90.049995|New Balance: $89.29999542236328
+>09/29/21 15:26:17 : GIVE CHANGE: $89.299995
