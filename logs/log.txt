@@ -141,3 +141,14 @@ Tue Sep 28 23:19:20 EDT 2021 Process ended normally.
 >09/29/21 15:25:55 : D4|Triplemint|Current Balance: $90.799995|New Balance: $90.04999542236328
 >09/29/21 15:25:58 : D4|Triplemint|Current Balance: $90.049995|New Balance: $89.29999542236328
 >09/29/21 15:26:17 : GIVE CHANGE: $89.299995
+>09/29/21 17:21:27 : FEED MONEY: $10.0  $10.0
+>09/29/21 17:21:38 : B1|Moonpie|Current Balance: $10.0|New Balance: $8.2
+>09/29/21 17:21:40 : C1|Cola|Current Balance: $8.2|New Balance: $6.949999809265137
+>09/29/21 17:21:43 : D1|U-Chews|Current Balance: $6.95|New Balance: $6.099999809265137
+>09/29/21 17:21:48 : D4|Triplemint|Current Balance: $6.1|New Balance: $5.349999904632568
+>09/29/21 17:21:50 : D4|Triplemint|Current Balance: $5.35|New Balance: $4.599999904632568
+>09/29/21 17:21:51 : D4|Triplemint|Current Balance: $4.6|New Balance: $3.8499999046325684
+>09/29/21 17:21:53 : D4|Triplemint|Current Balance: $3.85|New Balance: $3.0999999046325684
+>09/29/21 17:21:54 : D4|Triplemint|Current Balance: $3.1|New Balance: $2.3499999046325684
+>09/29/21 17:22:02 : GIVE CHANGE: $2.35
+>09/29/21 17:22:06 : Exiting program. Process ended normally.
