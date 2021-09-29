@@ -5,6 +5,21 @@ import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
+/**
+ * Menu.java
+ * Implements (InputStream input, OutputStream output): Java byte stream abstract classes that describe input/output.
+ * Java defines two types of streams: byte and character.
+ *
+ * Byte streams:
+ * 1. handle input and output of bytes.
+ * 2. used when reading or writing binary data.
+ *
+ * Character streams provide a convenient means for handling input/output of characters.
+ * They use Unicode and, therefore, can be internationalized.
+ *
+ * https://www.demo2s.com/java/java-outputstream-copy-inputstream-input-outputstream-output.html
+ */
+
 public class Menu {
 	private final Scanner in;
 	private final PrintWriter out;
