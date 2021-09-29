@@ -56,8 +56,7 @@ public class VendingMachineCLI {
 					break;
 				case MAIN_MENU_OPTION_EXIT:	// Exit the program
 					System.out.println("Thank you for shopping the Vendo-Matic 800!");
-					TELog.log("Exiting program.");
-					TELog.log("Process ended normally.");
+					TELog.log("Exiting program. Process ended normally.");
 					System.exit(0);
 				case (MAIN_MENU_OPTION_SALES_REPORT): // generate a sales report (call SalesReport.java)
 					/** TODO: OPTIONAL SALES REPORT CODE
@@ -76,9 +75,6 @@ public class VendingMachineCLI {
 
 	/** METHODS */
 	private static void logLaunchComments(String[] args) throws IOException {
-		TELog.log("*****************************************************");
-		TELog.log("******** New Launch Event: VendingMachineCLI ********");
-		TELog.log("*****************************************************");
 	}
 
 }
