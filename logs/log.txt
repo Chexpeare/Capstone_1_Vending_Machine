@@ -1,0 +1,64 @@
+Tue Sep 28 23:13:44 EDT 2021 *****************************************************
+Tue Sep 28 23:13:44 EDT 2021 ******** New Launch Event: VendingMachineCLI ********
+Tue Sep 28 23:13:44 EDT 2021 *****************************************************
+Tue Sep 28 23:13:44 EDT 2021 Change given: $0.0
+Tue Sep 28 23:13:44 EDT 2021 Exiting program.
+Tue Sep 28 23:13:44 EDT 2021 Process ended normally.
+Tue Sep 28 23:15:21 EDT 2021 *****************************************************
+Tue Sep 28 23:15:21 EDT 2021 ******** New Launch Event: VendingMachineCLI ********
+Tue Sep 28 23:15:21 EDT 2021 *****************************************************
+Tue Sep 28 23:15:21 EDT 2021 $1000.0  $1000.0
+Tue Sep 28 23:15:21 EDT 2021 A1|Potato Crisps|Current Balance: $1000.0|New Balance: $996.95
+Tue Sep 28 23:15:21 EDT 2021 A1|Potato Crisps|Current Balance: $996.95|New Balance: $993.9000122070313
+Tue Sep 28 23:15:21 EDT 2021 A1|Potato Crisps|Current Balance: $993.9|New Balance: $990.8500244140625
+Tue Sep 28 23:15:21 EDT 2021 A1|Potato Crisps|Current Balance: $990.85004|New Balance: $987.8000366210938
+Tue Sep 28 23:15:21 EDT 2021 A1|Potato Crisps|Current Balance: $987.80005|New Balance: $984.750048828125
+Tue Sep 28 23:15:21 EDT 2021 Change given: $984.75006
+Tue Sep 28 23:15:21 EDT 2021 $1000.0  $1000.0
+Tue Sep 28 23:15:21 EDT 2021 Change given: $1000.0
+Tue Sep 28 23:19:20 EDT 2021 *****************************************************
+Tue Sep 28 23:19:20 EDT 2021 ******** New Launch Event: VendingMachineCLI ********
+Tue Sep 28 23:19:20 EDT 2021 *****************************************************
+Tue Sep 28 23:19:20 EDT 2021 Change given: $0.0
+Tue Sep 28 23:19:20 EDT 2021 Exiting program.
+Tue Sep 28 23:19:20 EDT 2021 Process ended normally.
+09/29/21 10:25:26 : $500.0  $500.0
+09/29/21 10:25:34 : A1|Potato Crisps|Current Balance: $500.0|New Balance: $496.95
+09/29/21 10:25:37 : A2|Stackers|Current Balance: $496.95|New Balance: $495.50001220703126
+09/29/21 10:25:39 : A3|Grain Waves|Current Balance: $495.5|New Balance: $492.75
+09/29/21 10:25:42 : A4|Cloud Popcorn|Current Balance: $492.75|New Balance: $489.1
+09/29/21 10:25:50 : B1|Moonpie|Current Balance: $489.1|New Balance: $487.3000061035156
+09/29/21 10:25:55 : B2|Cowtales|Current Balance: $487.30002|New Balance: $485.8000183105469
+09/29/21 10:25:59 : B3|Wonka Bar|Current Balance: $485.80002|New Balance: $484.3000183105469
+09/29/21 10:26:02 : B4|Crunchie|Current Balance: $484.30002|New Balance: $482.5500183105469
+09/29/21 10:26:46 : Change given: $482.55002
+09/29/21 10:26:47 : Exiting program.
+09/29/21 10:26:47 : Process ended normally.
+09/29/21 10:30:27 : FEED MONEY: $5.0  $5.0
+09/29/21 10:30:34 : D1|U-Chews|Current Balance: $5.0|New Balance: $4.15
+09/29/21 10:30:38 : D2|Little League Chew|Current Balance: $4.15|New Balance: $3.2000000953674315
+09/29/21 10:30:40 : D3|Chiclets|Current Balance: $3.2|New Balance: $2.450000047683716
+09/29/21 10:30:42 : D4|Triplemint|Current Balance: $2.45|New Balance: $1.7000000476837158
+09/29/21 10:30:44 : Change given: $1.7
+09/29/21 10:30:46 : Exiting program. Process ended normally.
+>09/29/21 10:34:10 : FEED MONEY: $5.0  $5.0
+>09/29/21 10:34:17 : C3|Mountain Melter|Current Balance: $5.0|New Balance: $3.5
+>09/29/21 10:34:20 : A1|Potato Crisps|Current Balance: $3.5|New Balance: $0.4500000000000002
+>09/29/21 10:34:37 : Change given: $0.45
+>09/29/21 10:34:59 : FEED MONEY: $5.0  $5.0
+>09/29/21 10:35:02 : D2|Little League Chew|Current Balance: $5.0|New Balance: $4.05
+>09/29/21 10:35:54 : A1|Potato Crisps|Current Balance: $4.05|New Balance: $1.0000001907348635
+>09/29/21 10:35:56 : Change given: $1.0000002
+>09/29/21 10:35:59 : Exiting program. Process ended normally.
+>09/29/21 10:40:15 : FEED MONEY: $5.0  $5.0
+>09/29/21 10:40:24 : B4|Crunchie|Current Balance: $5.0|New Balance: $3.25
+>09/29/21 10:40:47 : D3|Chiclets|Current Balance: $3.25|New Balance: $2.5
+>09/29/21 10:40:52 : D2|Little League Chew|Current Balance: $2.5|New Balance: $1.55
+>09/29/21 10:40:55 : D4|Triplemint|Current Balance: $1.55|New Balance: $0.7999999523162842
+>09/29/21 10:41:05 : FEED MONEY: $10.0  $10.8
+>09/29/21 10:41:20 : C3|Mountain Melter|Current Balance: $10.8|New Balance: $9.300000190734863
+>09/29/21 10:41:25 : B4|Crunchie|Current Balance: $9.3|New Balance: $7.550000190734863
+>09/29/21 10:41:28 : GIVE CHANGE: $7.55
+>09/29/21 10:41:32 : Exiting program. Process ended normally.
+>09/29/21 10:46:00 : Exiting program. Process ended normally.
+>09/29/21 10:47:35 : Exiting program. Process ended normally.
