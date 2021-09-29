@@ -14,5 +14,15 @@ public class PurchaseTest {
 
     private ByteArrayOutputStream output;
 
+    @Before
+    public void setup() {
+        output = new ByteArrayOutputStream();
+    }
+
+    @Test
+    public void test() {
+
+    }
+
 
 }
