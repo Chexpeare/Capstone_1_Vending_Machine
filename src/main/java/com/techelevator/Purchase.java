@@ -1,11 +1,11 @@
 package com.techelevator;
 
-import java.io.*;
-
 import com.techelevator.util.TELog;
 import com.techelevator.view.Menu;
-import java.util.Scanner;
+
+import java.io.IOException;
 import java.util.Date;
+import java.util.Scanner;
 
 /** Purchase.java - Pushed from Backup */
 public class Purchase {

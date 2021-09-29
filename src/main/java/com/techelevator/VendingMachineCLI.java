@@ -1,7 +1,9 @@
 package com.techelevator;
 
+import com.techelevator.util.SalesReport;
 import com.techelevator.util.TELog;
 import com.techelevator.view.Menu;
+
 import java.io.IOException;
 import java.util.Date;
 
@@ -63,8 +65,9 @@ public class VendingMachineCLI {
 					 the total sales since the machine was started. The name of the file must include the date and
 					 time so each sales report is uniquely named.
 					 */
-					SalesReport salesReport = new SalesReport(menu);
-					salesReport.displayReport();
+//					SalesReport salesReport = new SalesReport(menu);
+					SalesReport.log("***** Vendo-Matic 800 Sales Report *****");
+					SalesReport.displayReport();
 
 					System.exit(0);   // break;
 			}
