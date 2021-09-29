@@ -76,7 +76,7 @@ public class Purchase {
 
         if (deposit > 0) {
             balance += deposit;
-            TELog.log("$"+ deposit + "  " + "$" + balance);
+            TELog.log("FEED MONEY: $"+ deposit + "  " + "$" + balance);
         } else {
             System.out.println("\nInvalid Deposit");
             TELog.log("INVALID DEPOSIT");
@@ -416,7 +416,7 @@ public class Purchase {
         double totalChange =0;
         double quarterRemainder;
         double dimesRemainder;
-        TELog.log("Change given: $" + balance);
+        TELog.log("GIVE CHANGE: $" + balance);
 
         if (balance > 0) {
             totalChange = balance;
