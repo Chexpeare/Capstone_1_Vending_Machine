@@ -1,11 +1,12 @@
 package com.techelevator;
 
+import java.io.*;
+
+import com.techelevator.util.SalesReport;
 import com.techelevator.util.TELog;
 import com.techelevator.view.Menu;
-
-import java.io.IOException;
-import java.util.Date;
 import java.util.Scanner;
+import java.util.Date;
 
 /** Purchase.java - Pushed from Backup */
 public class Purchase {
@@ -124,6 +125,7 @@ public class Purchase {
                         } else if ( (balance >= itemPrice) && (chips.getPotatoCrispsLeft() == 0) ) {
                             soldOutFormat();
                         }
+                        SalesReport.log(itemSelected + "|" + itemPrice + "|" + chipsCounter + "|" + totalSales);
                         break;
                     case "Grain Waves":
                         itemPrice = chips.getGrainWavesPrice();
@@ -140,6 +142,7 @@ public class Purchase {
                         } else if ( (balance >= itemPrice) && (chips.getGrainWavesLeft() == 0) ) {
                             soldOutFormat();
                         }
+                        SalesReport.log(itemSelected + "|" + itemPrice + "|" + chipsCounter + "|" + totalSales);
                         break;
                     case "Stackers":
                         itemPrice = chips.getStackersPrice();
@@ -156,6 +159,7 @@ public class Purchase {
                         } else if ( (balance >= itemPrice) && (chips.getStackersLeft() == 0) ) {
                             soldOutFormat();
                         }
+                        SalesReport.log(itemSelected + "|" + itemPrice + "|" + chipsCounter + "|" + totalSales);
                         break;
                     case "Cloud Popcorn":
                         itemPrice = chips.getCloudPopcornPrice();
@@ -172,6 +176,7 @@ public class Purchase {
                         } else if ( (balance >= itemPrice) && (chips.getCloudPopcornLeft() == 0) ) {
                             soldOutFormat();
                         }
+                        SalesReport.log(itemSelected + "|" + itemPrice + "|" + chipsCounter + "|" + totalSales);
                         break;
                 }
                 break;
@@ -195,6 +200,7 @@ public class Purchase {
                         } else if ( (balance >= itemPrice) && (candy.getMoonpiesLeft() == 0) ) {
                             soldOutFormat();
                         }
+                        SalesReport.log(itemSelected + "|" + itemPrice + "|" + candyCounter + "|" + totalSales);
                         break;
                     case "Cowtales":
                         itemPrice = candy.getCowtalesPrice();
@@ -211,6 +217,7 @@ public class Purchase {
                         } else if ( (balance >= itemPrice) && (candy.getCowtalesLeft() == 0) ) {
                             soldOutFormat();
                         }
+                        SalesReport.log(itemSelected + "|" + itemPrice + "|" + candyCounter + "|" + totalSales);
                         break;
                     case "Crunchie":
                         itemPrice = candy.getCrunchiesPrice();
@@ -227,6 +234,7 @@ public class Purchase {
                         } else if ( (balance >= itemPrice) && (candy.getCrunchiesLeft() == 0) ) {
                             soldOutFormat();
                         }
+                        SalesReport.log(itemSelected + "|" + itemPrice + "|" + candyCounter + "|" + totalSales);
                         break;
                     case "Wonka Bar":
                         itemPrice = candy.getWonkaBarsPrice();
@@ -243,6 +251,7 @@ public class Purchase {
                         } else if ( (balance >= itemPrice) && (candy.getWonkaBarsLeft() == 0) ) {
                             soldOutFormat();
                         }
+                        SalesReport.log(itemSelected + "|" + itemPrice + "|" + candyCounter + "|" + totalSales);
                         break;
                 }
                 break;
@@ -266,6 +275,7 @@ public class Purchase {
                         } else if ( (balance >= itemPrice) && (drinks.getColaLeft() == 0) ) {
                             soldOutFormat();
                         }
+                        SalesReport.log(itemSelected + "|" + itemPrice + "|" + drinksCounter + "|" + totalSales);
                         break;
                     case "Dr. Salt":
                         itemPrice = drinks.getDrSaltPrice();
@@ -282,6 +292,7 @@ public class Purchase {
                         } else if ( (balance >= itemPrice) && (drinks.getDrSaltLeft() == 0) ) {
                             soldOutFormat();
                         }
+                        SalesReport.log(itemSelected + "|" + itemPrice + "|" + drinksCounter + "|" + totalSales);
                         break;
                     case "Mountain Melter":
                         itemPrice = drinks.getMountainMelterPrice();
@@ -298,6 +309,7 @@ public class Purchase {
                         } else if ( (balance >= itemPrice) && (drinks.getMountainMelterLeft() == 0) ) {
                             soldOutFormat();
                         }
+                        SalesReport.log(itemSelected + "|" + itemPrice + "|" + drinksCounter + "|" + totalSales);
                         break;
                     case "Heavy":
                         itemPrice = drinks.getHeavyPrice();
@@ -314,6 +326,7 @@ public class Purchase {
                         } else if ( (balance >= itemPrice) && (drinks.getHeavyLeft() == 0) ) {
                             soldOutFormat();
                         }
+                        SalesReport.log(itemSelected + "|" + itemPrice + "|" + drinksCounter + "|" + totalSales);
                         break;
                 }
                 break;
@@ -337,6 +350,7 @@ public class Purchase {
                         } else if ( (balance >= itemPrice) && (gum.getuChewsLeft() == 0) ) {
                             soldOutFormat();
                         }
+                        SalesReport.log(itemSelected + "|" + itemPrice + "|" + gumCounter + "|" + totalSales);
                         break;
                     case "Little League Chew":
                         itemPrice = gum.getLittleLeaugeChewPrice();
@@ -353,6 +367,7 @@ public class Purchase {
                         } else if ( (balance >= itemPrice) && (gum.getLittleLeaugeChewLeft() == 0) ) {
                             soldOutFormat();
                         }
+                        SalesReport.log(itemSelected + "|" + itemPrice + "|" + gumCounter + "|" + totalSales);
                         break;
                     case "Chiclets":
                         itemPrice = gum.getChicletsPrice();
@@ -369,6 +384,7 @@ public class Purchase {
                         } else if ( (balance >= itemPrice) && (gum.getChicletsLeft() == 0) ) {
                             soldOutFormat();
                         }
+                        SalesReport.log(itemSelected + "|" + itemPrice + "|" + gumCounter + "|" + totalSales);
                         break;
                     case "Triplemint":
                         itemPrice = gum.getTriplemintPrice();
@@ -385,6 +401,7 @@ public class Purchase {
                         } else if ( (balance >= itemPrice) && (gum.getTriplemintLeft() == 0) ) {
                             soldOutFormat();
                         }
+                        SalesReport.log(itemSelected + "|" + itemPrice + "|" + gumCounter + "|" + totalSales);
                         break;
                 }
                 break;
