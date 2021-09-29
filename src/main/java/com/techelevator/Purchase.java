@@ -1,6 +1,8 @@
 package com.techelevator;
 
 import java.io.*;
+
+import com.techelevator.util.TELog;
 import com.techelevator.view.Menu;
 import java.util.Scanner;
 import java.util.Date;
@@ -13,7 +15,7 @@ public class Purchase {
     private static final String[] MAIN_MENU_OPTIONS = { MAIN_MENU_OPTION_FEED_MONEY,
             MAIN_MENU_OPTION_SELECT_PRODUCT ,
             MAIN_MENU_OPTION_FINISH_TRANSACTION};
-    private static final String logFilePath = "capstone/log.txt";
+//    private static final String logFilePath = "capstone/log.txt";
     private static final Date date = new Date();
     private static double totalSales = 0.0;
     private static double itemPrice = 0.0;
@@ -73,17 +75,16 @@ public class Purchase {
 
         if (deposit > 0) {
             balance += deposit;
-            logFile("$"+ deposit + "  " + "$" + balance);
+            TELog.log("$"+ deposit + "  " + "$" + balance);
         } else {
             System.out.println("\nInvalid Deposit");
-            logFile("INVALID DEPOSIT");
+            TELog.log("INVALID DEPOSIT");
         }
     }
 
     /** START: selectProduct() */
     public void selectProduct(Inventory inventory) throws IOException {
         inventory.getInventory();
-
         Scanner userInput = new Scanner(System.in);
         System.out.print("Item to purchase (Enter product key): ");
         itemKey = userInput.nextLine();
@@ -109,10 +110,10 @@ public class Purchase {
                 Chips chips = new Chips();
                 switch (itemSelected) {
                     case "Potato Crisps": // A1
+                        itemPrice = chips.getPotatoCrispsPrice();
                         if ( (balance >= chips.getPotatoCrispsPrice()) && (chips.getPotatoCrispsLeft() > 0) ) {
                             chipsCounter++;
-                            itemPrice = chips.getPotatoCrispsPrice();
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                            TELog.log(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
                                     + "New Balance: $" + (balance - itemPrice));
                             balance -= itemPrice;
                             totalSales += itemPrice;
@@ -125,10 +126,10 @@ public class Purchase {
                         }
                         break;
                     case "Grain Waves":
+                        itemPrice = chips.getGrainWavesPrice();
                         if ( (balance >= chips.getGrainWavesPrice()) && (chips.getGrainWavesLeft() > 0) ) {
                             chipsCounter++;
-                            itemPrice = chips.getGrainWavesPrice();
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                            TELog.log(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
                                     + "New Balance: $" + (balance - itemPrice));
                             balance -= itemPrice;
                             totalSales += itemPrice;
@@ -141,10 +142,10 @@ public class Purchase {
                         }
                         break;
                     case "Stackers":
+                        itemPrice = chips.getStackersPrice();
                         if ( (balance >= chips.getStackersPrice()) && (chips.getStackersLeft() > 0) ) {
                             chipsCounter++;
-                            itemPrice = chips.getStackersPrice();
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                            TELog.log(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
                                     + "New Balance: $" + (balance - itemPrice));
                             balance -= itemPrice;
                             totalSales += itemPrice;
@@ -157,10 +158,10 @@ public class Purchase {
                         }
                         break;
                     case "Cloud Popcorn":
+                        itemPrice = chips.getCloudPopcornPrice();
                         if ( (balance >= chips.getCloudPopcornPrice()) && (chips.getCloudPopcornLeft() > 0) ) {
                             chipsCounter++;
-                            itemPrice = chips.getCloudPopcornPrice();
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                            TELog.log(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
                                     + "New Balance: $" + (balance - itemPrice));
                             balance -= itemPrice;
                             totalSales += itemPrice;
@@ -180,10 +181,10 @@ public class Purchase {
                 Candy candy = new Candy();
                 switch (itemSelected) {
                     case "Moonpie":
+                        itemPrice = candy.getMoonPiePrice();
                         if ( (balance >= candy.getMoonPiePrice()) && (candy.getMoonpiesLeft() > 0) ) {
                             candyCounter++;
-                            itemPrice = candy.getMoonPiePrice();
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                            TELog.log(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
                                     + "New Balance: $" + (balance - itemPrice));
                             balance -= itemPrice;
                             totalSales += itemPrice;
@@ -196,10 +197,10 @@ public class Purchase {
                         }
                         break;
                     case "Cowtales":
+                        itemPrice = candy.getCowtalesPrice();
                         if ( (balance >= candy.getCowtalesPrice()) && (candy.getCowtalesLeft() > 0) ) {
                             candyCounter++;
-                            itemPrice = candy.getCowtalesPrice();
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                            TELog.log(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
                                     + "New Balance: $" + (balance - itemPrice));
                             balance -= itemPrice;
                             totalSales += itemPrice;
@@ -212,10 +213,10 @@ public class Purchase {
                         }
                         break;
                     case "Crunchie":
+                        itemPrice = candy.getCrunchiesPrice();
                         if ( (balance >= candy.getCrunchiesPrice()) && (candy.getCrunchiesLeft() > 0) ) {
                             candyCounter++;
-                            itemPrice = candy.getCrunchiesPrice();
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                            TELog.log(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
                                     + "New Balance: $" + (balance - itemPrice));
                             balance -= itemPrice;
                             totalSales += itemPrice;
@@ -228,10 +229,10 @@ public class Purchase {
                         }
                         break;
                     case "Wonka Bar":
+                        itemPrice = candy.getWonkaBarsPrice();
                         if ( (balance >= candy.getWonkaBarsPrice()) && (candy.getWonkaBarsLeft() > 0) ) {
                             candyCounter++;
-                            itemPrice = candy.getWonkaBarsPrice();
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                            TELog.log(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
                                     + "New Balance: $" + (balance - itemPrice));
                             balance -= itemPrice;
                             totalSales += itemPrice;
@@ -251,10 +252,10 @@ public class Purchase {
                 Drinks drinks = new Drinks();
                 switch (itemSelected) {
                     case "Cola":
+                        itemPrice = drinks.getColaPrice();
                         if ( (balance >= drinks.getColaPrice()) && (drinks.getColaLeft() > 0) ) {
                             drinksCounter++;
-                            itemPrice = drinks.getColaPrice();
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                            TELog.log(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
                                     + "New Balance: $" + (balance - itemPrice));
                             balance -= itemPrice;
                             totalSales += itemPrice;
@@ -267,10 +268,10 @@ public class Purchase {
                         }
                         break;
                     case "Dr. Salt":
+                        itemPrice = drinks.getDrSaltPrice();
                         if ( (balance >= drinks.getDrSaltPrice()) && (drinks.getDrSaltLeft() > 0) ) {
                             drinksCounter++;
-                            itemPrice = drinks.getDrSaltPrice();
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                            TELog.log(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
                                     + "New Balance: $" + (balance - itemPrice));
                             balance -= itemPrice;
                             totalSales += itemPrice;
@@ -283,10 +284,10 @@ public class Purchase {
                         }
                         break;
                     case "Mountain Melter":
+                        itemPrice = drinks.getMountainMelterPrice();
                         if ( (balance >= drinks.getMountainMelterPrice()) && (drinks.getMountainMelterLeft() > 0) ) {
                             drinksCounter++;
-                            itemPrice = drinks.getMountainMelterPrice();
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                            TELog.log(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
                                     + "New Balance: $" + (balance - itemPrice));
                             balance -= itemPrice;
                             totalSales += itemPrice;
@@ -299,10 +300,10 @@ public class Purchase {
                         }
                         break;
                     case "Heavy":
+                        itemPrice = drinks.getHeavyPrice();
                         if ( (balance >= drinks.getHeavyPrice()) && (drinks.getHeavyLeft() > 0) ) {
                             drinksCounter++;
-                            itemPrice = drinks.getHeavyPrice();
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                            TELog.log(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
                                     + "New Balance: $" + (balance - itemPrice));
                             balance -= itemPrice;
                             totalSales += itemPrice;
@@ -322,10 +323,10 @@ public class Purchase {
                 Gum gum = new Gum();
                 switch (itemSelected) {
                     case "U-Chews":
+                        itemPrice = gum.getUChewsPrice();
                         if ( (balance >= gum.getUChewsPrice()) && (gum.getuChewsLeft() > 0) ) {
                             gumCounter++;
-                            itemPrice = gum.getUChewsPrice();
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                            TELog.log(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
                                     + "New Balance: $" + (balance - itemPrice));
                             balance -= itemPrice;
                             totalSales += itemPrice;
@@ -338,10 +339,10 @@ public class Purchase {
                         }
                         break;
                     case "Little League Chew":
+                        itemPrice = gum.getLittleLeaugeChewPrice();
                         if ( (balance >= gum.getLittleLeaugeChewPrice()) && (gum.getLittleLeaugeChewLeft() > 0) ) {
                             gumCounter++;
-                            itemPrice = gum.getLittleLeaugeChewPrice();
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                            TELog.log(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
                                     + "New Balance: $" + (balance - itemPrice));
                             balance -= itemPrice;
                             totalSales += itemPrice;
@@ -354,10 +355,10 @@ public class Purchase {
                         }
                         break;
                     case "Chiclets":
+                        itemPrice = gum.getChicletsPrice();
                         if ( (balance >= gum.getChicletsPrice()) && (gum.getChicletsLeft() > 0) ) {
                             gumCounter++;
-                            itemPrice = gum.getChicletsPrice();
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                            TELog.log(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
                                     + "New Balance: $" + (balance - itemPrice));
                             balance -= itemPrice;
                             totalSales += itemPrice;
@@ -370,10 +371,10 @@ public class Purchase {
                         }
                         break;
                     case "Triplemint":
+                        itemPrice = gum.getTriplemintPrice();
                         if ( (balance >= gum.getTriplemintPrice()) && (gum.getTriplemintLeft() > 0) ) {
                             gumCounter++;
-                            itemPrice = gum.getTriplemintPrice();
-                            logFile(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
+                            TELog.log(itemKey + "|" + itemSelected + "|" + "Current Balance: " + "$"+ balance  + "|"
                                     + "New Balance: $" + (balance - itemPrice));
                             balance -= itemPrice;
                             totalSales += itemPrice;
@@ -398,7 +399,7 @@ public class Purchase {
         double totalChange =0;
         double quarterRemainder;
         double dimesRemainder;
-        logFile("Change given: $" + balance);
+        TELog.log("Change given: $" + balance);
 
         if (balance > 0) {
             totalChange = balance;
@@ -434,20 +435,6 @@ public class Purchase {
         drinksCounter = 0;
         gumCounter = 0;
         chipsCounter = 0;
-    }
-
-    /** METHODS: logFile() WRITE TO log.txt
-     * uses getCanonicalPath();
-     */
-    protected static void logFile(String message) throws IOException {
-        File outputFile = new File(logFilePath);
-        String canonical = outputFile.getCanonicalPath();
-
-        try ( PrintWriter logWriter = new PrintWriter(new FileWriter(String.valueOf(canonical), true)) ) {
-            logWriter.println(date + " " + message);
-        } catch (IOException e) {
-            System.out.println("Unable to write to file.");
-        }
     }
 
     /** GETTERS */

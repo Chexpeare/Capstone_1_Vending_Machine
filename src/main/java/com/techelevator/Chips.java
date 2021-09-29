@@ -15,6 +15,7 @@ public class Chips extends Snack {
     /** METHODS: Decrement product quantity */
     public int completeChipsPurchase(String itemSelected) {
         Snack snack = new Snack();
+
             switch (itemSelected) {
                 case "Potato Crisps":
                     potatoCrispsLeft--;
