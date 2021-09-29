@@ -12,6 +12,7 @@ public class Inventory {
     private final Map<String, String> itemTypeMap = new HashMap<>();
     private final Map<String, String> itemSelectedMap = new HashMap<>();
     private final String inventoryFile = "capstone/vendingmachine.csv";
+    private int unitsRemaining;
     /*  getCanonicalPath()
      *  platform specific method: directory path needs to conform to Unix:MacOS (/) or PC (\\)
      *  private final String inventoryFile = "C:\\Users\\18325\\Desktop\\CapStone Backup\\capstone\\vendingmachine.csv";
@@ -26,15 +27,16 @@ public class Inventory {
     public void displayInventory() throws IOException {
         File inputFile = new File(inventoryFile);
         String canonical = inputFile.getCanonicalPath();
-
         FileReader readerFile = new FileReader(canonical);
         BufferedReader reader = new BufferedReader(readerFile);
         String currentLine = reader.readLine();
 
         while (currentLine != null) {
             String[] splitItemLine = currentLine.split("\\|");
-            System.out.print(  splitItemLine[0] + "|" +  splitItemLine[1] + "|"
-                            +  splitItemLine[2] + "|" +  splitItemLine[3]);
+            System.out.print(   "\033[33m" + splitItemLine[0] + "\033[32m" + "|" +
+                                "\033[34m" + splitItemLine[1] + "\033[32m" + "|" +
+                                "\033[35m" + splitItemLine[2] + "\033[32m" + "|" +
+                                "\033[32m" + splitItemLine[3] + "\033[38m");
 
 //          INVENTORY: CHIPS
             if(splitItemLine[3].equals("Chip")) {
@@ -42,16 +44,20 @@ public class Inventory {
 
                 switch (splitItemLine[1]) {
                     case "Potato Crisps":
-                        System.out.println("  " + chips.getPotatoCrispsLeft());
+                        unitsRemaining = chips.getPotatoCrispsLeft();
+                        itemSelectedPrint(unitsRemaining);
                         break;
                     case "Stackers":
-                        System.out.println("  " + chips.getStackersLeft());
+                        unitsRemaining = chips.getStackersLeft();
+                        itemSelectedPrint(unitsRemaining);
                         break;
                     case "Grain Waves":
-                        System.out.println("  " + chips.getGrainWavesLeft());
+                        unitsRemaining = chips.getGrainWavesLeft();
+                        itemSelectedPrint(unitsRemaining);
                         break;
                     case "Cloud Popcorn":
-                        System.out.println("  " + chips.getCloudPopcornLeft());
+                        unitsRemaining = chips.getCloudPopcornLeft();
+                        itemSelectedPrint(unitsRemaining);
                         break;
                 }
             }
@@ -62,16 +68,20 @@ public class Inventory {
 
                 switch (splitItemLine[1]) {
                     case "Moonpie":
-                        System.out.println("  " + candy.getMoonpiesLeft());
+                        unitsRemaining = candy.getMoonpiesLeft();
+                        itemSelectedPrint(unitsRemaining);
                         break;
                     case "Cowtales":
-                        System.out.println("  " + candy.getCowtalesLeft());
+                        unitsRemaining = candy.getCowtalesLeft();
+                        itemSelectedPrint(unitsRemaining);
                         break;
                     case "Wonka Bar":
-                        System.out.println("  " + candy.getWonkaBarsLeft());
+                        unitsRemaining = candy.getWonkaBarsLeft();
+                        itemSelectedPrint(unitsRemaining);
                         break;
                     case "Crunchie":
-                        System.out.println("  " + candy.getCrunchiesLeft());
+                        unitsRemaining = candy.getCrunchiesLeft();
+                        itemSelectedPrint(unitsRemaining);
                         break;
                 }
             }
@@ -82,16 +92,20 @@ public class Inventory {
 
                 switch (splitItemLine[1]) {
                     case "Cola":
-                        System.out.println("  " + drinks.getColaLeft());
+                        unitsRemaining = drinks.getColaLeft();
+                        itemSelectedPrint(unitsRemaining);
                         break;
                     case "Dr. Salt":
-                        System.out.println("  " + drinks.getDrSaltLeft());
+                        unitsRemaining = drinks.getDrSaltLeft();
+                        itemSelectedPrint(unitsRemaining);
                         break;
                     case "Mountain Melter":
-                        System.out.println("  " + drinks.getMountainMelterLeft());
+                        unitsRemaining = drinks.getMountainMelterLeft();
+                        itemSelectedPrint(unitsRemaining);
                         break;
                     case "Heavy":
-                        System.out.println("  " + drinks.getHeavyLeft());
+                        unitsRemaining = drinks.getHeavyLeft();
+                        itemSelectedPrint(unitsRemaining);
                         break;
                 }
             }
@@ -102,26 +116,33 @@ public class Inventory {
 
                 switch (splitItemLine[1]) {
                     case "U-Chews":
-                        System.out.println("  " + gum.getuChewsLeft());
+                        unitsRemaining = gum.getuChewsLeft();
+                        itemSelectedPrint(unitsRemaining);
                         break;
                     case "Little League Chew":
-                        System.out.println("  " + gum.getLittleLeaugeChewLeft());
+                        unitsRemaining = gum.getLittleLeaugeChewLeft();
+                        itemSelectedPrint(unitsRemaining);
                         break;
                     case "Chiclets":
-                        System.out.println("  " + gum.getChicletsLeft());
+                        unitsRemaining = gum.getChicletsLeft();
+                        itemSelectedPrint(unitsRemaining);
                         break;
                     case "Triplemint":
-                        System.out.println("  " + gum.getTriplemintLeft());
+                        unitsRemaining = gum.getTriplemintLeft();
+                        itemSelectedPrint(unitsRemaining);
                         break;
                 }
             }
             currentLine = reader.readLine();
         }
+        System.out.println("\033[38m");     // Return text color to white
     }
 
     public void getInventory() throws IOException{
         File inputFile = new File(inventoryFile);
-        BufferedReader reader = new BufferedReader(new FileReader(inputFile));
+        String canonical = inputFile.getCanonicalPath();
+        FileReader readerFile = new FileReader(canonical);
+        BufferedReader reader = new BufferedReader(readerFile);
         String currentLine = reader.readLine();
 
         while(currentLine != null) {
@@ -131,12 +152,23 @@ public class Inventory {
             currentLine = reader.readLine();
         }
     }
+
+    private void itemSelectedPrint(int unitsRemaining) {
+        if (unitsRemaining == 5) {
+            System.out.println("|" + unitsRemaining);
+        } else {
+            System.out.println("|" + "\033[31m" + unitsRemaining + "\033[32m");
+        }
+
+    }
+
     public Map<String, String> getItemSelectedMap() {
         return itemSelectedMap;
     }
     public Map<String, String> getItemTypeMap() {
         return itemTypeMap;
     }
+
 }
 
 

@@ -69,3 +69,34 @@ Tue Sep 28 23:19:20 EDT 2021 Process ended normally.
 >09/29/21 11:14:53 : D2|Little League Chew|Current Balance: $11.7|New Balance: $10.749999809265137
 >09/29/21 11:14:56 : GIVE CHANGE: $10.75
 >09/29/21 11:14:57 : Exiting program. Process ended normally.
+>09/29/21 13:37:59 : Exiting program. Process ended normally.
+>09/29/21 14:11:21 : FEED MONEY: $100.0  $100.0
+>09/29/21 14:11:27 : A1|Potato Crisps|Current Balance: $100.0|New Balance: $96.95
+>09/29/21 14:11:54 : A1|Potato Crisps|Current Balance: $96.95|New Balance: $93.89999694824219
+>09/29/21 14:12:14 : GIVE CHANGE: $93.899994
+>09/29/21 14:14:45 : Exiting program. Process ended normally.
+>09/29/21 14:25:44 : FEED MONEY: $5.0  $5.0
+>09/29/21 14:25:47 : A1|Potato Crisps|Current Balance: $5.0|New Balance: $1.9500000000000002
+>09/29/21 14:25:50 : GIVE CHANGE: $1.95
+>09/29/21 14:28:55 : FEED MONEY: $10.0  $10.0
+>09/29/21 14:29:03 : A1|Potato Crisps|Current Balance: $10.0|New Balance: $6.95
+>09/29/21 14:29:06 : GIVE CHANGE: $6.95
+>09/29/21 14:30:02 : FEED MONEY: $10.0  $10.0
+>09/29/21 14:30:05 : A1|Potato Crisps|Current Balance: $10.0|New Balance: $6.95
+>09/29/21 14:30:07 : GIVE CHANGE: $6.95
+>09/29/21 14:30:35 : FEED MONEY: $10.0  $10.0
+>09/29/21 14:30:38 : A1|Potato Crisps|Current Balance: $10.0|New Balance: $6.95
+>09/29/21 14:30:45 : C3|Mountain Melter|Current Balance: $6.95|New Balance: $5.449999809265137
+>09/29/21 14:30:47 : GIVE CHANGE: $5.45
+>09/29/21 14:35:57 : GIVE CHANGE: $0.0
+>09/29/21 14:35:58 : Exiting program. Process ended normally.
+>09/29/21 14:36:11 : FEED MONEY: $10.0  $10.0
+>09/29/21 14:36:14 : A1|Potato Crisps|Current Balance: $10.0|New Balance: $6.95
+>09/29/21 14:36:15 : GIVE CHANGE: $6.95
+>09/29/21 14:36:32 : FEED MONEY: $5.0  $5.0
+>09/29/21 14:36:36 : D3|Chiclets|Current Balance: $5.0|New Balance: $4.25
+>09/29/21 14:36:38 : GIVE CHANGE: $4.25
+>09/29/21 14:46:10 : FEED MONEY: $5.0  $5.0
+>09/29/21 14:46:18 : A1|Potato Crisps|Current Balance: $5.0|New Balance: $1.9500000000000002
+>09/29/21 14:46:26 : D3|Chiclets|Current Balance: $1.95|New Balance: $1.2000000476837158
+>09/29/21 14:46:29 : GIVE CHANGE: $1.2
