@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class TELog {
-    private static final String logFilePath = "capstone/logs/process.log";
+    private static final String logFilePath = "capstone/logs/log.txt";
 //    private static final String logFilePath = "/Users/chexpeare/MeritAmerica/PairProgrammingBackup/pair-programming-4/logs/search.log";
 
     public static void log(String message) throws IOException {
@@ -20,7 +20,7 @@ public class TELog {
 
             LocalDateTime timestamp = LocalDateTime.now();
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yy HH:mm:ss");
-            writer.println(timestamp.format(formatter) + " : " + message);
+            writer.println(">" + timestamp.format(formatter) + " : " + message);
 
         } catch (Exception e) {
             throw new TELogException(e.getMessage() + "occurred while trying to write " + message + " to the log.");
