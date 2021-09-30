@@ -9,10 +9,10 @@ import java.util.Map;
 
 public class Inventory {
     /** PROPERTIES */
-    private final Map<String, String> itemTypeMap = new HashMap<>();
+    private final Map<String, String> itemCategoryMap = new HashMap<>();
     private final Map<String, String> itemSelectedMap = new HashMap<>();
     private final String inventoryFile = "capstone/vendingmachine.csv";
-    private int unitsRemaining;
+    int unitsRemaining;
     /*  getCanonicalPath()
      *  platform specific method: directory path needs to conform to Unix:MacOS (/) or PC (\\)
      *  private final String inventoryFile = "C:\\Users\\18325\\Desktop\\CapStone Backup\\capstone\\vendingmachine.csv";
@@ -147,8 +147,8 @@ public class Inventory {
 
         while(currentLine != null) {
             String[] splitItemLine = currentLine.split("\\|");
-            itemSelectedMap.put(splitItemLine[0], splitItemLine[1]);
-            itemTypeMap.put(splitItemLine[0], splitItemLine[3]);
+            itemCategoryMap.put(splitItemLine[0], splitItemLine[3]);        // Code & Category Selection
+            itemSelectedMap.put(splitItemLine[0], splitItemLine[1]);    // Code & Item Selection
             currentLine = reader.readLine();
         }
     }
@@ -167,8 +167,8 @@ public class Inventory {
     public Map<String, String> getItemSelectedMap() {
         return itemSelectedMap;
     }
-    public Map<String, String> getItemTypeMap() {
-        return itemTypeMap;
+    public Map<String, String> getItemCategoryMap() {
+        return itemCategoryMap;
     }
 
 }

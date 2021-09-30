@@ -34,11 +34,10 @@ public class VendingMachineCLI {
 	}
 
 	public static void main(String[] args) throws IOException {
-		logLaunchComments(args);
-
-		Menu menu = new Menu(System.in, System.out);
-		VendingMachineCLI cli = new VendingMachineCLI(menu);
-		cli.run();
+		logLaunchComments(args);								// Log: successful entry into the program
+		Menu menu = new Menu(System.in, System.out);			// Instantiates a Menu object: for options
+		VendingMachineCLI cli = new VendingMachineCLI(menu);	// Instantiates VendingMachineCLI: receiving Menu return options
+		cli.run();												// Calls run() method
 	}
 
 	public void run() throws IOException {
@@ -46,17 +45,17 @@ public class VendingMachineCLI {
 			String choice = (String) menu.getChoiceFromOptions(MAIN_MENU_OPTIONS);
 
 			switch (choice) {
-				case MAIN_MENU_OPTION_DISPLAY_ITEMS: // display vending machine items (call Inventory.java)
-					Inventory inventory = new Inventory();
-					inventory.displayInventory();
+				case MAIN_MENU_OPTION_DISPLAY_ITEMS: 			// display vending machine items (call Inventory.java)
+					Inventory inventory = new Inventory();		// Instantiates Inventory object: to access .csv file
+					inventory.displayInventory();				// Reads/formats/displays .csv file
 					break;
-				case MAIN_MENU_OPTION_PURCHASE: // do purchase (call Purchase.java)
+				case MAIN_MENU_OPTION_PURCHASE: 				// do purchase (call Purchase.java)
 					Purchase purchase = new Purchase(menu);
 					purchase.run();
 					break;
 				case MAIN_MENU_OPTION_EXIT:	// Exit the program
 					System.out.println("Thank you for shopping the Vendo-Matic 800!");
-					TELog.log("Exiting program. Process ended normally.");
+					TELog.log("Exiting program with System.exit(status: 0): Process ended successfully.");
 					System.exit(0);
 				case (MAIN_MENU_OPTION_SALES_REPORT): // generate a sales report (call SalesReport.java)
 					/** TODO: OPTIONAL SALES REPORT CODE
@@ -64,10 +63,9 @@ public class VendingMachineCLI {
 					 the total sales since the machine was started. The name of the file must include the date and
 					 time so each sales report is uniquely named.
 					 */
-//					SalesReport salesReport = new SalesReport(menu);
 					SalesReport.log("***** Vendo-Matic 800 Sales Report *****");
-					SalesReport.displayReport();
-
+					SalesReport.createSalesReport();
+					SalesReport.displaySalesReport();
 					System.exit(0);   // break;
 			}
 		}
@@ -75,6 +73,7 @@ public class VendingMachineCLI {
 
 	/** METHODS */
 	private static void logLaunchComments(String[] args) throws IOException {
+		TELog.log("Process successfully started: psvm() accessed without incident.");
 	}
 
 }

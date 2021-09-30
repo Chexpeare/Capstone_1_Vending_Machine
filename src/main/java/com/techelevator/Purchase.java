@@ -26,7 +26,7 @@ public class Purchase {
     private static int gumCounter = 0;
     private final Menu menu;
     private String itemSelected;
-    private String itemType;
+    private String itemCategory;
     private String itemKey;
     //    private String lowKey;
     private float balance;
@@ -98,14 +98,14 @@ public class Purchase {
             System.out.println("Invalid Key, Try again");
             itemKey =null;
             itemSelected = null;
-            itemType = null;
+            itemCategory = null;
             return;
         }
 
         itemSelected = inventory.getItemSelectedMap().get(itemKey);
-        itemType = inventory.getItemTypeMap().get(itemKey);
+        itemCategory = inventory.getItemCategoryMap().get(itemKey);
 
-        switch (itemType) {
+        switch (itemCategory) {
             // Start of Chips
             case "Chip":
                 Chips chips = new Chips();
@@ -467,8 +467,8 @@ public class Purchase {
     public String getItemKey() {
         return itemKey;
     }
-    public String getItemType() {
-        return itemType;
+    public String getItemCategory() {
+        return itemCategory;
     }
     public String getItemSelected() {
         return itemSelected;

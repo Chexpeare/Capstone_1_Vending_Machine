@@ -6,10 +6,11 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.TemporalAccessor;
 
 public class TELog {
     private static final String logFilePath = "capstone/logs/log.txt";
-//    private static final String logFilePath = "/Users/chexpeare/MeritAmerica/PairProgrammingBackup/pair-programming-4/logs/search.log";
+//    private static final String logFilePath = "/Users/chexpeare/MeritAmerica/PairProgrammingBackup/pair-programming-4/logs/log.txt";
 
     public static void log(String message) throws IOException {
         File outputFile = new File(logFilePath);
