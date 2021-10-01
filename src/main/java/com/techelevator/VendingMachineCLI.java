@@ -34,6 +34,11 @@ public class VendingMachineCLI {
 	}
 
 	public static void main(String[] args) throws IOException {
+		System.out.println("\n=========================\n"
+				+ "  \33[34;1mTHE UMBRELLA ACADEMY\33[0m\n"
+				+ "          MENU\n"
+				+ "-------------------------");
+
 		logLaunchComments(args);								// Log: successful entry into the program
 		Menu menu = new Menu(System.in, System.out);			// Instantiates a Menu object: for options
 		VendingMachineCLI cli = new VendingMachineCLI(menu);	// Instantiates VendingMachineCLI: receiving Menu return options
@@ -63,8 +68,7 @@ public class VendingMachineCLI {
 					 the total sales since the machine was started. The name of the file must include the date and
 					 time so each sales report is uniquely named.
 					 */
-					SalesReport.log("***** Vendo-Matic 800 Sales Report *****");
-					SalesReport.createSalesReport();
+					SalesReport.log("***** Vendo-Matic 800 Log File *****");
 					SalesReport.displaySalesReport();
 					System.exit(0);   // break;
 			}

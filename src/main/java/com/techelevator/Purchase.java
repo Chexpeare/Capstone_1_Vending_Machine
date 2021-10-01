@@ -24,7 +24,7 @@ public class Purchase {
     private static int drinksCounter = 0;
     private static int gumCounter = 0;
     private final Menu menu;
-    private String itemSelected;
+    private static String itemSelected;
     private String itemCategory;
     private String itemKey;
     //    private String lowKey;
@@ -33,6 +33,8 @@ public class Purchase {
     private int nickels;
     private int dimes;
     private int quarters;
+
+    protected double itemPrice = 0.0;
 
     protected double deposit;
     protected int itemsRemaining;
@@ -86,8 +88,6 @@ public class Purchase {
         } finally {
             TELog.log("INVALID DEPOSTI");
         }
-
-
     }
 
     /** START: selectProduct() */
@@ -113,7 +113,7 @@ public class Purchase {
         itemSelected = inventory.getItemSelectedMap().get(itemKey);
         itemCategory = inventory.getItemCategoryMap().get(itemKey);
 
-        double itemPrice = 0.0;
+//        double itemPrice = 0.0;
         switch (itemCategory) {
             // Start of Chips
             case "Chip":
@@ -135,6 +135,7 @@ public class Purchase {
                             soldOutFormat();
                         }
                         SalesReport.log(itemSelected + "|" + itemPrice + "|" + chipsCounter + "|" + totalSales);
+                        SalesReport.appendToSalesReport(itemSelected + "|" + itemPrice + "|" + chipsCounter + "|" + totalSales);
                         break;
                     case "Grain Waves":
                         itemPrice = chips.getGrainWavesPrice();
@@ -152,6 +153,7 @@ public class Purchase {
                             soldOutFormat();
                         }
                         SalesReport.log(itemSelected + "|" + itemPrice + "|" + chipsCounter + "|" + totalSales);
+                        SalesReport.appendToSalesReport(itemSelected + "|" + itemPrice + "|" + chipsCounter + "|" + totalSales);
                         break;
                     case "Stackers":
                         itemPrice = chips.getStackersPrice();
@@ -169,6 +171,7 @@ public class Purchase {
                             soldOutFormat();
                         }
                         SalesReport.log(itemSelected + "|" + itemPrice + "|" + chipsCounter + "|" + totalSales);
+                        SalesReport.appendToSalesReport(itemSelected + "|" + itemPrice + "|" + chipsCounter + "|" + totalSales);
                         break;
                     case "Cloud Popcorn":
                         itemPrice = chips.getCloudPopcornPrice();
@@ -186,6 +189,7 @@ public class Purchase {
                             soldOutFormat();
                         }
                         SalesReport.log(itemSelected + "|" + itemPrice + "|" + chipsCounter + "|" + totalSales);
+                        SalesReport.appendToSalesReport(itemSelected + "|" + itemPrice + "|" + chipsCounter + "|" + totalSales);
                         break;
                 }
                 break;
@@ -210,6 +214,7 @@ public class Purchase {
                             soldOutFormat();
                         }
                         SalesReport.log(itemSelected + "|" + itemPrice + "|" + candyCounter + "|" + totalSales);
+                        SalesReport.appendToSalesReport(itemSelected + "|" + itemPrice + "|" + candyCounter + "|" + totalSales);
                         break;
                     case "Cowtales":
                         itemPrice = candy.getCowtalesPrice();
@@ -227,6 +232,7 @@ public class Purchase {
                             soldOutFormat();
                         }
                         SalesReport.log(itemSelected + "|" + itemPrice + "|" + candyCounter + "|" + totalSales);
+                        SalesReport.appendToSalesReport(itemSelected + "|" + itemPrice + "|" + candyCounter + "|" + totalSales);
                         break;
                     case "Crunchie":
                         itemPrice = candy.getCrunchiesPrice();
@@ -244,6 +250,7 @@ public class Purchase {
                             soldOutFormat();
                         }
                         SalesReport.log(itemSelected + "|" + itemPrice + "|" + candyCounter + "|" + totalSales);
+                        SalesReport.appendToSalesReport(itemSelected + "|" + itemPrice + "|" + candyCounter + "|" + totalSales);
                         break;
                     case "Wonka Bar":
                         itemPrice = candy.getWonkaBarsPrice();
@@ -261,6 +268,7 @@ public class Purchase {
                             soldOutFormat();
                         }
                         SalesReport.log(itemSelected + "|" + itemPrice + "|" + candyCounter + "|" + totalSales);
+                        SalesReport.appendToSalesReport(itemSelected + "|" + itemPrice + "|" + candyCounter + "|" + totalSales);
                         break;
                 }
                 break;
@@ -285,6 +293,7 @@ public class Purchase {
                             soldOutFormat();
                         }
                         SalesReport.log(itemSelected + "|" + itemPrice + "|" + drinksCounter + "|" + totalSales);
+                        SalesReport.appendToSalesReport(itemSelected + "|" + itemPrice + "|" + drinksCounter + "|" + totalSales);
                         break;
                     case "Dr. Salt":
                         itemPrice = drinks.getDrSaltPrice();
@@ -302,6 +311,7 @@ public class Purchase {
                             soldOutFormat();
                         }
                         SalesReport.log(itemSelected + "|" + itemPrice + "|" + drinksCounter + "|" + totalSales);
+                        SalesReport.appendToSalesReport(itemSelected + "|" + itemPrice + "|" + drinksCounter + "|" + totalSales);
                         break;
                     case "Mountain Melter":
                         itemPrice = drinks.getMountainMelterPrice();
@@ -319,6 +329,7 @@ public class Purchase {
                             soldOutFormat();
                         }
                         SalesReport.log(itemSelected + "|" + itemPrice + "|" + drinksCounter + "|" + totalSales);
+                        SalesReport.appendToSalesReport(itemSelected + "|" + itemPrice + "|" + drinksCounter + "|" + totalSales);
                         break;
                     case "Heavy":
                         itemPrice = drinks.getHeavyPrice();
@@ -336,6 +347,7 @@ public class Purchase {
                             soldOutFormat();
                         }
                         SalesReport.log(itemSelected + "|" + itemPrice + "|" + drinksCounter + "|" + totalSales);
+                        SalesReport.appendToSalesReport(itemSelected + "|" + itemPrice + "|" + drinksCounter + "|" + totalSales);
                         break;
                 }
                 break;
@@ -360,6 +372,7 @@ public class Purchase {
                             soldOutFormat();
                         }
                         SalesReport.log(itemSelected + "|" + itemPrice + "|" + gumCounter + "|" + totalSales);
+                        SalesReport.appendToSalesReport(itemSelected + "|" + itemPrice + "|" + gumCounter + "|" + totalSales);
                         break;
                     case "Little League Chew":
                         itemPrice = gum.getLittleLeaugeChewPrice();
@@ -377,6 +390,7 @@ public class Purchase {
                             soldOutFormat();
                         }
                         SalesReport.log(itemSelected + "|" + itemPrice + "|" + gumCounter + "|" + totalSales);
+                        SalesReport.appendToSalesReport(itemSelected + "|" + itemPrice + "|" + gumCounter + "|" + totalSales);
                         break;
                     case "Chiclets":
                         itemPrice = gum.getChicletsPrice();
@@ -394,6 +408,7 @@ public class Purchase {
                             soldOutFormat();
                         }
                         SalesReport.log(itemSelected + "|" + itemPrice + "|" + gumCounter + "|" + totalSales);
+                        SalesReport.appendToSalesReport(itemSelected + "|" + itemPrice + "|" + gumCounter + "|" + totalSales);
                         break;
                     case "Triplemint":
                         itemPrice = gum.getTriplemintPrice();
@@ -411,6 +426,7 @@ public class Purchase {
                             soldOutFormat();
                         }
                         SalesReport.log(itemSelected + "|" + itemPrice + "|" + gumCounter + "|" + totalSales);
+                        SalesReport.appendToSalesReport(itemSelected + "|" + itemPrice + "|" + gumCounter + "|" + totalSales);
                         break;
                 }
                 break;
@@ -479,7 +495,7 @@ public class Purchase {
     public String getItemCategory() {
         return itemCategory;
     }
-    public String getItemSelected() {
+    public static String getItemSelected() {
         return itemSelected;
     }
     public int getNickels() {
