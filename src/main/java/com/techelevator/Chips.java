@@ -14,8 +14,8 @@ public class Chips extends Snack {
 
     /** METHODS: Decrement product quantity */
     public int completeChipsPurchase(String itemSelected) {
-        Snack snack = new Snack();
-
+        if (itemSelected.equals("Potato Crisps") || itemSelected.equals("Stackers") ||
+            itemSelected.equals("Grain Waves") || itemSelected.equals("Cloud Popcorn")) {
             switch (itemSelected) {
                 case "Potato Crisps":
                     potatoCrispsLeft--;
@@ -32,8 +32,9 @@ public class Chips extends Snack {
                 default:
                     break;
             }
-            return 0;
-        }
+        } else return 8951423;
+        return 0;
+    }
 
     /** Remaining: GETTERS & SETTERS */
     public int getPotatoCrispsLeft() {
