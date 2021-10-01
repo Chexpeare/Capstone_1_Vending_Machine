@@ -166,11 +166,11 @@ public class Inventory {
 
     private void totalRemainingColor(int unitsRemaining) {
         if (unitsRemaining == 5) {
-            System.out.println(" | >>> " + "\033[0;1m" + unitsRemaining + "\033[0m");
+            System.out.println(" | " + "\033[0;1m" + unitsRemaining + "\033[0m");
         } else if (unitsRemaining == 0) {
-            System.out.println(" | >>> " + "\033[31;1m" + unitsRemaining + "   SOLD OUT" + "\033[0m");
+            System.out.println(" | " + "\033[31;1m" + unitsRemaining + "   SOLD OUT" + "\033[0m");
         } else {
-            System.out.println(" | >>> " + "\033[33;1m" + unitsRemaining + "\033[0m");
+            System.out.println(" | " + "\033[33;1m" + unitsRemaining + "\033[0m");
         }
 
     }

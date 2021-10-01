@@ -622,3 +622,20 @@ Tue Sep 28 23:19:20 EDT 2021 Process ended normally.
 >10/01/21 02:58:53 : Unable to find the inventory file.
 >10/01/21 02:58:54 : D3|Chiclets|Current Balance: $73.499985|New Balance: $72.74998474121094
 >10/01/21 02:58:57 : GIVE CHANGE: $72.749985
+>10/01/21 11:12:23 : Process successfully started: psvm() accessed without incident.
+>10/01/21 11:12:30 : FEED MONEY: $100.0  $100.0
+>10/01/21 11:12:30 : INVALID DEPOSTI
+>10/01/21 11:12:32 : Unable to find the inventory file.
+>10/01/21 11:12:55 : Unable to find the inventory file.
+>10/01/21 11:12:56 : B3|Wonka Bar|Current Balance: $100.0|New Balance: $98.5
+>10/01/21 11:12:57 : Unable to find the inventory file.
+>10/01/21 11:12:57 : B3|Wonka Bar|Current Balance: $98.5|New Balance: $97.0
+>10/01/21 11:12:58 : Unable to find the inventory file.
+>10/01/21 11:12:59 : B3|Wonka Bar|Current Balance: $97.0|New Balance: $95.5
+>10/01/21 11:13:00 : Unable to find the inventory file.
+>10/01/21 11:13:01 : B3|Wonka Bar|Current Balance: $95.5|New Balance: $94.0
+>10/01/21 11:13:02 : Unable to find the inventory file.
+>10/01/21 11:13:02 : B3|Wonka Bar|Current Balance: $94.0|New Balance: $92.5
+>10/01/21 11:13:03 : Unable to find the inventory file.
+>10/01/21 11:13:16 : GIVE CHANGE: $92.5
+>10/01/21 11:13:26 : GIVE CHANGE: $0.0
