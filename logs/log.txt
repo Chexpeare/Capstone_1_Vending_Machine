@@ -639,3 +639,34 @@ Tue Sep 28 23:19:20 EDT 2021 Process ended normally.
 >10/01/21 11:13:03 : Unable to find the inventory file.
 >10/01/21 11:13:16 : GIVE CHANGE: $92.5
 >10/01/21 11:13:26 : GIVE CHANGE: $0.0
+>10/01/21 11:16:01 : Process successfully started: psvm() accessed without incident.
+>10/01/21 11:16:09 : FEED MONEY: $100.0  $100.0
+>10/01/21 11:16:09 : INVALID DEPOSTI
+>10/01/21 11:16:10 : Unable to find the inventory file.
+>10/01/21 11:16:20 : Unable to find the inventory file.
+>10/01/21 11:16:20 : C3|Mountain Melter|Current Balance: $100.0|New Balance: $98.5
+>10/01/21 11:16:21 : Unable to find the inventory file.
+>10/01/21 11:16:21 : C3|Mountain Melter|Current Balance: $98.5|New Balance: $97.0
+>10/01/21 11:16:22 : Unable to find the inventory file.
+>10/01/21 11:16:23 : C3|Mountain Melter|Current Balance: $97.0|New Balance: $95.5
+>10/01/21 11:16:23 : Unable to find the inventory file.
+>10/01/21 11:16:24 : C3|Mountain Melter|Current Balance: $95.5|New Balance: $94.0
+>10/01/21 11:16:25 : Unable to find the inventory file.
+>10/01/21 11:16:25 : C3|Mountain Melter|Current Balance: $94.0|New Balance: $92.5
+>10/01/21 11:16:26 : Unable to find the inventory file.
+>10/01/21 11:16:32 : Unable to find the inventory file.
+>10/01/21 11:16:36 : B4|Crunchie|Current Balance: $92.5|New Balance: $90.75
+>10/01/21 11:16:38 : Unable to find the inventory file.
+>10/01/21 11:16:39 : B2|Cowtales|Current Balance: $90.75|New Balance: $89.25
+>10/01/21 11:16:39 : Unable to find the inventory file.
+>10/01/21 11:16:40 : B2|Cowtales|Current Balance: $89.25|New Balance: $87.75
+>10/01/21 11:16:41 : Unable to find the inventory file.
+>10/01/21 11:16:42 : B2|Cowtales|Current Balance: $87.75|New Balance: $86.25
+>10/01/21 11:16:43 : Unable to find the inventory file.
+>10/01/21 11:16:45 : B2|Cowtales|Current Balance: $86.25|New Balance: $84.75
+>10/01/21 11:16:50 : Unable to find the inventory file.
+>10/01/21 11:16:51 : D3|Chiclets|Current Balance: $84.75|New Balance: $84.0
+>10/01/21 11:16:52 : Unable to find the inventory file.
+>10/01/21 11:16:53 : D3|Chiclets|Current Balance: $84.0|New Balance: $83.25
+>10/01/21 11:16:54 : GIVE CHANGE: $83.25
+>10/01/21 11:17:03 : Exiting program with System.exit(status: 0): Process ended successfully.
