@@ -14,22 +14,25 @@ public class Gum extends Snack {
 
     /** METHODS: Decrement product quantity */
     public int completeGumPurchase(String itemSelected) {
-        switch (itemSelected) {
-            case "U-Chews":
-                uChewsLeft--;
-                return uChewsLeft;
-            case "Little League Chew":
-                littleLeagueChewLeft--;
-                return littleLeagueChewLeft;
-            case "Chiclets":
-                chicletsLeft--;
-                return chicletsLeft;
-            case "Triplemint":
-                triplemintLeft--;
-                return triplemintLeft;
-            default:
-                break;
-        }
+        if (itemSelected.equals("U-Chews") || itemSelected.equals("Little League Chew") ||
+            itemSelected.equals("Chiclets") || itemSelected.equals("Triplemint")) {
+            switch (itemSelected) {
+                case "U-Chews":
+                    uChewsLeft--;
+                    return uChewsLeft;
+                case "Little League Chew":
+                    littleLeagueChewLeft--;
+                    return littleLeagueChewLeft;
+                case "Chiclets":
+                    chicletsLeft--;
+                    return chicletsLeft;
+                case "Triplemint":
+                    triplemintLeft--;
+                    return triplemintLeft;
+                default:
+                    break;
+            }
+        } else return 8951423;
         return 0;
     }
 
