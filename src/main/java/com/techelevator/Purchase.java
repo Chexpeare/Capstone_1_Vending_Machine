@@ -19,7 +19,6 @@ public class Purchase {
 //    private static final String logFilePath = "capstone/log.txt";
     private static final Date date = new Date();
     private static double totalSales = 0.0;
-    private static double itemPrice = 0.0;
     private static int chipsCounter = 0;
     private static int candyCounter = 0;
     private static int drinksCounter = 0;
@@ -37,7 +36,8 @@ public class Purchase {
 
     protected double deposit;
     protected int itemsRemaining;
-    protected String soldOutString = " SOLD OUT.\nPlease select another product or press [3] to finish your transaction.";
+    protected String soldOutString = "\033[31m" + "\033[1m" + " SOLD OUT." + "\033[0m"   + "\033[38m" +
+                                    "\nPlease select another product or press [3] to finish your transaction.";
     protected String addFundsString = "Please add additional funds or press [3] to finish your transaction.";
 
     /** CONSTRUCTOR */
@@ -69,18 +69,25 @@ public class Purchase {
 
     /** feedMoney() */
     public void feedMoney() throws IOException {
-        Scanner userInput = new Scanner(System.in);
-        System.out.print("How much money would you like to deposit: ");
-        deposit = userInput.nextDouble();
-//        System.out.println("Current Money Provided: $" + deposit);
 
-        if (deposit > 0) {
-            balance += deposit;
-            TELog.log("FEED MONEY: $"+ deposit + "  " + "$" + balance);
-        } else {
-            System.out.println("\nInvalid Deposit");
-            TELog.log("INVALID DEPOSIT");
+        try {
+            Scanner userInput = new Scanner(System.in);
+            System.out.print("How much money would you like to deposit: ");
+            deposit = userInput.nextDouble();
+//        System.out.println("Current Money Provided: $" + deposit);
+            if (deposit > 0) {
+                balance += deposit;
+                TELog.log("FEED MONEY: $"+ deposit + "  " + "$" + balance);
+            } else if (deposit <= 0) {
+                System.out.println("\033[31;1mPlease enter a valid amount.\033[0m");
+            }
+        } catch (Exception e) {
+            System.out.println("\033[31;1mPlease enter a valid amount.\033[0m");
+        } finally {
+            TELog.log("INVALID DEPOSTI");
         }
+
+
     }
 
     /** START: selectProduct() */
@@ -91,11 +98,12 @@ public class Purchase {
         itemKey = userInput.nextLine();
 //        lowKey = itemKey.toLowerCase();
 
-        if (!(itemKey.equals("A1") || itemKey.equals("A2") ||itemKey.equals("A3") ||itemKey.equals("A4")
+        if ( !(itemKey.equals("A1") || itemKey.equals("A2") ||itemKey.equals("A3") ||itemKey.equals("A4")
                 ||itemKey.equals("B1") ||itemKey.equals("B2") ||itemKey.equals("B3") ||itemKey.equals("B4")
                 ||itemKey.equals("C1") ||itemKey.equals("C2") ||itemKey.equals("C3") ||itemKey.equals("C4")
-                ||itemKey.equals("D1") ||itemKey.equals("D2") ||itemKey.equals("D3") ||itemKey.equals("D4"))) {
-            System.out.println("Invalid Key, Try again");
+                ||itemKey.equals("D1") ||itemKey.equals("D2") ||itemKey.equals("D3") ||itemKey.equals("D4")) ) {
+
+            System.out.println("\033[31;1m\nInvalid product code. Please try again.\033[0m");
             itemKey =null;
             itemSelected = null;
             itemCategory = null;
@@ -105,6 +113,7 @@ public class Purchase {
         itemSelected = inventory.getItemSelectedMap().get(itemKey);
         itemCategory = inventory.getItemCategoryMap().get(itemKey);
 
+        double itemPrice = 0.0;
         switch (itemCategory) {
             // Start of Chips
             case "Chip":
