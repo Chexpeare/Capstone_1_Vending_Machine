@@ -338,3 +338,287 @@ Tue Sep 28 23:19:20 EDT 2021 Process ended normally.
 >09/30/21 13:50:27 : D3|Chiclets|Current Balance: $100.0|New Balance: $99.25
 >09/30/21 13:51:50 : A3|Grain Waves|Current Balance: $99.25|New Balance: $96.5
 >09/30/21 13:52:23 : GIVE CHANGE: $96.5
+>09/30/21 23:31:27 : Process successfully started: psvm() accessed without incident.
+>09/30/21 23:31:33 : FEED MONEY: $100.0  $100.0
+>09/30/21 23:32:00 : B3|Wonka Bar|Current Balance: $100.0|New Balance: $98.5
+>09/30/21 23:32:41 : GIVE CHANGE: $98.5
+>09/30/21 23:32:42 : Exiting program with System.exit(status: 0): Process ended successfully.
+>09/30/21 23:43:48 : Process successfully started: psvm() accessed without incident.
+>09/30/21 23:43:52 : Exiting program with System.exit(status: 0): Process ended successfully.
+>10/01/21 01:07:48 : Process successfully started: psvm() accessed without incident.
+>10/01/21 01:08:08 : FEED MONEY: $100.0  $100.0
+>10/01/21 01:08:17 : A1|Potato Crisps|Current Balance: $100.0|New Balance: $96.95
+>10/01/21 01:08:23 : B2|Cowtales|Current Balance: $96.95|New Balance: $95.44999694824219
+>10/01/21 01:08:29 : C4|Heavy|Current Balance: $95.45|New Balance: $93.94999694824219
+>10/01/21 01:08:36 : D1|U-Chews|Current Balance: $93.95|New Balance: $93.0999969482422
+>10/01/21 01:08:45 : D4|Triplemint|Current Balance: $93.1|New Balance: $92.3499984741211
+>10/01/21 01:08:48 : D4|Triplemint|Current Balance: $92.35|New Balance: $91.5999984741211
+>10/01/21 01:09:04 : D4|Triplemint|Current Balance: $91.6|New Balance: $90.8499984741211
+>10/01/21 01:09:19 : D4|Triplemint|Current Balance: $90.85|New Balance: $90.0999984741211
+>10/01/21 01:09:21 : GIVE CHANGE: $90.1
+>10/01/21 01:09:35 : GIVE CHANGE: $0.0
+>10/01/21 01:09:39 : Exiting program with System.exit(status: 0): Process ended successfully.
+>10/01/21 01:10:16 : Process successfully started: psvm() accessed without incident.
+>10/01/21 01:11:06 : Process successfully started: psvm() accessed without incident.
+>10/01/21 01:11:28 : FEED MONEY: $100.0  $100.0
+>10/01/21 01:11:37 : B1|Moonpie|Current Balance: $100.0|New Balance: $98.2
+>10/01/21 01:13:01 : B2|Cowtales|Current Balance: $98.2|New Balance: $96.69999694824219
+>10/01/21 01:15:02 : Process successfully started: psvm() accessed without incident.
+>10/01/21 01:15:15 : FEED MONEY: $200.0  $200.0
+>10/01/21 01:15:21 : B1|Moonpie|Current Balance: $200.0|New Balance: $198.2
+>10/01/21 01:17:37 : Process successfully started: psvm() accessed without incident.
+>10/01/21 01:18:15 : FEED MONEY: $100.0  $100.0
+>10/01/21 01:18:22 : B1|Moonpie|Current Balance: $100.0|New Balance: $98.2
+>10/01/21 01:18:26 : B2|Cowtales|Current Balance: $98.2|New Balance: $96.69999694824219
+>10/01/21 01:18:29 : B3|Wonka Bar|Current Balance: $96.7|New Balance: $95.19999694824219
+>10/01/21 01:18:32 : B4|Crunchie|Current Balance: $95.2|New Balance: $93.44999694824219
+>10/01/21 01:18:40 : B1|Moonpie|Current Balance: $93.45|New Balance: $91.64999694824219
+>10/01/21 01:18:43 : B1|Moonpie|Current Balance: $91.649994|New Balance: $89.84999389648438
+>10/01/21 01:18:45 : B1|Moonpie|Current Balance: $89.84999|New Balance: $88.04999084472657
+>10/01/21 01:18:47 : B1|Moonpie|Current Balance: $88.04999|New Balance: $86.24998779296875
+>10/01/21 01:18:56 : GIVE CHANGE: $86.249985
+>10/01/21 01:19:01 : FEED MONEY: $100.0  $100.0
+>10/01/21 01:19:05 : A1|Potato Crisps|Current Balance: $100.0|New Balance: $96.95
+>10/01/21 01:19:08 : GIVE CHANGE: $96.95
+>10/01/21 01:19:09 : Exiting program with System.exit(status: 0): Process ended successfully.
+>10/01/21 01:31:21 : Process successfully started: psvm() accessed without incident.
+>10/01/21 01:31:36 : FEED MONEY: $100.0  $100.0
+>10/01/21 01:31:47 : A1|Potato Crisps|Current Balance: $100.0|New Balance: $96.95
+>10/01/21 01:31:49 : A1|Potato Crisps|Current Balance: $96.95|New Balance: $93.89999694824219
+>10/01/21 01:31:51 : A1|Potato Crisps|Current Balance: $93.899994|New Balance: $90.84999389648438
+>10/01/21 01:31:55 : A2|Stackers|Current Balance: $90.84999|New Balance: $89.39999084472656
+>10/01/21 01:31:59 : A1|Potato Crisps|Current Balance: $89.399994|New Balance: $86.34999389648438
+>10/01/21 01:32:01 : A1|Potato Crisps|Current Balance: $86.34999|New Balance: $83.29999084472657
+>10/01/21 01:32:24 : GIVE CHANGE: $83.29999
+>10/01/21 01:32:25 : Exiting program with System.exit(status: 0): Process ended successfully.
+>10/01/21 01:35:00 : Process successfully started: psvm() accessed without incident.
+>10/01/21 01:35:07 : FEED MONEY: $100.0  $100.0
+>10/01/21 01:35:15 : A1|Potato Crisps|Current Balance: $100.0|New Balance: $96.95
+>10/01/21 01:35:17 : A1|Potato Crisps|Current Balance: $96.95|New Balance: $93.89999694824219
+>10/01/21 01:35:20 : A1|Potato Crisps|Current Balance: $93.899994|New Balance: $90.84999389648438
+>10/01/21 01:35:22 : A1|Potato Crisps|Current Balance: $90.84999|New Balance: $87.79999084472657
+>10/01/21 01:35:23 : A1|Potato Crisps|Current Balance: $87.79999|New Balance: $84.74998779296875
+>10/01/21 01:35:50 : Process successfully started: psvm() accessed without incident.
+>10/01/21 01:35:57 : FEED MONEY: $100.0  $100.0
+>10/01/21 01:36:02 : A1|Potato Crisps|Current Balance: $100.0|New Balance: $96.95
+>10/01/21 01:36:03 : A1|Potato Crisps|Current Balance: $96.95|New Balance: $93.89999694824219
+>10/01/21 01:36:05 : A1|Potato Crisps|Current Balance: $93.899994|New Balance: $90.84999389648438
+>10/01/21 01:36:06 : A1|Potato Crisps|Current Balance: $90.84999|New Balance: $87.79999084472657
+>10/01/21 01:36:07 : A1|Potato Crisps|Current Balance: $87.79999|New Balance: $84.74998779296875
+>10/01/21 01:37:08 : Process successfully started: psvm() accessed without incident.
+>10/01/21 01:37:14 : FEED MONEY: $100.0  $100.0
+>10/01/21 01:37:25 : B1|Moonpie|Current Balance: $100.0|New Balance: $98.2
+>10/01/21 01:37:26 : B1|Moonpie|Current Balance: $98.2|New Balance: $96.39999694824219
+>10/01/21 01:37:28 : B1|Moonpie|Current Balance: $96.399994|New Balance: $94.59999389648438
+>10/01/21 01:37:30 : B1|Moonpie|Current Balance: $94.59999|New Balance: $92.79999084472657
+>10/01/21 01:37:31 : B1|Moonpie|Current Balance: $92.79999|New Balance: $90.99998779296875
+>10/01/21 01:37:55 : GIVE CHANGE: $90.999985
+>10/01/21 01:37:58 : Exiting program with System.exit(status: 0): Process ended successfully.
+>10/01/21 02:07:53 : Process successfully started: psvm() accessed without incident.
+>10/01/21 02:08:27 : Process successfully started: psvm() accessed without incident.
+>10/01/21 02:08:36 : FEED MONEY: $100.0  $100.0
+>10/01/21 02:11:41 : Process successfully started: psvm() accessed without incident.
+>10/01/21 02:14:56 : Process successfully started: psvm() accessed without incident.
+>10/01/21 02:15:01 : INVALID DEPOSIT
+>10/01/21 02:17:50 : Process successfully started: psvm() accessed without incident.
+>10/01/21 02:17:54 : INVALID DEPOSIT
+>10/01/21 02:18:24 : Process successfully started: psvm() accessed without incident.
+>10/01/21 02:18:28 : INVALID DEPOSIT
+>10/01/21 02:19:04 : Process successfully started: psvm() accessed without incident.
+>10/01/21 02:19:11 : INVALID DEPOSIT
+>10/01/21 02:22:31 : Process successfully started: psvm() accessed without incident.
+>10/01/21 02:22:41 : INVALID DEPOSIT
+>10/01/21 02:22:54 : FEED MONEY: $200.0  $200.0
+>10/01/21 02:23:23 : D1|U-Chews|Current Balance: $200.0|New Balance: $199.15
+>10/01/21 02:23:26 : D1|U-Chews|Current Balance: $199.15|New Balance: $198.29999389648438
+>10/01/21 02:23:28 : D1|U-Chews|Current Balance: $198.29999|New Balance: $197.44998779296876
+>10/01/21 02:23:29 : D1|U-Chews|Current Balance: $197.44998|New Balance: $196.59998168945313
+>10/01/21 02:23:31 : D1|U-Chews|Current Balance: $196.59998|New Balance: $195.7499755859375
+>10/01/21 02:23:36 : GIVE CHANGE: $195.74997
+>10/01/21 02:23:42 : Exiting program with System.exit(status: 0): Process ended successfully.
+>10/01/21 02:25:23 : Process successfully started: psvm() accessed without incident.
+>10/01/21 02:25:30 : INVALID DEPOSTI
+>10/01/21 02:25:37 : FEED MONEY: $100.0  $100.0
+>10/01/21 02:25:37 : INVALID DEPOSTI
+>10/01/21 02:25:42 : INVALID DEPOSTI
+>10/01/21 02:26:09 : INVALID DEPOSTI
+>10/01/21 02:27:26 : Process successfully started: psvm() accessed without incident.
+>10/01/21 02:27:35 : INVALID DEPOSTI
+>10/01/21 02:27:42 : INVALID DEPOSTI
+>10/01/21 02:27:45 : INVALID DEPOSTI
+>10/01/21 02:27:56 : FEED MONEY: $100.0  $100.0
+>10/01/21 02:27:56 : INVALID DEPOSTI
+>10/01/21 02:30:15 : Process successfully started: psvm() accessed without incident.
+>10/01/21 02:30:26 : FEED MONEY: $100.0  $100.0
+>10/01/21 02:30:26 : INVALID DEPOSTI
+>10/01/21 02:30:36 : B3|Wonka Bar|Current Balance: $100.0|New Balance: $98.5
+>10/01/21 02:43:00 : Process successfully started: psvm() accessed without incident.
+>10/01/21 02:43:12 : INVALID DEPOSTI
+>10/01/21 02:43:19 : FEED MONEY: $100.0  $100.0
+>10/01/21 02:43:19 : INVALID DEPOSTI
+>10/01/21 02:43:29 : INVALID DEPOSTI
+>10/01/21 02:43:38 : INVALID DEPOSTI
+>10/01/21 02:43:42 : FEED MONEY: $200.0  $300.0
+>10/01/21 02:43:42 : INVALID DEPOSTI
+>10/01/21 02:43:45 : Unable to find the inventory file.
+>10/01/21 02:43:49 : B3|Wonka Bar|Current Balance: $300.0|New Balance: $298.5
+>10/01/21 02:43:54 : GIVE CHANGE: $298.5
+>10/01/21 02:44:06 : Exiting program with System.exit(status: 0): Process ended successfully.
+>10/01/21 02:46:11 : Process successfully started: psvm() accessed without incident.
+>10/01/21 02:46:34 : FEED MONEY: $100.0  $100.0
+>10/01/21 02:46:34 : INVALID DEPOSTI
+>10/01/21 02:46:34 : Unable to find the inventory file.
+>10/01/21 02:46:39 : Unable to find the inventory file.
+>10/01/21 02:46:44 : B2|Cowtales|Current Balance: $100.0|New Balance: $98.5
+>10/01/21 02:46:45 : Unable to find the inventory file.
+>10/01/21 02:46:47 : B3|Wonka Bar|Current Balance: $98.5|New Balance: $97.0
+>10/01/21 02:46:49 : Unable to find the inventory file.
+>10/01/21 02:46:51 : C4|Heavy|Current Balance: $97.0|New Balance: $95.5
+>10/01/21 02:46:54 : Unable to find the inventory file.
+>10/01/21 02:47:01 : GIVE CHANGE: $95.5
+>10/01/21 02:47:14 : FEED MONEY: $100.0  $100.0
+>10/01/21 02:47:14 : INVALID DEPOSTI
+>10/01/21 02:47:21 : Unable to find the inventory file.
+>10/01/21 02:47:39 : D4|Triplemint|Current Balance: $100.0|New Balance: $99.25
+>10/01/21 02:47:39 : Unable to find the inventory file.
+>10/01/21 02:47:40 : D4|Triplemint|Current Balance: $99.25|New Balance: $98.5
+>10/01/21 02:47:41 : Unable to find the inventory file.
+>10/01/21 02:47:42 : D4|Triplemint|Current Balance: $98.5|New Balance: $97.75
+>10/01/21 02:47:43 : Unable to find the inventory file.
+>10/01/21 02:47:45 : D4|Triplemint|Current Balance: $97.75|New Balance: $97.0
+>10/01/21 02:47:45 : Unable to find the inventory file.
+>10/01/21 02:47:46 : D4|Triplemint|Current Balance: $97.0|New Balance: $96.25
+>10/01/21 02:47:47 : Unable to find the inventory file.
+>10/01/21 02:47:51 : GIVE CHANGE: $96.25
+>10/01/21 02:49:58 : Process successfully started: psvm() accessed without incident.
+>10/01/21 02:50:17 : FEED MONEY: $100.0  $100.0
+>10/01/21 02:50:17 : INVALID DEPOSTI
+>10/01/21 02:50:19 : Unable to find the inventory file.
+>10/01/21 02:50:24 : A1|Potato Crisps|Current Balance: $100.0|New Balance: $96.95
+>10/01/21 02:50:25 : Unable to find the inventory file.
+>10/01/21 02:50:26 : A1|Potato Crisps|Current Balance: $96.95|New Balance: $93.89999694824219
+>10/01/21 02:50:27 : Unable to find the inventory file.
+>10/01/21 02:50:28 : A1|Potato Crisps|Current Balance: $93.899994|New Balance: $90.84999389648438
+>10/01/21 02:50:28 : Unable to find the inventory file.
+>10/01/21 02:50:29 : A1|Potato Crisps|Current Balance: $90.84999|New Balance: $87.79999084472657
+>10/01/21 02:50:30 : Unable to find the inventory file.
+>10/01/21 02:50:32 : A1|Potato Crisps|Current Balance: $87.79999|New Balance: $84.74998779296875
+>10/01/21 02:50:33 : Unable to find the inventory file.
+>10/01/21 02:50:36 : Unable to find the inventory file.
+>10/01/21 02:50:38 : C4|Heavy|Current Balance: $84.749985|New Balance: $83.24998474121094
+>10/01/21 02:50:41 : Unable to find the inventory file.
+>10/01/21 02:50:42 : C4|Heavy|Current Balance: $83.249985|New Balance: $81.74998474121094
+>10/01/21 02:50:44 : Unable to find the inventory file.
+>10/01/21 02:50:46 : B3|Wonka Bar|Current Balance: $81.749985|New Balance: $80.24998474121094
+>10/01/21 02:50:49 : Unable to find the inventory file.
+>10/01/21 02:50:59 : A3|Grain Waves|Current Balance: $80.249985|New Balance: $77.49998474121094
+>10/01/21 02:51:00 : Unable to find the inventory file.
+>10/01/21 02:51:02 : B4|Crunchie|Current Balance: $77.499985|New Balance: $75.74998474121094
+>10/01/21 02:51:04 : GIVE CHANGE: $75.749985
+>10/01/21 02:52:20 : Process successfully started: psvm() accessed without incident.
+>10/01/21 02:52:31 : FEED MONEY: $100.0  $100.0
+>10/01/21 02:52:31 : INVALID DEPOSTI
+>10/01/21 02:52:34 : Unable to find the inventory file.
+>10/01/21 02:52:42 : Unable to find the inventory file.
+>10/01/21 02:52:43 : A1|Potato Crisps|Current Balance: $100.0|New Balance: $96.95
+>10/01/21 02:52:44 : Unable to find the inventory file.
+>10/01/21 02:52:46 : A1|Potato Crisps|Current Balance: $96.95|New Balance: $93.89999694824219
+>10/01/21 02:52:47 : Unable to find the inventory file.
+>10/01/21 02:52:48 : A1|Potato Crisps|Current Balance: $93.899994|New Balance: $90.84999389648438
+>10/01/21 02:52:49 : Unable to find the inventory file.
+>10/01/21 02:52:50 : A1|Potato Crisps|Current Balance: $90.84999|New Balance: $87.79999084472657
+>10/01/21 02:52:50 : Unable to find the inventory file.
+>10/01/21 02:52:51 : A1|Potato Crisps|Current Balance: $87.79999|New Balance: $84.74998779296875
+>10/01/21 02:52:52 : Unable to find the inventory file.
+>10/01/21 02:52:57 : Unable to find the inventory file.
+>10/01/21 02:52:59 : D3|Chiclets|Current Balance: $84.749985|New Balance: $83.99998474121094
+>10/01/21 02:53:00 : Unable to find the inventory file.
+>10/01/21 02:53:01 : D3|Chiclets|Current Balance: $83.999985|New Balance: $83.24998474121094
+>10/01/21 02:53:03 : Unable to find the inventory file.
+>10/01/21 02:53:09 : C4|Heavy|Current Balance: $83.249985|New Balance: $81.74998474121094
+>10/01/21 02:53:11 : Unable to find the inventory file.
+>10/01/21 02:53:12 : C4|Heavy|Current Balance: $81.749985|New Balance: $80.24998474121094
+>10/01/21 02:53:13 : Unable to find the inventory file.
+>10/01/21 02:53:13 : C4|Heavy|Current Balance: $80.249985|New Balance: $78.74998474121094
+>10/01/21 02:53:15 : Unable to find the inventory file.
+>10/01/21 02:53:17 : D1|U-Chews|Current Balance: $78.749985|New Balance: $77.89998474121094
+>10/01/21 02:53:20 : GIVE CHANGE: $77.89999
+>10/01/21 02:54:17 : Process successfully started: psvm() accessed without incident.
+>10/01/21 02:54:24 : FEED MONEY: $100.0  $100.0
+>10/01/21 02:54:24 : INVALID DEPOSTI
+>10/01/21 02:54:25 : Unable to find the inventory file.
+>10/01/21 02:54:32 : C1|Cola|Current Balance: $100.0|New Balance: $98.75
+>10/01/21 02:54:34 : Unable to find the inventory file.
+>10/01/21 02:54:34 : C1|Cola|Current Balance: $98.75|New Balance: $97.5
+>10/01/21 02:54:35 : Unable to find the inventory file.
+>10/01/21 02:54:36 : C1|Cola|Current Balance: $97.5|New Balance: $96.25
+>10/01/21 02:54:36 : Unable to find the inventory file.
+>10/01/21 02:54:37 : C1|Cola|Current Balance: $96.25|New Balance: $95.0
+>10/01/21 02:54:38 : Unable to find the inventory file.
+>10/01/21 02:54:38 : C1|Cola|Current Balance: $95.0|New Balance: $93.75
+>10/01/21 02:54:39 : Unable to find the inventory file.
+>10/01/21 02:54:43 : Unable to find the inventory file.
+>10/01/21 02:54:45 : A1|Potato Crisps|Current Balance: $93.75|New Balance: $90.7
+>10/01/21 02:54:46 : Unable to find the inventory file.
+>10/01/21 02:54:48 : A1|Potato Crisps|Current Balance: $90.7|New Balance: $87.64999694824219
+>10/01/21 02:54:54 : Unable to find the inventory file.
+>10/01/21 02:54:57 : B2|Cowtales|Current Balance: $87.649994|New Balance: $86.14999389648438
+>10/01/21 02:54:59 : Unable to find the inventory file.
+>10/01/21 02:55:01 : B3|Wonka Bar|Current Balance: $86.149994|New Balance: $84.64999389648438
+>10/01/21 02:55:02 : Unable to find the inventory file.
+>10/01/21 02:55:06 : D2|Little League Chew|Current Balance: $84.649994|New Balance: $83.69999389648437
+>10/01/21 02:55:07 : Unable to find the inventory file.
+>10/01/21 02:55:08 : D2|Little League Chew|Current Balance: $83.7|New Balance: $82.74999694824218
+>10/01/21 02:55:09 : Unable to find the inventory file.
+>10/01/21 02:55:09 : D2|Little League Chew|Current Balance: $82.75|New Balance: $81.8
+>10/01/21 02:55:10 : Unable to find the inventory file.
+>10/01/21 02:55:11 : D2|Little League Chew|Current Balance: $81.8|New Balance: $80.85000305175781
+>10/01/21 02:55:17 : Unable to find the inventory file.
+>10/01/21 02:55:18 : D4|Triplemint|Current Balance: $80.850006|New Balance: $80.10000610351562
+>10/01/21 02:55:19 : Unable to find the inventory file.
+>10/01/21 02:55:19 : D4|Triplemint|Current Balance: $80.100006|New Balance: $79.35000610351562
+>10/01/21 02:55:20 : Unable to find the inventory file.
+>10/01/21 02:55:21 : D4|Triplemint|Current Balance: $79.350006|New Balance: $78.60000610351562
+>10/01/21 02:55:21 : Unable to find the inventory file.
+>10/01/21 02:55:22 : D4|Triplemint|Current Balance: $78.600006|New Balance: $77.85000610351562
+>10/01/21 02:55:23 : Unable to find the inventory file.
+>10/01/21 02:55:23 : D4|Triplemint|Current Balance: $77.850006|New Balance: $77.10000610351562
+>10/01/21 02:55:24 : Unable to find the inventory file.
+>10/01/21 02:55:26 : Unable to find the inventory file.
+>10/01/21 02:55:29 : GIVE CHANGE: $77.100006
+>10/01/21 02:57:17 : Process successfully started: psvm() accessed without incident.
+>10/01/21 02:57:27 : FEED MONEY: $100.0  $100.0
+>10/01/21 02:57:27 : INVALID DEPOSTI
+>10/01/21 02:57:29 : Unable to find the inventory file.
+>10/01/21 02:57:52 : Unable to find the inventory file.
+>10/01/21 02:57:53 : A1|Potato Crisps|Current Balance: $100.0|New Balance: $96.95
+>10/01/21 02:57:54 : Unable to find the inventory file.
+>10/01/21 02:57:55 : A1|Potato Crisps|Current Balance: $96.95|New Balance: $93.89999694824219
+>10/01/21 02:57:56 : Unable to find the inventory file.
+>10/01/21 02:57:57 : A1|Potato Crisps|Current Balance: $93.899994|New Balance: $90.84999389648438
+>10/01/21 02:57:58 : Unable to find the inventory file.
+>10/01/21 02:58:00 : Unable to find the inventory file.
+>10/01/21 02:58:03 : A1|Potato Crisps|Current Balance: $90.84999|New Balance: $87.79999084472657
+>10/01/21 02:58:04 : Unable to find the inventory file.
+>10/01/21 02:58:05 : A1|Potato Crisps|Current Balance: $87.79999|New Balance: $84.74998779296875
+>10/01/21 02:58:08 : Unable to find the inventory file.
+>10/01/21 02:58:18 : Unable to find the inventory file.
+>10/01/21 02:58:22 : B3|Wonka Bar|Current Balance: $84.749985|New Balance: $83.24998474121094
+>10/01/21 02:58:23 : Unable to find the inventory file.
+>10/01/21 02:58:24 : B3|Wonka Bar|Current Balance: $83.249985|New Balance: $81.74998474121094
+>10/01/21 02:58:26 : Unable to find the inventory file.
+>10/01/21 02:58:31 : C2|Dr. Salt|Current Balance: $81.749985|New Balance: $80.24998474121094
+>10/01/21 02:58:34 : Unable to find the inventory file.
+>10/01/21 02:58:35 : C2|Dr. Salt|Current Balance: $80.249985|New Balance: $78.74998474121094
+>10/01/21 02:58:37 : Unable to find the inventory file.
+>10/01/21 02:58:38 : C2|Dr. Salt|Current Balance: $78.749985|New Balance: $77.24998474121094
+>10/01/21 02:58:39 : Unable to find the inventory file.
+>10/01/21 02:58:40 : C2|Dr. Salt|Current Balance: $77.249985|New Balance: $75.74998474121094
+>10/01/21 02:58:41 : Unable to find the inventory file.
+>10/01/21 02:58:41 : C2|Dr. Salt|Current Balance: $75.749985|New Balance: $74.24998474121094
+>10/01/21 02:58:42 : Unable to find the inventory file.
+>10/01/21 02:58:49 : Unable to find the inventory file.
+>10/01/21 02:58:51 : D3|Chiclets|Current Balance: $74.249985|New Balance: $73.49998474121094
+>10/01/21 02:58:53 : Unable to find the inventory file.
+>10/01/21 02:58:54 : D3|Chiclets|Current Balance: $73.499985|New Balance: $72.74998474121094
+>10/01/21 02:58:57 : GIVE CHANGE: $72.749985
