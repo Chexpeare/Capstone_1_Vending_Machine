@@ -14,22 +14,25 @@ public class Candy extends Snack {
 
     /** METHODS: Decrement product quantity */
     public int completeCandyPurchase(String itemSelected) {
-        switch (itemSelected) {
-            case "Moonpie":
-                moonPiesLeft--;
-                return moonPiesLeft;
-            case "Cowtales":
-                cowtalesLeft--;
-                return cowtalesLeft;
-            case "Wonka Bar":
-                wonkaBarsLeft--;
-                return wonkaBarsLeft;
-            case "Crunchie":
-                crunchiesLeft--;
-                return crunchiesLeft;
-            default:
-                break;
-        }
+        if (itemSelected.equals("Moonpie") || itemSelected.equals("Cowtales") ||
+            itemSelected.equals("Wonka Bar") || itemSelected.equals("Crunchie")) {
+            switch (itemSelected) {
+                case "Moonpie":
+                    moonPiesLeft--;
+                    return moonPiesLeft;
+                case "Cowtales":
+                    cowtalesLeft--;
+                    return cowtalesLeft;
+                case "Wonka Bar":
+                    wonkaBarsLeft--;
+                    return wonkaBarsLeft;
+                case "Crunchie":
+                    crunchiesLeft--;
+                    return crunchiesLeft;
+                default:
+                    break;
+            }
+        } else return 8951423;
         return 0;
     }
 
