@@ -14,22 +14,25 @@ public class Drinks extends Snack {
 
     /** METHODS: Decrement product quantity */
     public int completeDrinksPurchase(String itemSelected) {
-        switch (itemSelected) {
-            case "Cola":
-                colaLeft--;
-                return colaLeft;
-            case "Dr. Salt":
-                drSaltLeft--;
-                return drSaltLeft;
-            case "Mountain Melter":
-                mountainMelterLeft--;
-                return mountainMelterLeft;
-            case "Heavy":
-                heavyLeft--;
-                return heavyLeft;
-            default:
-                break;
-        }
+        if (itemSelected.equals("Cola") || itemSelected.equals("Dr. Salt") ||
+            itemSelected.equals("Mountain Melter") || itemSelected.equals("Heavy")) {
+            switch (itemSelected) {
+                case "Cola":
+                    colaLeft--;
+                    return colaLeft;
+                case "Dr. Salt":
+                    drSaltLeft--;
+                    return drSaltLeft;
+                case "Mountain Melter":
+                    mountainMelterLeft--;
+                    return mountainMelterLeft;
+                case "Heavy":
+                    heavyLeft--;
+                    return heavyLeft;
+                default:
+                    break;
+            }
+        } else return 8951423;
         return 0;
     }
 
