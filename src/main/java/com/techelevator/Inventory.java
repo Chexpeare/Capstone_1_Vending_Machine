@@ -1,5 +1,7 @@
 package com.techelevator;
 
+import com.techelevator.util.TELog;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -135,15 +137,24 @@ public class Inventory {
             }
             currentLine = reader.readLine();
         }
-        System.out.println("\033[38m");     // Return text color to white
+        System.out.println("\033[0m");     // Return text color to white
     }
 
     public void getInventory() throws IOException{
-        File inputFile = new File(inventoryFile);
-        String canonical = inputFile.getCanonicalPath();
-        FileReader readerFile = new FileReader(canonical);
-        BufferedReader reader = new BufferedReader(readerFile);
-        String currentLine = reader.readLine();
+        BufferedReader reader = null;
+        String currentLine = null;
+        try {
+            File inputFile = new File(inventoryFile);
+            String canonical = inputFile.getCanonicalPath();
+            FileReader readerFile = new FileReader(canonical);
+            reader = new BufferedReader(readerFile);
+            currentLine = reader.readLine();
+        } catch (IOException e) {
+            System.out.println("\033[31;1mUnable to find the inventory file. " +
+                    "           \nPlease confirm that the file exists in the specified directory.\033[0m");
+        } finally {
+            TELog.log("Unable to find the inventory file.");
+        }
 
         while(currentLine != null) {
             String[] splitItemLine = currentLine.split("\\|");
@@ -155,11 +166,11 @@ public class Inventory {
 
     private void totalRemainingColor(int unitsRemaining) {
         if (unitsRemaining == 5) {
-            System.out.println("|" + unitsRemaining);
+            System.out.println(" | >>> " + "\033[0;1m" + unitsRemaining + "\033[0m");
         } else if (unitsRemaining == 0) {
-            System.out.println("|" + "\033[31m" + unitsRemaining + "\033[32m");
+            System.out.println(" | >>> " + "\033[31;1m" + unitsRemaining + "   SOLD OUT" + "\033[0m");
         } else {
-            System.out.println("|" + "\033[34m" + unitsRemaining + "\033[32m");
+            System.out.println(" | >>> " + "\033[33;1m" + unitsRemaining + "\033[0m");
         }
 
     }
