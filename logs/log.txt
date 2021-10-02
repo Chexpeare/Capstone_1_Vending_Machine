@@ -1385,3 +1385,61 @@ Tue Sep 28 23:19:20 EDT 2021 Process ended normally.
 >10/01/21 18:06:31 : Process successfully started: psvm() accessed without incident.
 >10/01/21 18:06:55 : Unable to find the inventory file.
 >10/01/21 18:07:15 : GIVE CHANGE: $0.0
+>10/01/21 19:13:36 : Process successfully started: psvm() accessed without incident.
+>10/01/21 19:14:09 : Unable to find the inventory file.
+>10/01/21 19:14:28 : INVALID DEPOSTI
+>10/01/21 19:14:57 : FEED MONEY: $1000.0  $1000.0
+>10/01/21 19:14:57 : INVALID DEPOSTI
+>10/01/21 19:15:20 : INVALID DEPOSTI
+>10/01/21 19:15:34 : Unable to find the inventory file.
+>10/01/21 19:15:38 : A1|Potato Crisps|Current Balance: $1000.0|New Balance: $996.95
+>10/01/21 19:15:47 : Unable to find the inventory file.
+>10/01/21 19:15:48 : A1|Potato Crisps|Current Balance: $996.95|New Balance: $993.9000122070313
+>10/01/21 19:15:49 : Unable to find the inventory file.
+>10/01/21 19:15:50 : A1|Potato Crisps|Current Balance: $993.9|New Balance: $990.8500244140625
+>10/01/21 19:15:52 : Unable to find the inventory file.
+>10/01/21 19:16:01 : Unable to find the inventory file.
+>10/01/21 19:16:07 : Unable to find the inventory file.
+>10/01/21 19:16:08 : A1|Potato Crisps|Current Balance: $990.85004|New Balance: $987.8000366210938
+>10/01/21 19:16:15 : Unable to find the inventory file.
+>10/01/21 19:16:17 : A1|Potato Crisps|Current Balance: $987.80005|New Balance: $984.750048828125
+>10/01/21 19:16:22 : Unable to find the inventory file.
+>10/01/21 19:16:30 : Unable to find the inventory file.
+>10/01/21 19:16:35 : B1|Moonpie|Current Balance: $984.75006|New Balance: $982.9500610351563
+>10/01/21 19:16:36 : Unable to find the inventory file.
+>10/01/21 19:16:40 : C4|Heavy|Current Balance: $982.9501|New Balance: $981.4500732421875
+>10/01/21 19:16:43 : Unable to find the inventory file.
+>10/01/21 19:16:48 : Unable to find the inventory file.
+>10/01/21 19:16:50 : D4|Triplemint|Current Balance: $981.4501|New Balance: $980.7000732421875
+>10/01/21 19:17:03 : GIVE CHANGE: $980.7001
+>10/01/21 19:18:10 : FEED MONEY: $10.0  $10.0
+>10/01/21 19:18:10 : INVALID DEPOSTI
+>10/01/21 19:18:16 : Unable to find the inventory file.
+>10/01/21 19:18:18 : C3|Mountain Melter|Current Balance: $10.0|New Balance: $8.5
+>10/01/21 19:18:21 : Unable to find the inventory file.
+>10/01/21 19:18:23 : C3|Mountain Melter|Current Balance: $8.5|New Balance: $7.0
+>10/01/21 19:18:24 : Unable to find the inventory file.
+>10/01/21 19:18:25 : C3|Mountain Melter|Current Balance: $7.0|New Balance: $5.5
+>10/01/21 19:18:26 : Unable to find the inventory file.
+>10/01/21 19:18:27 : C3|Mountain Melter|Current Balance: $5.5|New Balance: $4.0
+>10/01/21 19:18:27 : Unable to find the inventory file.
+>10/01/21 19:18:28 : C3|Mountain Melter|Current Balance: $4.0|New Balance: $2.5
+>10/01/21 19:18:29 : Unable to find the inventory file.
+>10/01/21 19:18:35 : GIVE CHANGE: $2.5
+>10/01/21 19:19:38 : Process successfully started: psvm() accessed without incident.
+>10/01/21 19:19:42 : Exiting program with System.exit(status: 0): Process ended successfully.
+>10/01/21 21:05:52 : Process successfully started: psvm() accessed without incident.
+>10/01/21 21:06:03 : FEED MONEY: $100.0  $100.0
+>10/01/21 21:06:03 : INVALID DEPOSTI
+>10/01/21 21:06:04 : Unable to find the inventory file.
+>10/01/21 21:06:08 : A1|Potato Crisps|Current Balance: $100.0|New Balance: $96.95
+>10/01/21 21:06:11 : Unable to find the inventory file.
+>10/01/21 21:06:14 : A1|Potato Crisps|Current Balance: $96.95|New Balance: $93.89999694824219
+>10/01/21 21:06:16 : Unable to find the inventory file.
+>10/01/21 21:06:19 : Unable to find the inventory file.
+>10/01/21 21:06:20 : A2|Stackers|Current Balance: $93.899994|New Balance: $92.44999389648437
+>10/01/21 21:06:21 : Unable to find the inventory file.
+>10/01/21 21:06:24 : A3|Grain Waves|Current Balance: $92.45|New Balance: $89.69999694824219
+>10/01/21 21:06:25 : Unable to find the inventory file.
+>10/01/21 21:06:33 : A2|Stackers|Current Balance: $89.7|New Balance: $88.24999694824218
+>10/01/21 21:06:35 : GIVE CHANGE: $88.25

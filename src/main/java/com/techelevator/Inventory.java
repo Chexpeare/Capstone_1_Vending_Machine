@@ -40,12 +40,12 @@ public class Inventory {
         String currentLine = reader.readLine();
 
 
-            while (currentLine != null) {
-                String[] splitItemLine = currentLine.split("\\|");
-                System.out.print(   "\033[33m" + splitItemLine[0] + "\033[32m" + "|" +
-                                    "\033[34m" + splitItemLine[1] + "\033[32m" + "|" +
-                                    "\033[35m" + splitItemLine[2] + "\033[32m" + "|" +
-                                    "\033[32m" + splitItemLine[3] + "\033[38m");
+                while (currentLine != null) {
+                    String[] splitItemLine = currentLine.split("\\|");
+                    System.out.print(   "\033[33m" + splitItemLine[0] + "\033[32m" + "|" +
+                            "\033[34m" + splitItemLine[1] + "\033[32m" + "|" +
+                            "\033[35m" + splitItemLine[2] + "\033[32m" + "|" +
+                            "\033[32m" + splitItemLine[3] + "\033[38m");
 
     //          INVENTORY: CHIPS
                 if(splitItemLine[3].equals("Chip")) {
