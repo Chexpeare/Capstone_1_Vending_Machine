@@ -1,5 +1,15 @@
 ## Module 1 Capstone - Vending Machine Software
 
+Fork/Clone Source: 
+
+https://gitlab.com/te-school/merit-america/remote/jul-2021/module-one/projects/capstone
+
+My Fork/Clone:
+https://gitlab.com/carlosguevara/module-1-capstone.git
+
+Partnered Fork:
+https://gitlab.com/Vedavathipalani/capstone.git
+
 You've been asked to develop an application for the newest vending machine distributor,
 Umbrella Corp. They've released a new vending machine, Vendo-Matic 800, that is integrated
 with everyone's bank accounts, allowing customers to purchase products from their computers for their convenience.
